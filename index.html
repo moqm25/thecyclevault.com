@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The CycleVault – Private Period Tracking</title>
-    <meta name="description" content="A period tracker that keeps your data where it belongs: with you. No ads, no tracking, just calm, private cycle tracking.">
-    
+    <meta name="description"
+        content="A period tracker that keeps your data where it belongs: with you. No ads, no tracking, just calm, private cycle tracking.">
+
     <!-- Fonts (System UI stack used in CSS, but preconnecting for performance if we used external) -->
     <link rel="stylesheet" href="styles.css">
-    
+
     <!-- Favicon placeholder -->
     <link rel="icon" type="image/png" href="images/cyclevault-icon-light.png">
 </head>
+
 <body>
 
     <!-- Sticky Header -->
@@ -21,7 +24,7 @@
                 <img src="images/cyclevault-icon-light.png" alt="CycleVault Logo" class="logo-icon">
                 <span class="logo-text">The CycleVault</span>
             </a>
-            
+
             <nav class="main-nav">
                 <ul>
                     <li><a href="#problem">Why?</a></li>
@@ -33,8 +36,22 @@
             </nav>
 
             <button id="theme-toggle" aria-label="Toggle Dark Mode">
-                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
             </button>
         </div>
     </header>
@@ -52,20 +69,9 @@
                     </div>
                 </div>
                 <div class="hero-visual fade-in delay-1">
-                    <div class="phone-mockup">
-                        <div class="screen-content">
-                            <!-- CSS-only representation of the UI -->
-                            <div class="app-header">
-                                <div class="app-date">Today</div>
-                            </div>
-                            <div class="status-ring">
-                                <div class="ring-circle"></div>
-                                <div class="ring-text">Period Day 2</div>
-                            </div>
-                            <div class="action-card">
-                                <div class="card-line"></div>
-                                <div class="card-line short"></div>
-                            </div>
+                    <div class="iphone-mockup">
+                        <div class="iphone-screen">
+                            <img src="assets/app_screen.png" alt="The CycleVault App Screen" class="app-screen-img">
                         </div>
                     </div>
                 </div>
@@ -86,12 +92,14 @@
                     <div class="card problem-card fade-in">
                         <div class="icon-box warning">!</div>
                         <h3>Data Over-Collection</h3>
-                        <p>Most apps track interactions, location, and identifiable data far beyond what's needed for a calendar.</p>
+                        <p>Most apps track interactions, location, and identifiable data far beyond what's needed for a
+                            calendar.</p>
                     </div>
                     <div class="card problem-card fade-in delay-1">
                         <div class="icon-box warning">Ads</div>
                         <h3>You Are The Product</h3>
-                        <p>Many "free" apps monetize by building a profile of you to sell to advertisers and data brokers.</p>
+                        <p>Many "free" apps monetize by building a profile of you to sell to advertisers and data
+                            brokers.</p>
                     </div>
                 </div>
             </div>
@@ -246,7 +254,8 @@
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>No. We never sell your data. In fact, we don't even have access to it. It lives on your iPhone.</p>
+                            <p>No. We never sell your data. In fact, we don't even have access to it. It lives on your
+                                iPhone.</p>
                         </div>
                     </div>
                     <div class="faq-item">
@@ -255,10 +264,11 @@
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>No. By default, data is stored locally on your device. Backup depends on your personal iCloud Backup settings, which are encrypted by Apple.</p>
+                            <p>No. By default, data is stored locally on your device. Backup depends on your personal
+                                iCloud Backup settings, which are encrypted by Apple.</p>
                         </div>
                     </div>
-                     <div class="faq-item">
+                    <div class="faq-item">
                         <button class="faq-question" aria-expanded="false">
                             Do I need an account?
                             <span class="faq-icon">+</span>
@@ -273,7 +283,8 @@
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>We plan to introduce optional premium features for advanced insights. The core privacy and tracking features will remain free.</p>
+                            <p>We plan to introduce optional premium features for advanced insights. The core privacy
+                                and tracking features will remain free.</p>
                         </div>
                     </div>
                 </div>
@@ -293,10 +304,12 @@
             </div>
         </div>
         <div class="container footer-disclaimer">
-            <p>The CycleVault is not a medical device and does not provide medical advice. Consult a doctor for health concerns.</p>
+            <p>The CycleVault is not a medical device and does not provide medical advice. Consult a doctor for health
+                concerns.</p>
         </div>
     </footer>
 
     <script src="main.js"></script>
 </body>
+
 </html>
