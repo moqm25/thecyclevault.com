@@ -507,7 +507,13 @@ header {
 .text-gradient {
     background: linear-gradient(45deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.section-footer-link {
+    text-align: center;
+    margin-top: 40px;
 }
 
 .privacy-summary {
@@ -703,4 +709,39 @@ footer {
     .hero-content {
         margin-bottom: 40px;
     }
+}
+
+
+/* --- Coming Soon --- */
+.coming-soon-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.coming-soon-text {
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+/* For desktop alignment in hero */
+@media (min-width: 768px) {
+    .coming-soon-wrapper {
+        align-items: flex-start;
+    }
+}
+
+.coming-soon-wrapper-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.coming-soon-text-small {
+    color: var(--primary);
+    text-transform: uppercase;
 }

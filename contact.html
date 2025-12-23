@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title + Description (Google snippet) -->
+    <title>Contact Us - The CycleVault</title>
+    <meta name="description" content="Contact The CycleVault. Reach out to founder, support, or privacy teams.">
+
+    <!-- Canonical (prevents duplicate URL variants) -->
+    <link rel="canonical" href="https://thecyclevault.com/contact.html">
+
+    <!-- Open Graph (most platforms + sometimes Google) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thecyclevault.com/contact.html">
+    <meta property="og:title" content="The CycleVault - Contact Us">
+    <meta property="og:description" content="Contact The CycleVault. Reach out to founder, support, or privacy teams.">
+    <meta property="og:image" content="https://thecyclevault.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter (fallback + forces large preview on many platforms) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The CycleVault - Contact Us">
+    <meta name="twitter:description" content="Contact The CycleVault. Reach out to founder, support, or privacy teams.">
+    <meta name="twitter:image" content="https://thecyclevault.com/og-image.png">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/cyclevault-icon-light.png">
+
+    <style>
+        /* Specific styles for Contact page, borrowing from Policy page styles */
+        .contact-header {
+            padding: 120px 0 60px;
+            text-align: center;
+        }
+
+        .contact-content {
+            padding-bottom: 100px;
+        }
+
+        .contact-card {
+            margin-bottom: 32px;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .contact-email {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sticky Header -->
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/cyclevault-icon-light.png" alt="CycleVault Logo" class="logo-icon">
+                <span class="logo-text">The CycleVault</span>
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#problem">Why?</a></li>
+                    <li><a href="index.html#features">Features</a></li>
+                    <li><a href="index.html#privacy">Privacy</a></li>
+                    <li><a href="index.html#pricing">Pricing</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="contact-header">
+            <div class="container narrow-container">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you.</p>
+            </div>
+            <!-- Background Orbs -->
+            <div class="orb orb-1" style="top: -100px; left: -100px; opacity: 0.2;"></div>
+            <div class="orb orb-2" style="right: -100px; opacity: 0.2;"></div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="contact-content">
+            <div class="container narrow-container">
+
+                <div class="grid grid-1">
+                    <!-- Support -->
+                    <div class="card contact-card fade-in">
+                        <h3>General Support</h3>
+                        <p>For help with the app, bug reports, or feedback.</p>
+                        <a href="mailto:support@thecyclevault.com"
+                            class="text-gradient contact-email">support@thecyclevault.com</a>
+                    </div>
+
+                    <!-- Founder -->
+                    <div class="card contact-card fade-in delay-1">
+                        <h3>Founder</h3>
+                        <p>Direct line to the creator.</p>
+                        <a href="mailto:founder@thecyclevault.com"
+                            class="text-gradient contact-email">founder@thecyclevault.com</a>
+                    </div>
+
+                    <!-- Privacy -->
+                    <div class="card contact-card fade-in delay-2">
+                        <h3>Privacy</h3>
+                        <p>Questions about your data or our privacy practices.</p>
+                        <a href="mailto:privacy@thecyclevault.com"
+                            class="text-gradient contact-email">privacy@thecyclevault.com</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-left">
+                <span class="footer-logo">The CycleVault</span>
+                <p class="copyright">&copy; 2025 The CycleVault. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="container footer-disclaimer">
+            <p>The CycleVault is not a medical device and does not provide medical advice. Consult a doctor for health
+                concerns.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
