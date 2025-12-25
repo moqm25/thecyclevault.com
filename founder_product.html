@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The CycleVault - Founder & Product Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f7f9fc;
+            --paper-color: #ffffff;
+            --text-primary: #1a1a1a;
+            --text-secondary: #4a4a4a;
+            --accent-color: #2c3e50;
+            --border-color: #e1e4e8;
+            --spacing-unit: 1.5rem;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-primary);
+            line-height: 1.8;
+            padding: 2rem;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .document-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--paper-color);
+            padding: 4rem 5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05),
+                0 10px 15px -3px rgba(0, 0, 0, 0.05),
+                0 0 0 1px rgba(0, 0, 0, 0.02);
+            border-radius: 4px;
+            position: relative;
+        }
+
+        /* Subtle top border "binding" effect */
+        .document-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--accent-color), #4ca1af);
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            letter-spacing: 0.2rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            margin-top: 0;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 1.8rem;
+            background-color: var(--accent-color);
+            margin-right: 1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            margin-top: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            font-weight: 300;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+        }
+
+        li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 300;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+        }
+
+        .role-block {
+            background-color: #fcfcfc;
+            border: 1px solid #f0f0f0;
+            padding: 2rem;
+            border-radius: 4px;
+            margin-top: 2rem;
+        }
+
+        .meta-info {
+            font-size: 0.85rem;
+            color: #888;
+            border-top: 1px solid var(--border-color);
+            margin-top: 4rem;
+            padding-top: 2rem;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 0.1em;
+        }
+
+        @media (max-width: 768px) {
+            .document-container {
+                padding: 2rem;
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .version-block {
+            margin-bottom: 2rem;
+        }
+
+        .version-title {
+            font-weight: 600;
+            color: var(--accent-color);
+            display: block;
+            margin-bottom: 0.5rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+        }
+
+        .document-logo {
+            width: 100px;
+            height: auto;
+            margin-bottom: 2rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="document-container">
+        <header>
+            <img src="images/Logo_no_background.png" alt="The CycleVault Logo" class="document-logo">
+            <h1>The CycleVault</h1>
+            <div class="subtitle">Product Overview, Founders, Agreement, and Roadmap</div>
+        </header>
+
+        <section id="overview">
+            <h2>1. Product Overview — What The CycleVault Is</h2>
+            <p>The CycleVault is a privacy-first menstrual cycle tracking application designed with a single
+                uncompromising principle: user health data should remain entirely under the user’s control. Unlike
+                conventional health and period tracking applications that rely on cloud storage, user accounts,
+                analytics SDKs, or third-party data pipelines, The CycleVault operates on a strictly local-first
+                architecture.</p>
+            <p>All personal health data is stored locally on the user’s device and protected by operating-system-level
+                encryption. The application performs no automatic data uploads, silent network calls, or background
+                telemetry. There are no user accounts, no centralized databases, and no data monetization through
+                advertising or resale.</p>
+            <p>From a user perspective, The CycleVault offers calm, minimal, and reliable cycle tracking: logging
+                periods, symptoms, notes, and visualizing cycles through a calendar-based interface. From a technical
+                perspective, the product prioritizes data integrity, defensive programming, and privacy-preserving
+                design over feature bloat or engagement manipulation.</p>
+            <p>The CycleVault is intentionally positioned as the ethical opposite of mainstream health apps. Its
+                business model is designed to sustain development without compromising trust, privacy, or user autonomy.
+            </p>
+        </section>
+
+        <section id="founder-moiez">
+            <h2>2. Founder Role — Moiez Qamar</h2>
+            <div class="role-block">
+                <h3>Title</h3>
+                <p>Founder & Chief Product Officer (CPO) / Lead Engineer</p>
+
+                <h3>Role Summary</h3>
+                <p>Moiez Qamar is the original founder and creator of The CycleVault. He is responsible for the
+                    conception, architecture, development, and long-term direction of the product. The application’s
+                    logic, data model, security posture, and privacy guarantees originate from and are maintained by
+                    him.</p>
+
+                <h3>Responsibilities</h3>
+                <ul>
+                    <li>Define and own the product vision, philosophy, and roadmap</li>
+                    <li>Architect and implement the full iOS application</li>
+                    <li>Design and maintain all core logic, data models, and algorithms</li>
+                    <li>Lead encryption strategy, local storage design, and privacy enforcement</li>
+                    <li>Ensure compliance with the app’s privacy-first principles</li>
+                    <li>Make final decisions on feature inclusion, scope, and technical direction</li>
+                    <li>Maintain long-term reliability, maintainability, and system integrity</li>
+                </ul>
+
+                <h3>Decision Authority</h3>
+                <p>Moiez Qamar holds final authority over all product, engineering, architecture, security, and
+                    privacy-related decisions. He retains veto power over any proposal that compromises user trust,
+                    privacy guarantees, or core product principles.</p>
+
+                <h3>Contribution Profile</h3>
+                <ul>
+                    <li>Primary technical contributor</li>
+                    <li>Primary intellectual property creator</li>
+                    <li>Long-term operational and product leadership</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="founder-saif">
+            <h2>3. Co-Founder Role — Saif Mairaj</h2>
+            <div class="role-block">
+                <h3>Title</h3>
+                <p>Co-Founder & Head of Growth and Business Operations</p>
+
+                <h3>Role Summary</h3>
+                <p>Saif Mairaj is responsible for the business, growth, and external-facing aspects of The CycleVault.
+                    His role focuses on ensuring the product can sustainably reach users, generate ethical revenue, and
+                    operate as a viable business while fully respecting the product’s privacy-first mission.</p>
+
+                <h3>Responsibilities</h3>
+                <ul>
+                    <li>Develop and execute ethical marketing and growth strategies</li>
+                    <li>Define brand positioning and public messaging</li>
+                    <li>Manage website copy and external communications</li>
+                    <li>Conduct market research and competitive analysis</li>
+                    <li>Collaborate on pricing and subscription strategy</li>
+                    <li>Oversee financial planning, budgeting, and projections</li>
+                    <li>Manage vendor and partnership relationships, including sponsored listings</li>
+                </ul>
+
+                <h3>Decision Authority</h3>
+                <p>Saif Mairaj has authority over marketing, growth strategy, partnerships, and business operations. He
+                    does not have authority to override product, technical, or privacy-related decisions.</p>
+
+                <h3>Contribution Profile</h3>
+                <ul>
+                    <li>Strategic business and operational leadership</li>
+                    <li>Growth and sustainability planning</li>
+                    <li>External communications and partnerships</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="agreement">
+            <h2>4. Founder Agreement — Role, Authority, and Equity</h2>
+
+            <h3>4.1 Ownership Structure (Conceptual)</h3>
+            <p>The CycleVault’s ownership structure reflects contribution, risk, and responsibility.</p>
+            <ul>
+                <li>Moiez Qamar holds a majority ownership and controlling stake due to origination of the product,
+                    technical execution, and ongoing product risk.</li>
+                <li>Saif Mairaj holds a significant minority co-founder stake aligned with long-term growth and business
+                    contribution.</li>
+            </ul>
+            <p>Exact equity percentages are to be finalized upon formal incorporation and shall be subject to vesting.
+            </p>
+
+            <h3>4.2 Equity Vesting</h3>
+            <p>All founder equity shall vest over a standard vesting schedule (recommended: four years with a one-year
+                cliff), unless otherwise agreed in writing.</p>
+
+            <h3>4.3 Roles and Authority</h3>
+
+            <h4>Product and Engineering Authority:</h4>
+            <p>The Founder & Chief Product Officer (Moiez Qamar) has final authority over:</p>
+            <ul>
+                <li>Product roadmap and design</li>
+                <li>Software architecture and implementation</li>
+                <li>Data storage, encryption, privacy, and security</li>
+                <li>Feature approval or rejection</li>
+            </ul>
+
+            <h4>Business and Growth Authority:</h4>
+            <p>The Head of Growth & Business Operations (Saif Mairaj) has authority over:</p>
+            <ul>
+                <li>Marketing and brand strategy</li>
+                <li>External communications</li>
+                <li>Pricing and monetization proposals (subject to product approval)</li>
+                <li>Partnerships and vendor relationships</li>
+            </ul>
+
+            <h3>4.4 Non-Override Clause</h3>
+            <p>No business, marketing, or monetization decision may override or compromise:</p>
+            <ul>
+                <li>User privacy guarantees</li>
+                <li>Local-first data storage principles</li>
+                <li>Core product architecture or integrity</li>
+            </ul>
+
+            <h3>4.5 Dispute Resolution</h3>
+            <p>In the event of a disagreement affecting product integrity, privacy, or technical implementation, final
+                decision authority resides with the Founder & Chief Product Officer.</p>
+        </section>
+
+        <section id="roadmap">
+            <h2>5. Product and Company Roadmap</h2>
+
+            <div class="version-block">
+                <span class="version-title">Version 1 — Core Private Tracker (Free)</span>
+                <ul>
+                    <li>Period start/end tracking</li>
+                    <li>Flow intensity logging</li>
+                    <li>Symptom tracking and notes</li>
+                    <li>Calendar visualization</li>
+                    <li>Cycle history and predictions</li>
+                    <li>Local-only storage</li>
+                    <li>Data export and full reset</li>
+                    <li>No monetization</li>
+                </ul>
+            </div>
+
+            <div class="version-block">
+                <span class="version-title">Version 2 — Privacy & Trust Expansion</span>
+                <ul>
+                    <li>Full encryption with device-level keys</li>
+                    <li>Face ID / Touch ID app lock</li>
+                    <li>Privacy dashboard</li>
+                    <li>Educational content library</li>
+                    <li>Continued zero monetization</li>
+                </ul>
+            </div>
+
+            <div class="version-block">
+                <span class="version-title">Version 3 — Premium & Ethical Monetization</span>
+                <ul>
+                    <li>Apple In-App Purchase subscriptions</li>
+                    <li>Advanced insights and exports</li>
+                    <li>Chatbot with strict stateless design</li>
+                    <li>Sponsored product listings (non-targeted, labeled)</li>
+                    <li>Free tier remains fully functional</li>
+                </ul>
+            </div>
+
+            <div class="version-block">
+                <span class="version-title">Version 4 — Advanced Health Features</span>
+                <ul>
+                    <li>Optional Apple Health integration (read-only)</li>
+                    <li>Lifestyle and trend tracking</li>
+                    <li>Irregular cycle pattern detection</li>
+                    <li>All computation performed locally</li>
+                </ul>
+            </div>
+
+            <div class="version-block">
+                <span class="version-title">Version 5 — Power User & Transparency Tools</span>
+                <ul>
+                    <li>Multi-profile support</li>
+                    <li>Emergency data wipe</li>
+                    <li>Stealth mode</li>
+                    <li>Public transparency reports</li>
+                    <li>Deep privacy documentation</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="meta-info">
+            &copy; The CycleVault | Confidential & Proprietary Document
+        </div>
+    </div>
+
+</body>
+
+</html>
