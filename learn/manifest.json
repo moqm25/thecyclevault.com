@@ -176,6 +176,310 @@
             "lastModifiedAt": "2024-01-01",
             "language": "en",
             "pinned": true
+        },
+        {
+            "id": "cycle-length-normal",
+            "title": "What Is a Normal Menstrual Cycle Length?",
+            "summary": "Understanding typical cycle length ranges and natural variation.",
+            "url": "https://www.acog.org/womens-health/faqs/your-menstrual-cycle",
+            "sourceName": "American College of Obstetricians and Gynecologists (ACOG)",
+            "tags": [
+                "basics",
+                "health"
+            ],
+            "readingMinutes": 4,
+            "publishedAt": "2019-01-01",
+            "lastModifiedAt": "2022-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "heavy-periods",
+            "title": "Heavy Menstrual Bleeding",
+            "summary": "Causes, symptoms, and when heavy periods may be a concern.",
+            "url": "https://www.cdc.gov/ncbddd/blooddisorders/women/menorrhagia.html",
+            "sourceName": "Centers for Disease Control and Prevention (CDC)",
+            "tags": [
+                "health",
+                "symptoms"
+            ],
+            "readingMinutes": 5,
+            "publishedAt": "2020-01-01",
+            "lastModifiedAt": "2023-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "light-periods",
+            "title": "Light Periods (Hypomenorrhea)",
+            "summary": "What light menstrual flow may indicate and common causes.",
+            "url": "https://my.clevelandclinic.org/health/diseases/17634-hypomenorrhea",
+            "sourceName": "Cleveland Clinic",
+            "tags": [
+                "health",
+                "symptoms"
+            ],
+            "readingMinutes": 4,
+            "publishedAt": "2021-01-01",
+            "lastModifiedAt": "2024-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "missed-period",
+            "title": "Missed Periods",
+            "summary": "Reasons periods may be late or skipped beyond pregnancy.",
+            "url": "https://www.nhs.uk/conditions/periods/late-or-missed-periods/",
+            "sourceName": "NHS",
+            "tags": [
+                "health",
+                "basics"
+            ],
+            "readingMinutes": 4,
+            "publishedAt": "2019-01-01",
+            "lastModifiedAt": "2023-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "pms-overview",
+            "title": "Premenstrual Syndrome (PMS)",
+            "summary": "Common PMS symptoms and how they affect daily life.",
+            "url": "https://www.womenshealth.gov/menstrual-cycle/premenstrual-syndrome",
+            "sourceName": "Office on Women's Health (HHS)",
+            "tags": [
+                "pms",
+                "mental-health"
+            ],
+            "readingMinutes": 5,
+            "publishedAt": "2020-01-01",
+            "lastModifiedAt": "2024-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "pmdd",
+            "title": "Premenstrual Dysphoric Disorder (PMDD)",
+            "summary": "A severe form of PMS involving significant mood symptoms.",
+            "url": "https://www.ncbi.nlm.nih.gov/books/NBK279045/",
+            "sourceName": "National Institutes of Health (NIH)",
+            "tags": [
+                "mental-health",
+                "conditions"
+            ],
+            "readingMinutes": 6,
+            "publishedAt": "2018-01-01",
+            "lastModifiedAt": "2023-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "hormones-estrogen-progesterone",
+            "title": "Estrogen and Progesterone",
+            "summary": "The primary hormones driving the menstrual cycle.",
+            "url": "https://www.yourhormones.info/hormones/estrogen/",
+            "sourceName": "Society for Endocrinology",
+            "tags": [
+                "hormones",
+                "basics"
+            ],
+            "readingMinutes": 5,
+            "publishedAt": "2017-01-01",
+            "lastModifiedAt": "2022-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "fertile-window",
+            "title": "Understanding the Fertile Window",
+            "summary": "How timing around ovulation affects fertility.",
+            "url": "https://www.mayoclinic.org/healthy-lifestyle/getting-pregnant/in-depth/fertility-window/art-20047584",
+            "sourceName": "Mayo Clinic",
+            "tags": [
+                "fertility",
+                "ovulation"
+            ],
+            "readingMinutes": 5,
+            "publishedAt": "2019-01-01",
+            "lastModifiedAt": "2023-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "basal-body-temp",
+            "title": "Basal Body Temperature Method",
+            "summary": "How temperature tracking confirms ovulation after it occurs.",
+            "url": "https://www.plannedparenthood.org/learn/pregnancy/fertility-awareness/basal-body-temperature",
+            "sourceName": "Planned Parenthood",
+            "tags": [
+                "tracking",
+                "fertility"
+            ],
+            "readingMinutes": 6,
+            "publishedAt": "2018-01-01",
+            "lastModifiedAt": "2022-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "endometriosis",
+            "title": "Endometriosis",
+            "summary": "Symptoms, causes, and diagnosis of endometriosis.",
+            "url": "https://www.cdc.gov/reproductivehealth/endometriosis/index.htm",
+            "sourceName": "Centers for Disease Control and Prevention (CDC)",
+            "tags": [
+                "conditions",
+                "health"
+            ],
+            "readingMinutes": 6,
+            "publishedAt": "2020-01-01",
+            "lastModifiedAt": "2024-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "teen-periods",
+            "title": "Periods in Teens",
+            "summary": "What to expect when periods first begin and what's normal.",
+            "url": "https://www.acog.org/womens-health/faqs/your-first-period",
+            "sourceName": "ACOG",
+            "tags": [
+                "basics",
+                "education"
+            ],
+            "readingMinutes": 4,
+            "publishedAt": "2019-01-01",
+            "lastModifiedAt": "2021-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "stress-cycle",
+            "title": "Stress and the Menstrual Cycle",
+            "summary": "How physical and emotional stress can delay ovulation.",
+            "url": "https://www.health.harvard.edu/womens-health/how-stress-affects-your-period",
+            "sourceName": "Harvard Health Publishing",
+            "tags": [
+                "stress",
+                "health"
+            ],
+            "readingMinutes": 4,
+            "publishedAt": "2018-01-01",
+            "lastModifiedAt": "2023-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "birth-control-cycle",
+            "title": "How Birth Control Affects Your Cycle",
+            "summary": "Differences between natural cycles and hormonal contraception.",
+            "url": "https://www.plannedparenthood.org/learn/birth-control",
+            "sourceName": "Planned Parenthood",
+            "tags": [
+                "birth-control",
+                "hormones"
+            ],
+            "readingMinutes": 5,
+            "publishedAt": "2019-01-01",
+            "lastModifiedAt": "2024-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "spotting-midcycle",
+            "title": "Ovulation Spotting",
+            "summary": "Why light bleeding can happen mid-cycle.",
+            "url": "https://my.clevelandclinic.org/health/symptoms/22185-ovulation-bleeding",
+            "sourceName": "Cleveland Clinic",
+            "tags": [
+                "tracking",
+                "symptoms"
+            ],
+            "readingMinutes": 3,
+            "publishedAt": "2021-01-01",
+            "lastModifiedAt": "2024-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "nutrition-cycle",
+            "title": "Nutrition and the Menstrual Cycle",
+            "summary": "How nutrient needs may change across the cycle.",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835948/",
+            "sourceName": "National Institutes of Health (NIH)",
+            "tags": [
+                "nutrition",
+                "health"
+            ],
+            "readingMinutes": 7,
+            "publishedAt": "2019-01-01",
+            "lastModifiedAt": "2019-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "menopause-overview",
+            "title": "Menopause Basics",
+            "summary": "What menopause is and how cycles change leading up to it.",
+            "url": "https://www.nia.nih.gov/health/what-menopause",
+            "sourceName": "National Institute on Aging",
+            "tags": [
+                "aging",
+                "health"
+            ],
+            "readingMinutes": 5,
+            "publishedAt": "2018-01-01",
+            "lastModifiedAt": "2023-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "period-products-safety",
+            "title": "Menstrual Product Safety",
+            "summary": "Safety considerations for pads, tampons, cups, and discs.",
+            "url": "https://www.fda.gov/medical-devices/consumer-products/menstrual-products",
+            "sourceName": "U.S. Food & Drug Administration (FDA)",
+            "tags": [
+                "products",
+                "health"
+            ],
+            "readingMinutes": 4,
+            "publishedAt": "2020-01-01",
+            "lastModifiedAt": "2024-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "tracking-accuracy",
+            "title": "Accuracy of Period Tracking",
+            "summary": "Why predictions vary and how real data improves estimates.",
+            "url": "https://www.nature.com/articles/s41746-019-0152-7",
+            "sourceName": "npj Digital Medicine",
+            "tags": [
+                "tracking",
+                "research"
+            ],
+            "readingMinutes": 7,
+            "publishedAt": "2019-01-01",
+            "lastModifiedAt": "2019-01-01",
+            "language": "en",
+            "pinned": false
+        },
+        {
+            "id": "privacy-reproductive-data",
+            "title": "Reproductive Health Data Privacy",
+            "summary": "Why menstrual data is sensitive and how it can be misused.",
+            "url": "https://www.eff.org/deeplinks/2022/06/period-tracking-apps-and-your-privacy",
+            "sourceName": "Electronic Frontier Foundation (EFF)",
+            "tags": [
+                "privacy",
+                "security"
+            ],
+            "readingMinutes": 5,
+            "publishedAt": "2022-01-01",
+            "lastModifiedAt": "2024-01-01",
+            "language": "en",
+            "pinned": true
         }
     ]
 }
