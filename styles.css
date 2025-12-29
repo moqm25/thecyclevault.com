@@ -745,6 +745,7 @@ footer {
     color: var(--primary);
     text-transform: uppercase;
 }
+
 /* --- Education Styles --- */
 .edu-hero {
     padding: 100px 0 60px;
@@ -758,13 +759,16 @@ footer {
     border-radius: 4px;
     margin-bottom: 30px;
     font-size: 0.95rem;
-    color: #1C1C1E; /* Force dark text for readability in light mode */
+    color: #1C1C1E;
+    /* Force dark text for readability in light mode */
 }
 
 /* Dark Mode Override for Disclaimer */
 [data-theme="dark"] .edu-disclaimer-box {
-    background-color: #332A00; /* Darker amber background */
-    color: #E0E0E0; /* Light text for readability */
+    background-color: #332A00;
+    /* Darker amber background */
+    color: #E0E0E0;
+    /* Light text for readability */
     border-left: 4px solid #FFC107;
 }
 
@@ -820,9 +824,13 @@ footer {
     margin-top: 2em;
     margin-bottom: 0.8em;
     font-size: 1.4rem;
+    color: var(--primary);
+    /* Added color for life */
+    font-weight: 700;
 }
 
-.article-content ul {
+.article-content ul,
+.edu-references-list {
     margin-bottom: 1.5em;
     padding-left: 20px;
     list-style: disc;
@@ -831,12 +839,45 @@ footer {
 .article-content li {
     margin-bottom: 0.5em;
     font-size: 1.1rem;
+    line-height: 1.6;
 }
 
-.article-content hr {
+.article-content hr.article-divider {
     margin: 3em 0;
     border: 0;
-    border-top: 1px solid var(--bg-alt);
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
+    /* Gradient HR */
+    opacity: 0.6;
+}
+
+/* New Footer Disclaimer Style */
+.edu-footer-disclaimer {
+    background-color: var(--bg-alt);
+    border-left: 4px solid var(--text-muted);
+    padding: 20px;
+    border-radius: 8px;
+    margin: 40px 0;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+/* References Styling */
+.edu-references-list li {
+    font-size: 0.95rem;
+    margin-bottom: 0.5em;
+}
+
+.edu-references-list a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.edu-references-list a:hover {
+    color: var(--secondary);
+    text-decoration: underline;
 }
 
 .back-link {
