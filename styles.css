@@ -745,3 +745,116 @@ footer {
     color: var(--primary);
     text-transform: uppercase;
 }
+/* --- Education Styles --- */
+.edu-hero {
+    padding: 100px 0 60px;
+    text-align: center;
+}
+
+.edu-disclaimer-box {
+    background-color: #FFF4E5;
+    border-left: 4px solid #FFA000;
+    padding: 16px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+    color: #1C1C1E; /* Force dark text for readability in light mode */
+}
+
+/* Dark Mode Override for Disclaimer */
+[data-theme="dark"] .edu-disclaimer-box {
+    background-color: #332A00; /* Darker amber background */
+    color: #E0E0E0; /* Light text for readability */
+    border-left: 4px solid #FFC107;
+}
+
+.edu-support-note {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.article-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.article-excerpt {
+    flex-grow: 1;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.read-link {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+/* Article Page */
+.article-container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 100px;
+}
+
+.article-meta {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.article-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+    color: var(--text-main);
+}
+
+.article-content h3 {
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    font-size: 1.4rem;
+}
+
+.article-content ul {
+    margin-bottom: 1.5em;
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.article-content li {
+    margin-bottom: 0.5em;
+    font-size: 1.1rem;
+}
+
+.article-content hr {
+    margin: 3em 0;
+    border: 0;
+    border-top: 1px solid var(--bg-alt);
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.back-link:hover {
+    color: var(--primary);
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid var(--bg-alt);
+}
