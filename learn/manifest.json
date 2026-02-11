@@ -4,7 +4,7 @@
             "id": "intro-menstrual-cycle",
             "title": "The Menstrual Cycle",
             "summary": "An overview of the menstrual cycle phases and how hormonal changes affect the body.",
-            "url": "https://www.nhs.uk/conditions/periods/menstrual-cycle/",
+            "url": "https://www.nhs.uk/conditions/periods/",
             "sourceName": "NHS",
             "tags": [
                 "basics",
@@ -12,7 +12,7 @@
             ],
             "readingMinutes": 5,
             "publishedAt": "2020-01-01",
-            "lastModifiedAt": "2023-01-01",
+            "lastModifiedAt": "2025-01-01",
             "language": "en",
             "pinned": true
         },
@@ -229,7 +229,7 @@
             "id": "missed-period",
             "title": "Missed Periods",
             "summary": "Reasons periods may be late or skipped beyond pregnancy.",
-            "url": "https://www.nhs.uk/conditions/periods/late-or-missed-periods/",
+            "url": "https://www.nhs.uk/conditions/stopped-or-missed-periods/",
             "sourceName": "NHS",
             "tags": [
                 "health",
@@ -421,7 +421,7 @@
             "id": "menopause-overview",
             "title": "Menopause Basics",
             "summary": "What menopause is and how cycles change leading up to it.",
-            "url": "https://www.nia.nih.gov/health/what-menopause",
+            "url": "https://www.nia.nih.gov/health/menopause/what-menopause",
             "sourceName": "National Institute on Aging",
             "tags": [
                 "aging",
