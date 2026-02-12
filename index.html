@@ -41,6 +41,13 @@
 
 <body>
 
+    <!-- Global Ambient Background -->
+    <div class="global-ambient-background">
+        <div class="orb-float orb-1"></div>
+        <div class="orb-float orb-2"></div>
+        <div class="orb-float orb-3"></div>
+    </div>
+
     <!-- Sticky Header -->
     <header id="main-header">
         <div class="container header-container">
@@ -164,48 +171,181 @@
             </div>
         </section>
 
-        <!-- Features Section -->
-        <section id="features" class="section">
-            <div class="container">
-                <div class="section-header">
+        <!-- Feature Showcase Section (Sticky Scrollytelling) -->
+        <section id="features" class="feature-showcase">
+            <div class="container feature-showcase__inner">
+
+                <!-- Header (Spans Full Width of Grid) -->
+                <div class="section-header feature-showcase__main-header"
+                    style="grid-column: 1 / -1; text-align: center; margin-bottom: 40px; padding-top: 80px;">
                     <h2 class="text-gradient">Designed for Calm</h2>
-                    <p>Everything you need, nothing you don't.</p>
+                    <p style="max-width: 600px; margin: 0 auto;">A private, peaceful cycle tracker that respects your
+                        data and your peace of mind.</p>
                 </div>
-                <div class="grid grid-3">
-                    <div class="card feature-card fade-in">
-                        <div class="feature-icon">🩸</div>
-                        <h3>Private Tracking</h3>
-                        <p>Log flow, symptoms, and notes simply and quickly.</p>
+
+                <!-- Left Column: Scrolling Text -->
+                <div class="feature-showcase__text-col">
+
+                    <!-- 1. Welcome Sequence (Group: welcome) -->
+                    <div class="feature-showcase__panel" data-feature="welcome-1" data-group="welcome">
+                        <div class="feature-content fade-in">
+                            <div class="feature-icon">✨</div>
+                            <h3>Welcome Home</h3>
+                            <p>Your cycle journey begins here. We've stripped away the clutter to give you a serene,
+                                distraction-free dashboard. Instantly see your current phase, daily insights, and
+                                fertility status—beautifully visualized without overwhelming charts.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_welcome_1.jpeg" alt="Welcome Screen 1">
+                        </div>
                     </div>
-                    <div class="card feature-card fade-in delay-1">
-                        <div class="feature-icon">✨</div>
-                        <h3>Smart Insights</h3>
-                        <p>On-device predictions for your next cycle based on your history.</p>
+
+                    <div class="feature-showcase__panel" data-feature="welcome-2" data-group="welcome">
+                        <div class="feature-content fade-in">
+                            <h3>No Account Needed</h3>
+                            <p>Privacy starts on day one. We believe your health data belongs to you, not a server.
+                                CycleVault requires no email, no password, and no account creation. Simply open the app
+                                and start tracking immediately.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_welcome_2.jpeg" alt="Welcome Screen 2">
+                        </div>
                     </div>
-                    <div class="card feature-card fade-in delay-2">
-                        <div class="feature-icon">🗓️</div>
-                        <h3>Calm Calendar</h3>
-                        <p>A gentle, clutter-free view of your month.</p>
+
+                    <!-- 2. Tracking Sequence (Group: tracking) -->
+                    <div class="feature-showcase__panel" data-feature="tracking-1" data-group="tracking">
+                        <div class="feature-content fade-in">
+                            <div class="feature-icon">🩸</div>
+                            <h3>Effortless Tracking</h3>
+                            <p>Logging should be quick, not a chore. With our streamlined interface, you can record flow
+                                intensity, symptoms, and mood in seconds. It’s designed to be intuitive and fast, so you
+                                can get back to living your life.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_tracking_3.jpeg" alt="Tracking Screen">
+                        </div>
                     </div>
-                    <div class="card feature-card fade-in">
-                        <div class="feature-icon">🔒</div>
-                        <h3>Local Export</h3>
-                        <p>It's your data. Export it to JSON or wipe it clean instantly.</p>
+
+                    <div class="feature-showcase__panel" data-feature="tracking-2" data-group="tracking">
+                        <div class="feature-content fade-in">
+                            <h3>Deep Insights</h3>
+                            <p>Unlock the power of your data. Swipe to reveal comprehensive trends and patterns in your
+                                cycle history. Understand your body's unique rhythm with crystal-clear analytics—all
+                                processed locally on your device.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_tracking_4.jpeg" alt="Insights Screen">
+                        </div>
                     </div>
-                    <div class="card feature-card fade-in delay-1">
-                        <div class="feature-icon">👤</div>
-                        <h3>No Account Ever</h3>
-                        <p>Open the app and start. We don't need your email.</p>
+
+                    <!-- 3. Calendar Sequence (Group: calendar) -->
+                    <div class="feature-showcase__panel" data-feature="calendar-1" data-group="calendar">
+                        <div class="feature-content fade-in">
+                            <div class="feature-icon">🗓️</div>
+                            <h3>Calm Calendar</h3>
+                            <p>Visualize your entire history with our gentle, dot-based calendar. It provides a clear,
+                                eagle-eye view of past cycles and future predictions, helping you plan ahead with
+                                confidence and ease.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_calendar_1.png" alt="Calendar View">
+                        </div>
                     </div>
-                    <div class="card feature-card fade-in delay-2">
-                        <div class="feature-icon">🚀</div>
-                        <h3>Future Proof</h3>
-                        <p>Built to handle advanced features privately.</p>
+
+                    <div class="feature-showcase__panel" data-feature="calendar-2" data-group="calendar">
+                        <div class="feature-content fade-in">
+                            <h3>Plan Ahead</h3>
+                            <p>Future planning made simple. Scroll smoothly through upcoming months to see predicted
+                                fertile windows and period dates. Whether you're planning a vacation or just your week,
+                                you'll always know what to expect.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_calendar_2.png" alt="Calendar Planning">
+                        </div>
+                    </div>
+
+                    <!-- 4. Details Sequence (Group: details) -->
+                    <div class="feature-showcase__panel" data-feature="details" data-group="details">
+                        <div class="feature-content fade-in">
+                            <div class="feature-icon">📝</div>
+                            <h3>Detailed History</h3>
+                            <p>Dive deeper into any specific day. Tap a date to view a complete breakdown of your logs,
+                                edit entries, or review personal notes. It's your personal health diary, organized and
+                                always accessible.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_details.jpeg" alt="Detailed History">
+                        </div>
+                    </div>
+
+                    <!-- 5. Export (Group: export) -->
+                    <div class="feature-showcase__panel" data-feature="export" data-group="export">
+                        <div class="feature-content fade-in">
+                            <div class="feature-icon">🔒</div>
+                            <h3>Total Control</h3>
+                            <p>Your data is portable and yours to keep. Export your entire history to a secure JSON file
+                                for backup or transfer. And if you ever choose to leave, you can wipe everything
+                                instantly with a single tap.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_export.jpeg" alt="Export Screen">
+                        </div>
+                    </div>
+
+                    <!-- 6. Lock (Group: lock) -->
+                    <div class="feature-showcase__panel" data-feature="lock" data-group="lock">
+                        <div class="feature-content fade-in">
+                            <div class="feature-icon">🛡️</div>
+                            <h3>Biometric Security</h3>
+                            <p>Add an extra layer of privacy to your most personal data. Secure The CycleVault with Face
+                                ID or Touch ID, ensuring that your history remains visible only to you, even if your
+                                phone is unlocked.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_lock.jpeg" alt="Lock Screen">
+                        </div>
+                    </div>
+
+                    <div class="section-footer-link fade-in" style="margin-top: 60px; text-align: left;">
+                        <a href="features.html" class="btn btn-outline">Read More About Our Features</a>
                     </div>
                 </div>
-                <div class="section-footer-link fade-in">
-                    <a href="features.html" class="btn btn-outline">Read More About Our Features</a>
+
+                <!-- Right Column: Sticky Phone -->
+                <div class="feature-showcase__sticky-col">
+                    <div class="feature-showcase__phone">
+                        <div class="feature-showcase__screen">
+                            <!-- 1. Welcome (Group: welcome) -->
+                            <img src="assets/feature_welcome_1.jpeg" class="screen-img active" data-img="welcome-1"
+                                alt="Welcome 1">
+                            <img src="assets/feature_welcome_2.jpeg" class="screen-img" data-img="welcome-2"
+                                alt="Welcome 2">
+
+                            <!-- 2. Tracking (Group: tracking) -->
+                            <img src="assets/feature_tracking_3.jpeg" class="screen-img" data-img="tracking-1"
+                                alt="Tracking 1">
+                            <img src="assets/feature_tracking_4.jpeg" class="screen-img" data-img="tracking-2"
+                                alt="Tracking 2">
+
+                            <!-- 3. Calendar (Group: calendar) -->
+                            <img src="assets/feature_calendar_1.png" class="screen-img" data-img="calendar-1"
+                                alt="Calendar 1">
+                            <img src="assets/feature_calendar_2.png" class="screen-img" data-img="calendar-2"
+                                alt="Calendar 2">
+
+                            <!-- 4. Details (Group: details) -->
+                            <img src="assets/feature_details.jpeg" class="screen-img" data-img="details"
+                                alt="Detailed History">
+
+                            <!-- 5. Export (Group: export) -->
+                            <img src="assets/feature_export.jpeg" class="screen-img" data-img="export" alt="Export">
+
+                            <!-- 6. Lock (Group: lock) -->
+                            <img src="assets/feature_lock.jpeg" class="screen-img" data-img="lock" alt="Lock">
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </section>
 
@@ -341,7 +481,7 @@
         <div class="container footer-container">
             <div class="footer-left">
                 <span class="footer-logo">The CycleVault</span>
-                <p class="copyright">&copy; 2025 The CycleVault. All rights reserved.</p>
+                <p class="copyright">&copy; 2026 The CycleVault. All rights reserved.</p>
             </div>
             <div class="footer-right">
                 <a href="privacy.html">Privacy Policy</a>

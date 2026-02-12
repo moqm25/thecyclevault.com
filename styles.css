@@ -14,17 +14,20 @@
 
     /* Backgrounds & Surfaces (Light) */
     --bg-page: #FAFAFC;
-    --bg-card: #FFFFFF;
-    --bg-alt: #F2F2F7;
+    --bg-card: rgba(255, 255, 255, 0.7);
+    /* Glassmorphism base */
+    --bg-alt: rgba(242, 242, 247, 0.7);
+    --border-card: rgba(255, 255, 255, 0.5);
 
     /* Text Colors (Light) */
     --text-main: #1C1C1E;
     --text-muted: #6C6C75;
 
     /* UI Elements */
-    --radius: 20px;
-    --shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-    --shadow-hover: 0 12px 32px rgba(163, 156, 255, 0.2);
+    --radius: 24px;
+    /* Slightly rounder */
+    --shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 12px 40px rgba(163, 156, 255, 0.25);
     --nav-height: 70px;
 
     /* Transitions */
@@ -32,22 +35,24 @@
 }
 
 [data-theme="dark"] {
-    /* Brand Colors (Dark - slightly desaturated for eye comfort) */
-    --primary: #FF7B7B;
+    /* Brand Colors (Dark - Saturated/Glowing) */
+    --primary: #FF8585;
     --secondary: #B1ABFF;
     --accent: #2C2C35;
 
-    /* Backgrounds & Surfaces (Dark) */
-    --bg-page: #1A1A1F;
-    --bg-card: #2E2E38;
-    --bg-alt: #25252B;
+    /* Backgrounds & Surfaces (Dark - Midnight Palette) */
+    --bg-page: #0B0B14;
+    /* Deep Midnight Blue/Black */
+    --bg-card: rgba(30, 30, 40, 0.6);
+    --bg-alt: rgba(40, 40, 55, 0.6);
+    --border-card: rgba(255, 255, 255, 0.1);
 
     /* Text Colors (Dark) */
-    --text-main: #EDEDF0;
-    --text-muted: #A0A0A5;
+    --text-main: #FFFFFF;
+    --text-muted: #A0A0B0;
 
-    --shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-    --shadow-hover: 0 12px 32px rgba(163, 156, 255, 0.1);
+    --shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    --shadow-hover: 0 12px 40px rgba(163, 156, 255, 0.15);
 }
 
 /* --- Base --- */
@@ -61,9 +66,71 @@ html {
     scroll-behavior: smooth;
 }
 
+/* --- Global Ambient Background --- */
+.global-ambient-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+    background: var(--bg-page);
+    /* Fallback */
+}
+
+/* Create moving gradients */
+.orb-float {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.15;
+    animation: moveOrb 20s infinite alternate ease-in-out;
+}
+
+.orb-1 {
+    width: 60vw;
+    height: 60vw;
+    background: var(--primary);
+    top: -10vw;
+    left: -10vw;
+    animation-duration: 25s;
+}
+
+.orb-2 {
+    width: 50vw;
+    height: 50vw;
+    background: var(--secondary);
+    bottom: -10vw;
+    right: -10vw;
+    animation-duration: 28s;
+    animation-delay: -5s;
+}
+
+.orb-3 {
+    width: 40vw;
+    height: 40vw;
+    background: var(--primary);
+    top: 40%;
+    left: 30%;
+    opacity: 0.1;
+    animation-duration: 32s;
+    animation-delay: -10s;
+}
+
+@keyframes moveOrb {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        transform: translate(30px, 50px) scale(1.1);
+    }
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    background-color: var(--bg-page);
     color: var(--text-main);
     line-height: 1.6;
     transition: background-color var(--transition), color var(--transition);
@@ -310,7 +377,9 @@ header {
 /* Realistic iPhone CSS Mockup */
 .iphone-mockup {
     width: 300px;
-    height: 600px;
+    aspect-ratio: 9 / 19.5;
+    /* Modern iPhone ratio */
+    height: auto;
     /* Adjust based on valid aspect ratio */
     background: #000;
     border-radius: 50px;
@@ -408,43 +477,74 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+/* --- Grids & Cards --- */
+.grid {
+    display: grid;
+    gap: 32px;
+}
+
+.grid-2 {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-3 {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
 .card {
     background: var(--bg-card);
     padding: 32px;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     transition: var(--transition);
+    border: 1px solid var(--border-card);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
+    border-color: var(--primary);
 }
 
 /* Problem Section */
 .icon-box {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background: #FFF0F0;
-    color: #000;
-    border-radius: 12px;
+    color: #FF0000;
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
-    margin-bottom: 20px;
-    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.1);
 }
 
 .warning {
-    color: red;
-    background: rgba(255, 0, 0, 0.1);
+    color: #FF4444;
+    background: rgba(255, 68, 68, 0.1);
 }
 
 /* Feature Icons */
 .feature-icon {
     font-size: 2rem;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] .feature-icon {
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* Comparison Table */
@@ -461,6 +561,9 @@ header {
     padding: 30px;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
+    border: 1px solid var(--border-card);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .cycle-vault {
@@ -499,16 +602,18 @@ header {
 
 /* Privacy Section */
 .privacy-section {
-    background: linear-gradient(135deg, var(--bg-card), var(--bg-alt));
+    background: transparent;
+    /* Remove old gradient */
     position: relative;
     overflow: hidden;
 }
 
 .text-gradient {
-    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 10px rgba(255, 107, 107, 0.2));
 }
 
 .section-footer-link {
@@ -517,11 +622,13 @@ header {
 }
 
 .privacy-summary {
-    background: rgba(163, 156, 255, 0.1);
-    border-radius: 16px;
-    padding: 24px;
+    background: rgba(163, 156, 255, 0.08);
+    border: 1px solid rgba(163, 156, 255, 0.2);
+    border-radius: 24px;
+    padding: 30px;
     margin-top: 40px;
     text-align: center;
+    backdrop-filter: blur(10px);
 }
 
 .check-list {
@@ -547,10 +654,11 @@ header {
 }
 
 .pricing-header .price {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 800;
     color: var(--primary);
     margin-top: 8px;
+    text-shadow: 0 4px 12px rgba(255, 107, 107, 0.2);
 }
 
 .pricing-features li {
@@ -562,7 +670,8 @@ header {
 .pricing-card.premium {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(180deg, var(--bg-card), var(--bg-alt));
+    background: linear-gradient(180deg, var(--bg-card), rgba(163, 156, 255, 0.1));
+    border: 1px solid var(--secondary);
 }
 
 /* FAQ */
@@ -573,16 +682,24 @@ header {
 
 .faq-item {
     background: var(--bg-card);
-    margin-bottom: 16px;
-    border-radius: 16px;
+    margin-bottom: 20px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    border: 1px solid var(--border-card);
+    backdrop-filter: blur(20px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
 }
 
 .faq-question {
     width: 100%;
     text-align: left;
-    padding: 20px;
+    padding: 24px;
     background: none;
     border: none;
     font-size: 1.1rem;
@@ -596,19 +713,21 @@ header {
 
 .faq-icon {
     font-size: 1.5rem;
+    color: var(--secondary);
     transition: transform 0.3s;
 }
 
 .faq-answer {
-    padding: 0 20px;
+    padding: 0 24px;
     height: 0;
     overflow: hidden;
     transition: height 0.3s ease;
 }
 
 .faq-answer p {
-    padding-bottom: 20px;
+    padding-bottom: 24px;
     margin-bottom: 0;
+    color: var(--text-muted);
 }
 
 .faq-question[aria-expanded="true"] .faq-icon {
@@ -618,10 +737,15 @@ header {
 
 /* Footer */
 footer {
-    background: var(--bg-card);
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(20px);
     /* Darker in dark mode */
     padding: 60px 0 30px;
-    border-top: 1px solid var(--bg-alt);
+    border-top: 1px solid var(--border-card);
+}
+
+[data-theme="dark"] footer {
+    background: rgba(10, 10, 15, 0.8);
 }
 
 .footer-container {
@@ -765,19 +889,31 @@ footer {
 
 /* Dark Mode Override for Disclaimer */
 [data-theme="dark"] .edu-disclaimer-box {
-    background-color: #332A00;
-    /* Darker amber background */
+    background-color: rgba(255, 193, 7, 0.1);
+    /* Glassy Amber */
     color: #E0E0E0;
-    /* Light text for readability */
     border-left: 4px solid #FFC107;
+    backdrop-filter: blur(10px);
 }
 
 .edu-support-note {
     font-size: 0.9rem;
     color: var(--text-muted);
-    margin-top: 10px;
-    text-align: center;
+    font-style: italic;
+    opacity: 0.8;
 }
+
+/* Page Headers Transparency */
+.policy-header,
+.contact-header,
+.features-header,
+.edu-hero {
+    background: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+
 
 .article-card {
     display: flex;
@@ -898,4 +1034,205 @@ footer {
     margin-top: 60px;
     padding-top: 40px;
     border-top: 1px solid var(--bg-alt);
+}
+
+/* --- Feature Showcase (Sticky Scrollytelling) --- */
+.feature-showcase {
+    padding: 0;
+}
+
+.feature-showcase__inner {
+    position: relative;
+    /* Default stacked mobile layout */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mobile Default (Stacked) */
+.feature-showcase__text-col {
+    padding: 60px 0;
+    width: 100%;
+}
+
+.feature-showcase__panel {
+    margin-bottom: 80px;
+    opacity: 1;
+    /* Always visible on mobile */
+    transition: opacity 0.5s ease;
+}
+
+.feature-showcase__mobile-visual {
+    margin-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 4px solid var(--text-main);
+    /* Simple frame */
+}
+
+.feature-showcase__mobile-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.feature-showcase__sticky-col {
+    display: none;
+    /* Hidden on mobile */
+}
+
+.feature-content {
+    max-width: 500px;
+}
+
+.feature-content h3 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.feature-content p {
+    font-size: 1.1em;
+}
+
+
+/* Desktop Sticky Layout */
+@media (min-width: 768px) {
+    .feature-showcase__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: start;
+    }
+
+    .feature-showcase__text-col {
+        padding: 0 0 100px 0;
+        /* Bottom padding for last item scroll */
+    }
+
+    .feature-showcase__panel {
+        min-height: 80vh;
+        /* Make each section tall enough to scroll */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 0;
+        opacity: 0.3;
+        /* Dim inactive */
+        transition: opacity 0.5s ease;
+    }
+
+    .feature-showcase__panel.is-active {
+        opacity: 1;
+    }
+
+    .feature-showcase__mobile-visual {
+        display: none;
+        /* Hide visual in text col on desktop */
+    }
+
+    .feature-showcase__sticky-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        /* Ensure it fits in the grid col */
+        width: 100%;
+    }
+
+    /* Reuse .iphone-mockup styles but specific for this context */
+    .feature-showcase__phone {
+        width: 320px;
+        /* Slightly wider for better visibility */
+        aspect-ratio: 9 / 19.5;
+        /* Modern iPhone ratio (approx 320x693) */
+        height: auto;
+        /* Let aspect-ratio drive height */
+        background: #000;
+        border-radius: 50px;
+        position: relative;
+        box-shadow:
+            0 0 0 4px #212121,
+            0 0 0 9px #353535,
+            0 0 0 11px #1a1a1a,
+            0 30px 60px rgba(0, 0, 0, 0.4);
+        z-index: 10;
+        overflow: hidden;
+        /* No float animation while scrolling to avoid jitter */
+    }
+
+    /* Dark mode border adjustment */
+    [data-theme="dark"] .feature-showcase__phone {
+        box-shadow:
+            0 0 0 4px #212121,
+            0 0 0 9px #4a4a4a,
+            0 0 0 11px #1a1a1a,
+            0 30px 60px rgba(0, 0, 0, 0.6);
+    }
+
+    .feature-showcase__screen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 46px;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    .screen-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        /* Default state: Off-screen for horizontal (Right) or vertical (Bottom) depends on logic, 
+           but we'll let JS set the specific off-screen class. 
+           Hidden by default. */
+        transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.6s ease;
+        z-index: 1;
+        transform: translateX(100%);
+        /* Default fallback */
+    }
+
+    .screen-img.active {
+        opacity: 1;
+        transform: translate(0, 0);
+        z-index: 10;
+    }
+
+    /* --- Horizontal States (Same Feature) --- */
+    .screen-img.prev {
+        /* Exited Left */
+        opacity: 0;
+        transform: translateX(-100%);
+        z-index: 1;
+    }
+
+    .screen-img.next {
+        /* Waiting Right */
+        opacity: 0;
+        transform: translateX(100%);
+        z-index: 1;
+    }
+
+    /* --- Vertical States (New Feature) --- */
+    .screen-img.prev-vertical {
+        /* Exited Up */
+        opacity: 0;
+        transform: translateY(-100%);
+        z-index: 1;
+    }
+
+    .screen-img.next-vertical {
+        /* Waiting Down */
+        opacity: 0;
+        transform: translateY(100%);
+        z-index: 1;
+    }
 }

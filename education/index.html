@@ -13,6 +13,12 @@
 </head>
 
 <body>
+    <!-- Global Ambient Background -->
+    <div class="global-ambient-background">
+        <div class="orb-float orb-1"></div>
+        <div class="orb-float orb-2"></div>
+        <div class="orb-float orb-3"></div>
+    </div>
     <header id="main-header">
         <div class="container header-container">
             <a href="../index.html" class="logo">
@@ -244,7 +250,7 @@
         <div class="container footer-container">
             <div class="footer-left">
                 <span class="footer-logo">The CycleVault</span>
-                <p class="copyright">&copy; 2025 The CycleVault. All rights reserved.</p>
+                <p class="copyright">&copy; 2026 The CycleVault. All rights reserved.</p>
             </div>
             <div class="footer-right">
                 <a href="../privacy.html">Privacy Policy</a>
@@ -258,24 +264,6 @@
     </footer>
     <!-- Include main.js for fade-in animations and other interactivity -->
     <script src="../main.js"></script>
-    <script>
-        // Simple dark mode toggle script compatible with existing styles
-        const toggleBtn = document.getElementById('theme-toggle');
-        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-
-        let currentTheme = localStorage.getItem('theme');
-        if (!currentTheme) {
-            currentTheme = prefersDarkScheme.matches ? 'dark' : 'light';
-        }
-        document.body.setAttribute('data-theme', currentTheme);
-
-        toggleBtn.addEventListener('click', function () {
-            let theme = document.body.getAttribute('data-theme');
-            let newTheme = theme === 'dark' ? 'light' : 'dark';
-            document.body.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-        });
-    </script>
 </body>
 
 </html>

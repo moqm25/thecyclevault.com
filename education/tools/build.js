@@ -179,7 +179,7 @@ function renderPage(title, description, bodyContent, rootPath, isArticlePage) {
         <div class="container footer-container">
             <div class="footer-left">
                 <span class="footer-logo">The CycleVault</span>
-                <p class="copyright">&copy; 2025 The CycleVault. All rights reserved.</p>
+                <p class="copyright">&copy; 2026 The CycleVault. All rights reserved.</p>
             </div>
             <div class="footer-right">
                 <a href="${privacyLink}">Privacy Policy</a>

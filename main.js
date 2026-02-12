@@ -83,4 +83,79 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     fadeElements.forEach(el => observer.observe(el));
+
+    // --- Feature Showcase Scrollytelling ---
+    const featurePanels = document.querySelectorAll('.feature-showcase__panel');
+    const screenImages = document.querySelectorAll('.screen-img');
+
+    // Only run if elements exist
+    if (featurePanels.length > 0) {
+        const featureObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // 1. Highlight active text panel
+                    featurePanels.forEach(p => p.classList.remove('is-active'));
+                    entry.target.classList.add('is-active');
+
+                    // 2. Switch phone screen image with Mixed Vertical/Horizontal logic
+                    const featureKey = entry.target.getAttribute('data-feature');
+
+                    // Current Active Info
+                    const activePanel = entry.target;
+                    const activeGroup = activePanel.getAttribute('data-group'); // Get group from active panel
+                    const panelsArray = Array.from(featurePanels);
+                    const activeIndex = panelsArray.indexOf(activePanel);
+
+                    // Find image with matching data-img
+                    const targetImage = document.querySelector(`.screen-img[data-img="${featureKey}"]`);
+
+                    if (targetImage) {
+                        // Apply classes based on index relation AND group relation
+                        screenImages.forEach((img) => {
+                            const imgKey = img.getAttribute('data-img');
+                            // Find the panel that corresponds to this image to get its index & group
+                            const correspondingPanel = document.querySelector(`.feature-showcase__panel[data-feature="${imgKey}"]`);
+
+                            if (correspondingPanel) {
+                                const imgIndex = panelsArray.indexOf(correspondingPanel);
+                                const imgGroup = correspondingPanel.getAttribute('data-group');
+
+                                // Reset all transition classes
+                                img.classList.remove('active', 'prev', 'next', 'prev-vertical', 'next-vertical');
+
+                                if (imgIndex === activeIndex) {
+                                    // CASE: Active Image
+                                    img.classList.add('active');
+                                } else if (imgIndex < activeIndex) {
+                                    // CASE: Previous Image (Scrolled Past)
+                                    if (imgGroup === activeGroup) {
+                                        // Same Group -> Slide Left (Horizontal)
+                                        img.classList.add('prev');
+                                    } else {
+                                        // Different Group -> Slide Up (Vertical)
+                                        img.classList.add('prev-vertical');
+                                    }
+                                } else {
+                                    // CASE: Next Image (Upcoming)
+                                    if (imgGroup === activeGroup) {
+                                        // Same Group -> Slide Right (Wait Horizontal)
+                                        img.classList.add('next');
+                                    } else {
+                                        // Different Group -> Slide Down (Wait Vertical)
+                                        img.classList.add('next-vertical');
+                                    }
+                                }
+                            }
+                        });
+                    }
+                }
+            });
+        }, {
+            root: null,
+            threshold: 0.5, // Trigger when 50% of the panel is visible
+            rootMargin: "-10% 0px -10% 0px"
+        });
+
+        featurePanels.forEach(panel => featureObserver.observe(panel));
+    }
 });
