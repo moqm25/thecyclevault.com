@@ -1,0 +1,14 @@
+/* TEAM */
+Founder & Developer: Moiez Qamar
+Contact: founder [at] thecyclevault.com
+Site: https://thecyclevault.com
+
+/* THANKS */
+To everyone who values a calmer, more private way to track their cycle.
+
+/* SITE */
+Last update: 2026/05/23
+Language: English
+Doctype: HTML5
+Components: Hand-crafted HTML, CSS, and a small amount of JS
+Standards: HTML5, CSS3

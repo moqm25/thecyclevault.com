@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title + Description (Google snippet) -->
+    <title>The CycleVault - Private Period Tracking</title>
+    <meta name="description"
+        content="A private period tracker that keeps your data where it belongs: with you. No ads, no tracking—just calm, private cycle tracking.">
+
+    <!-- Canonical (prevents duplicate URL variants) -->
+    <link rel="canonical" href="https://thecyclevault.com/">
+
+    <!-- Open Graph (most platforms + sometimes Google) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thecyclevault.com/">
+    <meta property="og:title" content="The CycleVault - Private Period Tracking">
+    <meta property="og:description"
+        content="Private, local-first period tracking. No ads. No tracking. Your data stays with you.">
+    <meta property="og:image" content="https://thecyclevault.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="The CycleVault">
+
+
+    <!-- Twitter (fallback + forces large preview on many platforms) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The CycleVault - Private Period Tracking">
+    <meta name="twitter:description" content="Private, local-first period tracking. No ads. No tracking.">
+    <meta name="twitter:image" content="https://thecyclevault.com/og-image.png">
+    <!-- Fonts (System UI stack used in CSS, but preconnecting for performance if we used external) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon placeholder -->
+    <link rel="icon" href="images/favicon_io/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+</head>
+
+<body>
+
+    <!-- Global Ambient Background -->
+    <div class="global-ambient-background">
+        <div class="orb-float orb-1"></div>
+        <div class="orb-float orb-2"></div>
+        <div class="orb-float orb-3"></div>
+    </div>
+
+    <!-- Sticky Header -->
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <img src="images/cyclevault-icon-light.png" alt="CycleVault Logo" class="logo-icon">
+                <span class="logo-text">The CycleVault</span>
+            </a>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="education/index.html">Education</a></li>
+                    <li><a href="#problem">Why?</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#privacy">Privacy</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content fade-in">
+                    <h1 class="text-gradient">A period tracker that keeps your data where it belongs: with you.</h1>
+                    <p class="hero-subhead">Private. Local. Secure. Period tracking without the extraction.</p>
+                    <p class="coming-soon-text">COMING SOON</p>
+                    <div class="hero-ctas">
+                        <!-- <button class="btn btn-primary">Get it on the App Store</button> -->
+                        <!-- <div class="coming-soon-wrapper"> -->
+                        <a href="mailto:founder@thecyclevault.com?subject=I%20want%20to%20join%20the%20waitlist!&body=Hi!%20I'd%20like%20to%20try%20The%20CycleVault.%20Please%20let%20me%20know%20when%20it's%20available."
+                            class="btn btn-primary">Join the Waiting List</a>
+                        <!-- </div> -->
+                        <a href="#privacy" class="btn btn-secondary">See how we protect your data</a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in delay-1">
+                    <div class="iphone-mockup">
+                        <div class="iphone-screen">
+                            <img src="assets/app_screen.png" alt="The CycleVault App Screen" class="app-screen-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Background Orbs -->
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+        </section>
+
+        <!-- The Problem Section -->
+        <section id="problem" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why CycleVault?</h2>
+                    <p>Because most period apps know too much.</p>
+                </div>
+                <div class="grid grid-2">
+                    <div class="card problem-card fade-in">
+                        <div class="icon-box warning">!</div>
+                        <h3>Data Over-Collection</h3>
+                        <p>Most apps track interactions, location, and identifiable data far beyond what's needed for a
+                            calendar.</p>
+                    </div>
+                    <div class="card problem-card fade-in delay-1">
+                        <div class="icon-box warning">Ads</div>
+                        <h3>You Are The Product</h3>
+                        <p>Many "free" apps monetize by building a profile of you to sell to advertisers and data
+                            brokers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Difference Section -->
+        <section id="difference" class="section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="text-gradient">The CycleVault Difference</h2>
+                </div>
+                <div class="comparison-table fade-in">
+                    <div class="col most-apps">
+                        <h3>Most Apps</h3>
+                        <ul>
+                            <li class="negative">Data stored in cloud</li>
+                            <li class="negative">Required accounts & logins</li>
+                            <li class="negative">Third-party trackers</li>
+                            <li class="negative">Hidden subscription fees</li>
+                        </ul>
+                    </div>
+                    <div class="col cycle-vault">
+                        <h3>The CycleVault</h3>
+                        <ul>
+                            <li class="positive">Data stays locally on your iPhone</li>
+                            <li class="positive">No accounts, no logins</li>
+                            <li class="positive">Zero ads, zero trackers</li>
+                            <li class="positive">Transparent, fair model</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Showcase Section (Sticky Scrollytelling) -->
+        <section id="features" class="feature-showcase">
+            <div class="container feature-showcase__inner">
+
+                <!-- Header (Spans Full Width of Grid) -->
+                <div class="section-header feature-showcase__main-header"
+                    style="grid-column: 1 / -1; text-align: center; margin-bottom: 40px; padding-top: 80px;">
+                    <h2 class="text-gradient">Designed for Calm</h2>
+                    <p style="max-width: 600px; margin: 0 auto;">A private, peaceful cycle tracker that respects your
+                        data and your peace of mind.</p>
+                </div>
+
+                <!-- Left Column: Scrolling Text -->
+                <div class="feature-showcase__text-col">
+
+                    <!-- 1. Welcome Sequence (Group: welcome) -->
+                    <div class="feature-showcase__panel" data-feature="welcome-1" data-group="welcome">
+                        <div class="feature-content fade-in">
+                            <div class="feature-icon">✨</div>
+                            <h3>Welcome Home</h3>
+                            <p>Your cycle journey begins here. We've stripped away the clutter to give you a serene,
+                                distraction-free dashboard. Instantly see your current phase, daily insights, and
+                                fertility status—beautifully visualized without overwhelming charts.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_welcome_1.jpeg" alt="Welcome Screen 1">
+                        </div>
+                    </div>
+
+                    <div class="feature-showcase__panel" data-feature="welcome-2" data-group="welcome">
+                        <div class="feature-content fade-in">
+                            <h3>No Account Needed</h3>
+                            <p>Privacy starts on day one. We believe your health data belongs to you, not a server.
+                                CycleVault requires no email, no password, and no account creation. Simply open the app
+                                and start tracking immediately.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_welcome_2.jpeg" alt="Welcome Screen 2">
+                        </div>
+                    </div>
+
+                    <!-- 2. Tracking Sequence (Group: tracking) -->
+                    <div class="feature-showcase__panel" data-feature="tracking-1" data-group="tracking">
+                        <div class="feature-content fade-in">
+                            <div class="feature-icon">🩸</div>
+                            <h3>Effortless Tracking</h3>
+                            <p>Logging should be quick, not a chore. With our streamlined interface, you can record flow
+                                intensity, symptoms, and mood in seconds. It’s designed to be intuitive and fast, so you
+                                can get back to living your life.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_tracking_3.jpeg" alt="Tracking Screen">
+                        </div>
+                    </div>
+
+                    <div class="feature-showcase__panel" data-feature="tracking-2" data-group="tracking">
+                        <div class="feature-content fade-in">
+                            <h3>Deep Insights</h3>
+                            <p>Unlock the power of your data. Swipe to reveal comprehensive trends and patterns in your
+                                cycle history. Understand your body's unique rhythm with crystal-clear analytics—all
+                                processed locally on your device.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_tracking_4.jpeg" alt="Insights Screen">
+                        </div>
+                    </div>
+
+                    <!-- 3. Calendar Sequence (Group: calendar) -->
+                    <div class="feature-showcase__panel" data-feature="calendar-1" data-group="calendar">
+                        <div class="feature-content fade-in">
+                            <div class="feature-icon">🗓️</div>
+                            <h3>Calm Calendar</h3>
+                            <p>Visualize your entire history with our gentle, dot-based calendar. It provides a clear,
+                                eagle-eye view of past cycles and future predictions, helping you plan ahead with
+                                confidence and ease.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_calendar_1.png" alt="Calendar View">
+                        </div>
+                    </div>
+
+                    <div class="feature-showcase__panel" data-feature="calendar-2" data-group="calendar">
+                        <div class="feature-content fade-in">
+                            <h3>Plan Ahead</h3>
+                            <p>Future planning made simple. Scroll smoothly through upcoming months to see predicted
+                                fertile windows and period dates. Whether you're planning a vacation or just your week,
+                                you'll always know what to expect.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_calendar_2.png" alt="Calendar Planning">
+                        </div>
+                    </div>
+
+                    <!-- 4. Details Sequence (Group: details) -->
+                    <div class="feature-showcase__panel" data-feature="details" data-group="details">
+                        <div class="feature-content fade-in">
+                            <div class="feature-icon">📝</div>
+                            <h3>Detailed History</h3>
+                            <p>Dive deeper into any specific day. Tap a date to view a complete breakdown of your logs,
+                                edit entries, or review personal notes. It's your personal health diary, organized and
+                                always accessible.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_details.jpeg" alt="Detailed History">
+                        </div>
+                    </div>
+
+                    <!-- 5. Export (Group: export) -->
+                    <div class="feature-showcase__panel" data-feature="export" data-group="export">
+                        <div class="feature-content fade-in">
+                            <div class="feature-icon">🔒</div>
+                            <h3>Total Control</h3>
+                            <p>Your data is portable and yours to keep. Export your entire history to a secure JSON file
+                                for backup or transfer. And if you ever choose to leave, you can wipe everything
+                                instantly with a single tap.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_export.jpeg" alt="Export Screen">
+                        </div>
+                    </div>
+
+                    <!-- 6. Lock (Group: lock) -->
+                    <div class="feature-showcase__panel" data-feature="lock" data-group="lock">
+                        <div class="feature-content fade-in">
+                            <div class="feature-icon">🛡️</div>
+                            <h3>Biometric Security</h3>
+                            <p>Add an extra layer of privacy to your most personal data. Secure The CycleVault with Face
+                                ID or Touch ID, ensuring that your history remains visible only to you, even if your
+                                phone is unlocked.</p>
+                        </div>
+                        <div class="feature-showcase__mobile-visual">
+                            <img src="assets/feature_lock.jpeg" alt="Lock Screen">
+                        </div>
+                    </div>
+
+                    <div class="section-footer-link fade-in" style="margin-top: 60px; text-align: left;">
+                        <a href="features.html" class="btn btn-outline">Read More About Our Features</a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Sticky Phone -->
+                <div class="feature-showcase__sticky-col">
+                    <div class="feature-showcase__phone">
+                        <div class="feature-showcase__screen">
+                            <!-- 1. Welcome (Group: welcome) -->
+                            <img src="assets/feature_welcome_1.jpeg" class="screen-img active" data-img="welcome-1"
+                                alt="Welcome 1">
+                            <img src="assets/feature_welcome_2.jpeg" class="screen-img" data-img="welcome-2"
+                                alt="Welcome 2">
+
+                            <!-- 2. Tracking (Group: tracking) -->
+                            <img src="assets/feature_tracking_3.jpeg" class="screen-img" data-img="tracking-1"
+                                alt="Tracking 1">
+                            <img src="assets/feature_tracking_4.jpeg" class="screen-img" data-img="tracking-2"
+                                alt="Tracking 2">
+
+                            <!-- 3. Calendar (Group: calendar) -->
+                            <img src="assets/feature_calendar_1.png" class="screen-img" data-img="calendar-1"
+                                alt="Calendar 1">
+                            <img src="assets/feature_calendar_2.png" class="screen-img" data-img="calendar-2"
+                                alt="Calendar 2">
+
+                            <!-- 4. Details (Group: details) -->
+                            <img src="assets/feature_details.jpeg" class="screen-img" data-img="details"
+                                alt="Detailed History">
+
+                            <!-- 5. Export (Group: export) -->
+                            <img src="assets/feature_export.jpeg" class="screen-img" data-img="export" alt="Export">
+
+                            <!-- 6. Lock (Group: lock) -->
+                            <img src="assets/feature_lock.jpeg" class="screen-img" data-img="lock" alt="Lock">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Privacy Section -->
+        <section id="privacy" class="section privacy-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="text-gradient">Privacy isn't a feature.<br>It's the foundation.</h2>
+                </div>
+                <div class="grid grid-3">
+                    <div class="card privacy-card fade-in">
+                        <h3>Local-Only Data</h3>
+                        <p>Your cycle, symptoms, and notes stay encrypted on your device's filesystem.</p>
+                    </div>
+                    <div class="card privacy-card fade-in delay-1">
+                        <h3>No Trackers</h3>
+                        <p>We don't embed Facebook, Google, or any other third-party tracking SDKs.</p>
+                    </div>
+                    <div class="card privacy-card fade-in delay-2">
+                        <h3>You Control It</h3>
+                        <p>Export a backup or delete everything permanently with one button.</p>
+                    </div>
+                </div>
+                <div class="privacy-summary fade-in">
+                    <ul class="check-list">
+                        <li>No selling period data</li>
+                        <li>No third-party ads</li>
+                        <li>No dark patterns</li>
+                    </ul>
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="privacy.html" class="btn btn-outline">Read Full Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="text-gradient">Simple, Fair Pricing</h2>
+                </div>
+                <div class="grid grid-2 pricing-grid">
+                    <div class="card pricing-card fade-in">
+                        <div class="pricing-header">
+                            <h3>Free Forever</h3>
+                            <div class="price">$0</div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>Core cycle tracking</li>
+                            <li>Calendar & history</li>
+                            <li>Data export & delete</li>
+                            <li>No ads, no logins</li>
+                        </ul>
+                        <button class="btn btn-outline full-width" style="display: none;">Included on Day One</button>
+                        <div class="coming-soon-wrapper-card" style="text-align: center; margin-top: 1rem;">
+                            <span class="coming-soon-text-small"
+                                style="display: block; font-size: 0.8rem; font-weight: bold; margin-bottom: 0.5rem; letter-spacing: 1px;">COMING
+                                SOON</span>
+                            <a href="mailto:founder@thecyclevault.com?subject=I%20want%20to%20join%20the%20waitlist!&body=Hi!%20I'd%20like%20to%20try%20The%20CycleVault.%20Please%20let%20me%20know%20when%20it's%20available."
+                                class="btn btn-primary full-width">Join the Waiting List</a>
+                        </div>
+                    </div>
+                    <div class="card pricing-card premium fade-in delay-1">
+                        <div class="pricing-header">
+                            <h3>Premium</h3>
+                            <div class="price">Coming Soon</div>
+                        </div>
+                        <ul class="pricing-features">
+                            <li>All Free features</li>
+                            <li>Advanced insights & trends</li>
+                            <li>Private AI assistant</li>
+                            <li>Supporting indie dev</li>
+                        </ul>
+                        <button class="btn btn-primary full-width disabled">Join the Waitlist</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section alt-bg">
+            <div class="container narrow-container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do you sell or share my data?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No. We never sell your data. In fact, we don't even have access to it. It lives on your
+                                iPhone.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Is my data stored in the cloud?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No. By default, data is stored locally on your device. Backup depends on your personal
+                                iCloud Backup settings, which are encrypted by Apple.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do I need an account?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nope. Just open the app and start tracking. No email or password required.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            How does the app make money?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We plan to introduce optional premium features for advanced insights. The core privacy
+                                and tracking features will remain free.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-left">
+                <span class="footer-logo">The CycleVault</span>
+                <p class="copyright">&copy; 2026 The CycleVault. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="container footer-disclaimer">
+            <p>The CycleVault is not a medical device and does not provide medical advice. Consult a doctor for health
+                concerns.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

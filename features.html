@@ -1,312 +1,294 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title + Description (Google snippet) -->
-    <title>Features - The CycleVault</title>
-    <meta name="description"
-        content="Explore the features of The CycleVault. Private, local-first period tracking with smart insights and calm design.">
-
-    <!-- Canonical (prevents duplicate URL variants) -->
-    <link rel="canonical" href="https://thecyclevault.com/features.html">
-
-    <!-- Open Graph (most platforms + sometimes Google) -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://thecyclevault.com/features.html">
-    <meta property="og:title" content="The CycleVault - Features">
-    <meta property="og:description"
-        content="Explore the features of The CycleVault. Private, local-first period tracking with smart insights and calm design.">
-    <meta property="og:image" content="https://thecyclevault.com/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="The CycleVault">
-
-
-    <!-- Twitter (fallback + forces large preview on many platforms) -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The CycleVault - Features">
-    <meta name="twitter:description"
-        content="Explore the features of The CycleVault. Private, local-first period tracking with smart insights and calm design.">
-    <meta name="twitter:image" content="https://thecyclevault.com/og-image.png">
-
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="images/cyclevault-icon-light.png">
-
-    <style>
-        /* Specific styles for Features page */
-        .features-header {
-            padding: 120px 0 60px;
-            text-align: center;
-        }
-
-        .features-content {
-            padding-bottom: 100px;
-        }
-
-        .feature-detail-card {
-            margin-bottom: 40px;
-            padding: 40px;
-            display: flex;
-            align-items: flex-start;
-            gap: 24px;
-        }
-
-        .feature-detail-icon {
-            font-size: 3rem;
-            flex-shrink: 0;
-            background: var(--bg-secondary);
-            width: 80px;
-            height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 20px;
-        }
-
-        .feature-detail-text h3 {
-            margin-top: 0;
-            margin-bottom: 12px;
-            font-size: 1.5rem;
-        }
-
-        .feature-detail-text p {
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
-
-        @media (max-width: 768px) {
-            .feature-detail-card {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-        }
-    </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#A89BFF" />
+<title>Features — The CycleVault</title>
+<meta name="description" content="Every feature in The CycleVault — designed for calm, private, on-device cycle tracking. Plus what's coming next." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="site.css?v=15" />
+<script>document.documentElement.classList.add('js-on');</script>
+<script>(function(){try{var t=localStorage.getItem('cv-theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
 </head>
-
 <body>
 
-    <!-- Global Ambient Background -->
-    <div class="global-ambient-background">
-        <div class="orb-float orb-1"></div>
-        <div class="orb-float orb-2"></div>
-        <div class="orb-float orb-3"></div>
+<div class="ambient" aria-hidden="true">
+  <div class="wash wash-a"></div>
+  <div class="wash wash-b"></div>
+  <div class="wash wash-c"></div>
+  <div class="grain"></div>
+</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true"><img src="images/Logo_no_background.png" alt="" /></span>
+      <span class="brand-text">The CycleVault</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html#why">Why</a>
+      <a href="features.html" style="color: var(--ink);">Features</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="learn/index.html">Learn</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+      <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+    </button>
+    <a href="index.html#waitlist" class="nav-cta">Join the waitlist <span aria-hidden="true">→</span></a>
+  </div>
+</header>
+
+<main>
+
+  <section class="subpage-hero">
+    <div class="container">
+      <p class="eyebrow eyebrow-center"><span class="dot"></span><span>Features</span></p>
+      <h1 class="reveal">Everything you need. <em>Nothing you don't.</em></h1>
+      <p class="subpage-sub reveal">The CycleVault is engineered to be the calmest period tracker you've ever used. Every feature lives on your phone, runs without an account, and respects your attention.</p>
     </div>
+  </section>
 
-    <!-- Sticky Header -->
-    <header id="main-header">
-        <div class="container header-container">
-            <a href="index.html" class="logo">
-                <img src="images/cyclevault-icon-light.png" alt="CycleVault Logo" class="logo-icon">
-                <span class="logo-text">The CycleVault</span>
-            </a>
+  <section class="container">
+    <div class="feature-detail-grid">
 
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="education/index.html">Education</a></li>
-                    <li><a href="index.html#problem">Why?</a></li>
-                    <li><a href="index.html#features">Features</a></li>
-                    <li><a href="index.html#privacy">Privacy</a></li>
-                    <li><a href="index.html#pricing">Pricing</a></li>
-                    <li><a href="index.html#faq">FAQ</a></li>
-                </ul>
-            </nav>
-
-            <button id="theme-toggle" aria-label="Toggle Dark Mode">
-                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="5"></circle>
-                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                </svg>
-                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-            </button>
+      <div class="fd-card reveal">
+        <div class="fd-card-glyph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg>
         </div>
-    </header>
-
-    <main>
-        <!-- Page Header -->
-        <section class="features-header">
-            <div class="container narrow-container">
-                <h1 class="text-gradient">Features</h1>
-                <p>Everything you need, nothing you don't.</p>
-            </div>
-        </section>
-
-        <!-- Features Content -->
-        <section class="features-content">
-            <div class="container">
-
-                <div class="grid grid-2">
-                    <!-- Private Tracking -->
-                    <div class="card feature-detail-card fade-in">
-                        <div class="feature-detail-icon">🩸</div>
-                        <div class="feature-detail-text">
-                            <h3>Private Tracking</h3>
-                            <p>Log your flow, symptoms, and notes with simple, intuitive controls. Your data is stored
-                                directly on your device, not in the cloud.</p>
-                        </div>
-                    </div>
-
-                    <!-- Smart Insights -->
-                    <div class="card feature-detail-card fade-in delay-1">
-                        <div class="feature-detail-icon">✨</div>
-                        <div class="feature-detail-text">
-                            <h3>Smart Insights</h3>
-                            <p>Get on-device predictions for your next cycle. The app learns from your history to
-                                provide accurate estimates without sharing your data.</p>
-                        </div>
-                    </div>
-
-                    <!-- Calm Calendar -->
-                    <div class="card feature-detail-card fade-in">
-                        <div class="feature-detail-icon">🗓️</div>
-                        <div class="feature-detail-text">
-                            <h3>Calm Calendar</h3>
-                            <p>A gentle, clutter-free calendar view helps you visualize your cycle at a glance. Identify
-                                patterns and plan ahead with ease.</p>
-                        </div>
-                    </div>
-
-                    <!-- Local Export -->
-                    <div class="card feature-detail-card fade-in delay-1">
-                        <div class="feature-detail-icon">🔒</div>
-                        <div class="feature-detail-text">
-                            <h3>Local Export</h3>
-                            <p>Your data belongs to you. Export your entire history to a JSON file for backup or
-                                analysis, or wipe it clean instantly.</p>
-                        </div>
-                    </div>
-
-                    <!-- No Account Ever -->
-                    <div class="card feature-detail-card fade-in">
-                        <div class="feature-detail-icon">👤</div>
-                        <div class="feature-detail-text">
-                            <h3>No Account Ever</h3>
-                            <p>We believe privacy means no accounts. Just open the app and start tracking. We don't need
-                                your email or personal details.</p>
-                        </div>
-                    </div>
-
-                    <!-- Future Proof -->
-                    <div class="card feature-detail-card fade-in delay-1">
-                        <div class="feature-detail-icon">🚀</div>
-                        <div class="feature-detail-text">
-                            <h3>Future Proof</h3>
-                            <p>Built on a modern, private-first architecture designed to support advanced features like
-                                AI health insights—all running locally on your device.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Features for Future Versions -->
-        <section class="section alt-bg">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Features for Future Versions</h2>
-                </div>
-
-                <!-- Group 1 -->
-                <h3 style="text-align: center; margin-bottom: 24px;">Understand your cycle, not just track it.</h3>
-                <div class="grid grid-3" style="margin-bottom: 60px;">
-                    <div class="card fade-in">
-                        <div class="feature-icon">🌘</div>
-                        <h3>Cycle Phases</h3>
-                        <p>Automatically see where you are in your cycle (Menstrual, Follicular, Ovulatory, Luteal),
-                            derived locally from your history.</p>
-                    </div>
-                    <div class="card fade-in delay-1">
-                        <div class="feature-icon">💡</div>
-                        <h3>Phase Insights</h3>
-                        <p>Gentle, educational context for each phase — energy, focus, and common experiences, all
-                            on-device.</p>
-                    </div>
-                    <div class="card fade-in delay-2">
-                        <div class="feature-icon">➕</div>
-                        <h3>Manual Cycle Entry</h3>
-                        <p>Add past periods directly from the Calendar or History with a simple “+” flow — no file
-                            imports required.</p>
-                    </div>
-                </div>
-
-                <!-- Group 2 -->
-                <h3 style="text-align: center; margin-bottom: 24px;">Your patterns, made visible.</h3>
-                <div class="grid grid-3" style="margin-bottom: 60px;">
-                    <div class="card fade-in">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Daily Feelings & Energy</h3>
-                        <p>Log mood and energy levels alongside symptoms to spot patterns over time.</p>
-                    </div>
-                    <div class="card fade-in delay-1">
-                        <div class="feature-icon">📊</div>
-                        <h3>Pattern Summaries</h3>
-                        <p>See correlations between phases, symptoms, and how you feel — all calculated locally.</p>
-                    </div>
-                    <div class="card fade-in delay-2">
-                        <div class="feature-icon">📅</div>
-                        <h3>Smarter History View</h3>
-                        <p>Clearer cycle breakdowns and summaries that adapt as your history grows.</p>
-                    </div>
-                </div>
-
-                <!-- Group 3 -->
-                <h3 style="text-align: center; margin-bottom: 24px;">Built to grow with you.</h3>
-                <div class="grid grid-3">
-                    <div class="card fade-in">
-                        <div class="feature-icon">🔄</div>
-                        <h3>Cycle Modes</h3>
-                        <p>Switch between Cycle Tracking, Pregnancy, and Postpartum modes with tailored timelines and
-                            views.</p>
-                    </div>
-                    <div class="card fade-in delay-1">
-                        <div class="feature-icon">🤰</div>
-                        <h3>Pregnancy Tracking</h3>
-                        <p>Week-by-week progress, trimester milestones, and symptom logging — all offline and private.
-                        </p>
-                    </div>
-                    <div class="card fade-in delay-2">
-                        <div class="feature-icon">🧠</div>
-                        <h3>Advanced Local Intelligence</h3>
-                        <p>On-device insights that adapt to life changes, without accounts, cloud storage, or data
-                            sharing.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container footer-container">
-            <div class="footer-left">
-                <span class="footer-logo">The CycleVault</span>
-                <p class="copyright">&copy; 2026 The CycleVault. All rights reserved.</p>
-            </div>
-            <div class="footer-right">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="contact.html">Contact</a>
-            </div>
+        <div class="fd-card-body">
+          <h3>Private tracking</h3>
+          <p>Log flow, symptoms, discharge, mood and notes with calm, oversized controls.</p>
+          <ul>
+            <li>One-tap "Start period" with haptic confirmation</li>
+            <li>20+ symptom chips, discharge color &amp; consistency</li>
+            <li>Optional free-text notes per day</li>
+          </ul>
         </div>
-        <div class="container footer-disclaimer">
-            <p>The CycleVault is not a medical device and does not provide medical advice. Consult a doctor for health
-                concerns.</p>
-        </div>
-    </footer>
+      </div>
 
-    <script src="main.js"></script>
+      <div class="fd-card reveal reveal-late">
+        <div class="fd-card-glyph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 13.5 9 21 10.5 13.5 12 12 19.5 10.5 12 3 10.5 10.5 9z" fill="currentColor"/></svg>
+        </div>
+        <div class="fd-card-body">
+          <h3>On-device predictions</h3>
+          <p>Predict your next period and current phase entirely on your phone.</p>
+          <ul>
+            <li>Smoothed prediction window, not a single date</li>
+            <li>Honest "likely" language — never guarantees</li>
+            <li>Adapts as your history grows</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="fd-card reveal">
+        <div class="fd-card-glyph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg>
+        </div>
+        <div class="fd-card-body">
+          <h3>Calm calendar</h3>
+          <p>Past periods, predictions, and phases on the same gentle grid.</p>
+          <ul>
+            <li>Three states: logged, today, predicted</li>
+            <li>Phase dots: menstrual, follicular, ovulatory, luteal</li>
+            <li>Swipe months with decelerating motion</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="fd-card reveal reveal-late">
+        <div class="fd-card-glyph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="18" cy="17" r="3"/></svg>
+        </div>
+        <div class="fd-card-body">
+          <h3>Total data control</h3>
+          <p>Your history is yours. Take it with you. Or wipe it instantly.</p>
+          <ul>
+            <li>Export full history to portable JSON</li>
+            <li>Import from a JSON backup</li>
+            <li>One-tap "Delete all data" (irreversible)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="fd-card reveal">
+        <div class="fd-card-glyph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V8a4 4 0 1 1 8 0v3"/></svg>
+        </div>
+        <div class="fd-card-body">
+          <h3>Face ID lock</h3>
+          <p>An extra layer between your cycle and anyone holding your phone.</p>
+          <ul>
+            <li>Face ID / Touch ID unlock</li>
+            <li>Auto-lock when the app backgrounds</li>
+            <li>No CycleVault-side passcode storage</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="fd-card reveal reveal-late">
+        <div class="fd-card-glyph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+        </div>
+        <div class="fd-card-body">
+          <h3>No account, ever</h3>
+          <p>Open the app, start tracking. That's the entire onboarding.</p>
+          <ul>
+            <li>No email, password, or phone number</li>
+            <li>No Sign-in-with-Apple linking your cycle to your ID</li>
+            <li>Optional first name — stored locally, used only inside the app</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="fd-card reveal">
+        <div class="fd-card-glyph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.4 8 9 4.6-.6 8-4.5 8-9V6z"/></svg>
+        </div>
+        <div class="fd-card-body">
+          <h3>Zero third-party SDKs</h3>
+          <p>No analytics, no ad networks, no crash reporters. You can audit the binary.</p>
+          <ul>
+            <li>No Facebook SDK, no Google Analytics</li>
+            <li>No outbound network calls during normal use</li>
+            <li>Privacy summary documented in plain English</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="fd-card reveal reveal-late">
+        <div class="fd-card-glyph">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg>
+        </div>
+        <div class="fd-card-body">
+          <h3>Calm insights</h3>
+          <p>Trends from your last six cycles, rendered as one soft chart — not a dashboard.</p>
+          <ul>
+            <li>Average cycle length &amp; regularity</li>
+            <li>Cycle-length trend chart</li>
+            <li>Phase context in plain language</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-band">
+    <div class="container">
+      <div class="section-band-head reveal">
+        <p class="eyebrow eyebrow-center"><span class="dot"></span><span>Roadmap</span></p>
+        <h2>Coming after launch.</h2>
+        <p>Built locally, just like everything else. Names are working titles — order may shift.</p>
+      </div>
+
+      <div class="future-cluster">
+        <h3 class="future-cluster-h reveal">Understand your cycle, not just track it.</h3>
+        <div class="future-grid">
+          <div class="future-card reveal">
+            <div class="future-card-h"><span class="future-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18"/></svg></span><h4>Cycle phases</h4></div>
+            <p>Automatically see where you are — Menstrual, Follicular, Ovulatory, Luteal — derived locally.</p>
+          </div>
+          <div class="future-card reveal reveal-late">
+            <div class="future-card-h"><span class="future-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 2v3M5.6 5.6l2.1 2.1M2 12h3M18.3 7.7l2.1-2.1M22 12h-3"/><circle cx="12" cy="14" r="4"/><path d="M9 18v3h6v-3"/></svg></span><h4>Phase insights</h4></div>
+            <p>Gentle, educational context for each phase — energy, focus, common experiences.</p>
+          </div>
+          <div class="future-card reveal">
+            <div class="future-card-h"><span class="future-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span><h4>Manual cycle entry</h4></div>
+            <p>Add past periods directly from Calendar or History with a simple "+" flow.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="future-cluster">
+        <h3 class="future-cluster-h reveal">Your patterns, made visible.</h3>
+        <div class="future-grid">
+          <div class="future-card reveal">
+            <div class="future-card-h"><span class="future-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z" fill="currentColor"/></svg></span><h4>Feelings &amp; energy</h4></div>
+            <p>Log mood and energy alongside symptoms to spot patterns over time.</p>
+          </div>
+          <div class="future-card reveal reveal-late">
+            <div class="future-card-h"><span class="future-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 21V9M9 21V3M15 21v-9M21 21V13"/></svg></span><h4>Pattern summaries</h4></div>
+            <p>Correlations between phases, symptoms, and how you feel — calculated locally.</p>
+          </div>
+          <div class="future-card reveal">
+            <div class="future-card-h"><span class="future-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h4>Smarter history</h4></div>
+            <p>Clearer cycle breakdowns and summaries that adapt as your history grows.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="future-cluster">
+        <h3 class="future-cluster-h reveal">Built to grow with you.</h3>
+        <div class="future-grid">
+          <div class="future-card reveal">
+            <div class="future-card-h"><span class="future-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M22 12a10 10 0 1 0-3.5 7.6"/><path d="M22 12l-3 3-3-3"/></svg></span><h4>Cycle modes</h4></div>
+            <p>Switch between Cycle Tracking, Pregnancy, and Postpartum modes with tailored timelines.</p>
+          </div>
+          <div class="future-card reveal reveal-late">
+            <div class="future-card-h"><span class="future-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 21c-4-3-7-7-7-11a7 7 0 0 1 14 0c0 4-3 8-7 11z"/><circle cx="12" cy="10" r="3"/></svg></span><h4>Pregnancy tracking</h4></div>
+            <p>Week-by-week progress, trimester milestones, symptom logging — offline and private.</p>
+          </div>
+          <div class="future-card reveal">
+            <div class="future-card-h"><span class="future-glyph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg></span><h4>On-device AI</h4></div>
+            <p>Private summaries that adapt to life changes — without accounts, cloud storage, or sharing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <div class="cta-card reveal">
+        <div class="cta-aura"></div>
+        <div class="cta-stars">
+          <span class="cs cs1">✦</span><span class="cs cs2">✦</span><span class="cs cs3">✦</span><span class="cs cs4">✦</span><span class="cs cs5">✦</span>
+        </div>
+        <p class="cta-eyebrow">COMING SOON · iOS</p>
+        <h2 class="cta-title">Get the calm tracker <em>first.</em></h2>
+        <p class="cta-sub">We'll email you exactly once: the day The CycleVault is available on the App Store.</p>
+        <div style="position: relative; z-index: 2; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <a href="index.html#waitlist" class="btn btn-primary">Join the waitlist <span class="btn-arrow" aria-hidden="true">→</span></a>
+          <a href="index.html" class="btn btn-ghost">Back to home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="container foot-inner">
+    <div class="foot-brand">
+      <span class="brand-mark"><img src="images/Logo_no_background.png" alt="" /></span>
+      <div>
+        <div class="foot-title">The CycleVault</div>
+        <div class="foot-tag">Private. Local. Yours.</div>
+      </div>
+    </div>
+    <div class="foot-cols">
+      <div><div class="foot-h">Product</div><a href="features.html">Features</a><a href="index.html#pricing">Pricing</a><a href="index.html#faq">FAQ</a></div>
+      <div><div class="foot-h">Company</div><a href="learn/index.html">Learn</a><a href="contact.html">Contact</a></div>
+      <div><div class="foot-h">Legal</div><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a></div>
+    </div>
+  </div>
+  <div class="container foot-bottom">
+    <p>© 2026 The CycleVault. Made calmly.</p>
+    <p class="foot-disc">The CycleVault is not a medical device and doesn't provide medical advice. Consult a clinician for health concerns.</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
 </body>
-
 </html>

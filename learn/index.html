@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#A89BFF" />
+<title>Learn — The CycleVault Library</title>
+<meta name="description" content="Plain-language menstrual health writing from The CycleVault. A calm, hand-edited library — no SEO bait, no scary headlines." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../site.css?v=15" />
+<script>document.documentElement.classList.add('js-on');</script>
+<script>(function(){try{var t=localStorage.getItem('cv-theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+</head>
+<body>
+
+<div class="ambient" aria-hidden="true">
+  <div class="wash wash-a"></div>
+  <div class="wash wash-b"></div>
+  <div class="wash wash-c"></div>
+  <div class="grain"></div>
+</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand" aria-label="The CycleVault home">
+      <span class="brand-mark" aria-hidden="true"><img src="../images/Logo_no_background.png" alt="" /></span>
+      <span class="brand-text">The CycleVault</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html#why">Why</a>
+      <a href="../features.html">Features</a>
+      <a href="../privacy.html">Privacy</a>
+      <a href="index.html" style="color: var(--ink);">Learn</a>
+      <a href="../index.html#pricing">Pricing</a>
+      <a href="../index.html#faq">FAQ</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+      <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+    </button>
+    <a href="../index.html#waitlist" class="nav-cta">Join the waitlist <span aria-hidden="true">→</span></a>
+  </div>
+</header>
+
+<main>
+
+  <section class="learn-hero">
+    <div class="container">
+      <p class="eyebrow eyebrow-center"><span class="dot"></span><span>The CycleVault Library</span></p>
+      <h1 class="reveal">Calm, careful writing about <em>your body.</em></h1>
+      <p class="learn-hero-sub reveal">A small, hand-edited library of plain-language articles — written to inform, not to alarm. No SEO bait, no scary headlines, no ads.</p>
+
+      <div class="learn-disclaimer reveal">
+        <span class="learn-disclaimer-ico">!</span>
+        <div>
+          <strong style="color: var(--ink); font-weight: 600;">Educational content, not medical advice.</strong>
+          The CycleVault Library is for informational purposes only and does not replace medical guidance. If you have concerns about your health, speak with a qualified clinician. Spotted a mistake? Email <a href="mailto:support@thecyclevault.com">support@thecyclevault.com</a>.
+        </div>
+      </div>
+
+      <div class="learn-filters reveal" role="tablist" aria-label="Filter articles by category">
+        <button type="button" class="filter-chip filter-all" aria-pressed="true" data-cat="all">All <span class="filter-count">15</span></button>
+        <button type="button" class="filter-chip filter-foundations" aria-pressed="false" data-cat="foundations"><span class="lib-cat-dot"></span>Foundations <span class="filter-count">4</span></button>
+        <button type="button" class="filter-chip filter-variation" aria-pressed="false" data-cat="variation"><span class="lib-cat-dot"></span>Variation <span class="filter-count">3</span></button>
+        <button type="button" class="filter-chip filter-symptoms" aria-pressed="false" data-cat="symptoms"><span class="lib-cat-dot"></span>Symptoms <span class="filter-count">4</span></button>
+        <button type="button" class="filter-chip filter-tracking" aria-pressed="false" data-cat="tracking"><span class="lib-cat-dot"></span>Tracking <span class="filter-count">2</span></button>
+        <button type="button" class="filter-chip filter-wellbeing" aria-pressed="false" data-cat="wellbeing"><span class="lib-cat-dot"></span>Wellbeing <span class="filter-count">2</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="library">
+    <div class="container">
+      <div class="library-grid">
+
+        <a class="lib-card cat-foundations reveal" data-cat="foundations" href="what-a-period-actually-is.html">
+          <div class="lib-thumb"><span class="lib-cat"><span class="lib-cat-dot"></span>Foundations</span><img src="imgs/10.jpeg" alt="" loading="lazy" /></div>
+          <div class="lib-body">
+            <div class="lib-meta">4 min read</div>
+            <h3>What a period actually is</h3>
+            <p class="lib-excerpt">Periods aren't a failure or a problem. They're the body completing a cycle and resetting — here's what that actually looks like.</p>
+            <span class="lib-read">Read article <span class="lib-arrow">→</span></span>
+          </div>
+        </a>
+
+        <a class="lib-card cat-foundations reveal" data-cat="foundations" href="the-menstrual-cycle-explained-simply.html">
+          <div class="lib-thumb"><span class="lib-cat"><span class="lib-cat-dot"></span>Foundations</span><img src="imgs/1.png" alt="" loading="lazy" /></div>
+          <div class="lib-body">
+            <div class="lib-meta">4 min read</div>
+            <h3>The menstrual cycle, explained simply</h3>
+            <p class="lib-excerpt">The four phases, in plain language. Less a strict schedule, more a rhythm your body returns to.</p>
+            <span class="lib-read">Read article <span class="lib-arrow">→</span></span>
+          </div>
+        </a>
+
+        <a class="lib-card cat-foundations reveal" data-cat="foundations" href="what-hormones-are-doing-during-your-cycle.html">
+          <div class="lib-thumb"><span class="lib-cat"><span class="lib-cat-dot"></span>Foundations</span><img src="imgs/6.jpeg" alt="" loading="lazy" /></div>
+          <div class="lib-body">
+            <div class="lib-meta">5 min read</div>
+            <h3>What hormones are doing during your cycle</h3>
+            <p class="lib-excerpt">Meet estrogen, the builder, and progesterone, the supporter. Hormonal shifts aren't a problem — they're a rhythm.</p>
+            <span class="lib-read">Read article <span class="lib-arrow">→</span></span>
+          </div>
+        </a>
+
+        <a class="lib-card cat-variation reveal" data-cat="variation" href="why-cycle-length-can-change-from-month-to-month.html">
+          <div class="lib-thumb"><span class="lib-cat"><span class="lib-cat-dot"></span>Variation</span><img src="imgs/15.jpeg" alt="" loading="lazy" /></div>
+          <div class="lib-body">
+            <div class="lib-meta">4 min read</div>
+            <h3>Why cycle length can change month to month</h3>
+            <p class="lib-excerpt">Your cycle isn't a clock. Stress, travel, sleep — they all shift ovulation, and ovulation shifts everything else.</p>
+            <span class="lib-read">Read article <span class="lib-arrow">→</span></span>
+          </div>
+        </a>
+
+        <a class="lib-card cat-foundations reveal" data-cat="foundations" href="what-normal-periods-really-look-like.html">
+          <div class="lib-thumb"><span class="lib-cat"><span class="lib-cat-dot"></span>Foundations</span><img src="imgs/11.jpeg" alt="" loading="lazy" /></div>
+          <div class="lib-body">
+            <div class="lib-meta">4 min read</div>
+            <h3>What "normal" periods really look like</h3>
+            <p class="lib-excerpt">Normal is not a single standard — it's a range. A wide one. Here's the spectrum.</p>
+            <span class="lib-read">Read article <span class="lib-arrow">→</span></span>
+          </div>
+        </a>
+
+        <a class="lib-card cat-variation reveal" data-cat="variation" href="why-period-symptoms-can-feel-different-every-month.html">
+          <div class="lib-thumb"><span class="lib-cat"><span class="lib-cat-dot"></span>Variation</span><img src="imgs/12.jpeg" alt="" loading="lazy" /></div>
+          <div class="lib-body">
+            <div class="lib-meta">5 min read</div>
+            <h3>Why period symptoms feel different every month</h3>
+            <p class="lib-excerpt">Hormones don't act alone. Sleep, stress, nutrition, and life all shape how a cycle feels.</p>
+            <span class="lib-read">Read article <span class="lib-arrow">→</span></span>
+          </div>
+        </a>
+
+        <a class="lib-card cat-symptoms reveal" data-cat="symptoms" href="cramps-why-they-happen-and-why-they-vary.html">
+          <div class="lib-thumb"><span class="lib-cat"><span class="lib-cat-dot"></span>Symptoms</span><img src="imgs/2.jpeg" alt="" loading="lazy" /></div>
+          <div class="lib-body">
+            <div class="lib-meta">5 min read</div>
+            <h3>Cramps: why they happen and why they vary</h3>
+            <p class="lib-excerpt">Cramps are the uterus doing its job. Why they feel so different from cycle to cycle, and what's worth flagging.</p>
+            <span class="lib-read">Read article <span class="lib-arrow">→</span></span>
+          </div>
+        </a>
+
+        <a class="lib-card cat-symptoms reveal" data-cat="symptoms" href="fatigue-around-your-period.html">
+          <div class="lib-thumb"><span class="lib-cat"><span class="lib-cat-dot"></span>Symptoms</span><img src="imgs/3.jpeg" alt="" loading="lazy" /></div>
+          <div class="lib-body">
+            <div class="lib-meta">4 min read</div>
+            <h3>Fatigue around your period</h3>
+            <p class="lib-excerpt">Tiredness near your period is real, and it's not weakness. Here's what's happening — and when to ask for help.</p>
+            <span class="lib-read">Read article <span class="lib-arrow">→</span></span>
+          </div>
+        </a>
+
+        <a class="lib-card cat-symptoms reveal" data-cat="symptoms" href="mood-changes-across-the-cycle.html">
+          <div class="lib-thumb"><span class="lib-cat"><span class="lib-cat-dot"></span>Symptoms</span><img src="imgs/7.jpeg" alt="" loading="lazy" /></div>
+          <div class="lib-body">
+            <div class="lib-meta">5 min read</div>
+            <h3>Mood changes across the cycle</h3>
+            <p class="lib-excerpt">Emotions aren't flaws to fix. They're information — and they reflect more than just hormones.</p>
+            <span class="lib-read">Read article <span class="lib-arrow">→</span></span>
+          </div>
+        </a>
+
+        <a class="lib-card cat-symptoms reveal" data-cat="symptoms" href="spotting-vs-a-period.html">
+          <div class="lib-thumb"><span class="lib-cat"><span class="lib-cat-dot"></span>Symptoms</span><img src="imgs/4.jpeg" alt="" loading="lazy" /></div>
+          <div class="lib-body">
+            <div class="lib-meta">4 min read</div>
+            <h3>Spotting vs a period</h3>
+            <p class="lib-excerpt">Not all bleeding is a period. Telling them apart is simpler than it sounds.</p>
+            <span class="lib-read">Read article <span class="lib-arrow">→</span></span>
+          </div>
+        </a>
+
+        <a class="lib-card cat-wellbeing reveal" data-cat="wellbeing" href="how-stress-shows-up-in-your-cycle.html">
+          <div class="lib-thumb"><span class="lib-cat"><span class="lib-cat-dot"></span>Wellbeing</span><img src="imgs/5.jpeg" alt="" loading="lazy" /></div>
+          <div class="lib-body">
+            <div class="lib-meta">4 min read</div>
+            <h3>How stress shows up in your cycle</h3>
+            <p class="lib-excerpt">The stress-and-cycle connection in plain language. It's protective, not a malfunction.</p>
+            <span class="lib-read">Read article <span class="lib-arrow">→</span></span>
+          </div>
+        </a>
+
+        <a class="lib-card cat-tracking reveal" data-cat="tracking" href="what-tracking-your-cycle-can-help-you-notice.html">
+          <div class="lib-thumb"><span class="lib-cat"><span class="lib-cat-dot"></span>Tracking</span><img src="imgs/13.jpeg" alt="" loading="lazy" /></div>
+          <div class="lib-body">
+            <div class="lib-meta">4 min read</div>
+            <h3>What tracking can help you notice</h3>
+            <p class="lib-excerpt">Tracking isn't about prediction. It's about recognizing your own patterns — quietly, over time.</p>
+            <span class="lib-read">Read article <span class="lib-arrow">→</span></span>
+          </div>
+        </a>
+
+        <a class="lib-card cat-tracking reveal" data-cat="tracking" href="what-tracking-cant-predict.html">
+          <div class="lib-thumb"><span class="lib-cat"><span class="lib-cat-dot"></span>Tracking</span><img src="imgs/9.jpeg" alt="" loading="lazy" /></div>
+          <div class="lib-body">
+            <div class="lib-meta">4 min read</div>
+            <h3>What tracking can't predict</h3>
+            <p class="lib-excerpt">An honest look at the limits of any cycle app, including ours. Your body isn't an algorithm.</p>
+            <span class="lib-read">Read article <span class="lib-arrow">→</span></span>
+          </div>
+        </a>
+
+        <a class="lib-card cat-variation reveal" data-cat="variation" href="how-periods-can-change-across-life-stages.html">
+          <div class="lib-thumb"><span class="lib-cat"><span class="lib-cat-dot"></span>Variation</span><img src="imgs/14.jpeg" alt="" loading="lazy" /></div>
+          <div class="lib-body">
+            <div class="lib-meta">5 min read</div>
+            <h3>How periods change across life stages</h3>
+            <p class="lib-excerpt">From teen years through perimenopause — change is the rule, not the exception.</p>
+            <span class="lib-read">Read article <span class="lib-arrow">→</span></span>
+          </div>
+        </a>
+
+        <a class="lib-card cat-wellbeing reveal" data-cat="wellbeing" href="when-it-makes-sense-to-talk-to-a-doctor.html">
+          <div class="lib-thumb"><span class="lib-cat"><span class="lib-cat-dot"></span>Wellbeing</span><img src="imgs/8.jpeg" alt="" loading="lazy" /></div>
+          <div class="lib-body">
+            <div class="lib-meta">4 min read</div>
+            <h3>When it makes sense to talk to a doctor</h3>
+            <p class="lib-excerpt">Seeking medical input is normal care, not a sign of failure. Here are the patterns worth flagging.</p>
+            <span class="lib-read">Read article <span class="lib-arrow">→</span></span>
+          </div>
+        </a>
+
+      </div>
+
+      <div id="lib-empty" class="reveal" style="display:none; text-align:center; padding:80px 20px; color:var(--muted);">
+        <p>No articles in this category yet. <button type="button" class="filter-chip" onclick="document.querySelector('[data-cat=all]').click()" style="margin-top:10px;">Show all</button></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta" style="padding-top: 20px;">
+    <div class="container">
+      <div class="cta-card reveal">
+        <div class="cta-aura"></div>
+        <div class="cta-stars">
+          <span class="cs cs1">✦</span><span class="cs cs2">✦</span><span class="cs cs3">✦</span><span class="cs cs4">✦</span><span class="cs cs5">✦</span>
+        </div>
+        <p class="cta-eyebrow">COMING SOON · iOS</p>
+        <h2 class="cta-title">All of this, <em>in your pocket.</em></h2>
+        <p class="cta-sub">Track your cycle calmly, privately, on your phone. Free forever — no accounts, no ads, no extraction.</p>
+        <div style="position: relative; z-index: 2; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <a href="../index.html#waitlist" class="btn btn-primary">Join the waitlist <span class="btn-arrow" aria-hidden="true">→</span></a>
+          <a href="../index.html" class="btn btn-ghost">Back to home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="container foot-inner">
+    <div class="foot-brand">
+      <span class="brand-mark"><img src="../images/Logo_no_background.png" alt="" /></span>
+      <div>
+        <div class="foot-title">The CycleVault</div>
+        <div class="foot-tag">Private. Local. Yours.</div>
+      </div>
+    </div>
+    <div class="foot-cols">
+      <div><div class="foot-h">Product</div><a href="../features.html">Features</a><a href="../index.html#pricing">Pricing</a><a href="../index.html#faq">FAQ</a></div>
+      <div><div class="foot-h">Company</div><a href="index.html">Learn</a><a href="../contact.html">Contact</a></div>
+      <div><div class="foot-h">Legal</div><a href="../privacy.html">Privacy Policy</a><a href="../terms.html">Terms</a></div>
+    </div>
+  </div>
+  <div class="container foot-bottom">
+    <p>© 2026 The CycleVault. Made calmly.</p>
+    <p class="foot-disc">The CycleVault is not a medical device and doesn't provide medical advice. Consult a clinician for health concerns.</p>
+  </div>
+</footer>
+
+<script src="../site.js"></script>
+<script>
+  // Filter chips
+  (function() {
+    const chips = document.querySelectorAll('.filter-chip[data-cat]');
+    const cards = document.querySelectorAll('.lib-card[data-cat]');
+    const empty = document.getElementById('lib-empty');
+    chips.forEach(c => c.addEventListener('click', () => {
+      const cat = c.dataset.cat;
+      chips.forEach(x => x.setAttribute('aria-pressed', x === c ? 'true' : 'false'));
+      let shown = 0;
+      cards.forEach(card => {
+        const match = cat === 'all' || card.dataset.cat === cat;
+        card.classList.toggle('hidden', !match);
+        if (match) shown++;
+      });
+      if (empty) empty.style.display = shown ? 'none' : 'block';
+    }));
+  })();
+</script>
+</body>
+</html>

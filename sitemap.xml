@@ -2,62 +2,107 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://thecyclevault.com/</loc>
-    </url>
-    <url>
-        <loc>https://thecyclevault.com/privacy.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>1.0</priority>
     </url>
     <url>
         <loc>https://thecyclevault.com/features.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://thecyclevault.com/privacy.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://thecyclevault.com/terms.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.5</priority>
     </url>
     <url>
         <loc>https://thecyclevault.com/contact.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://thecyclevault.com/education/</loc>
+        <loc>https://thecyclevault.com/learn/</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://thecyclevault.com/education/articles/cramps-why-they-happen-and-why-they-vary.html</loc>
+        <loc>https://thecyclevault.com/learn/the-menstrual-cycle-explained-simply.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://thecyclevault.com/education/articles/fatigue-around-your-period.html</loc>
+        <loc>https://thecyclevault.com/learn/what-a-period-actually-is.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://thecyclevault.com/education/articles/how-periods-can-change-across-life-stages.html</loc>
+        <loc>https://thecyclevault.com/learn/what-hormones-are-doing-during-your-cycle.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://thecyclevault.com/education/articles/how-stress-shows-up-in-your-cycle.html</loc>
+        <loc>https://thecyclevault.com/learn/what-normal-periods-really-look-like.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://thecyclevault.com/education/articles/mood-changes-across-the-cycle.html</loc>
+        <loc>https://thecyclevault.com/learn/why-cycle-length-can-change-from-month-to-month.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://thecyclevault.com/education/articles/spotting-vs-a-period.html</loc>
+        <loc>https://thecyclevault.com/learn/why-period-symptoms-can-feel-different-every-month.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://thecyclevault.com/education/articles/the-menstrual-cycle-explained-simply.html</loc>
+        <loc>https://thecyclevault.com/learn/cramps-why-they-happen-and-why-they-vary.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://thecyclevault.com/education/articles/what-a-period-actually-is.html</loc>
+        <loc>https://thecyclevault.com/learn/fatigue-around-your-period.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://thecyclevault.com/education/articles/what-hormones-are-doing-during-your-cycle.html</loc>
+        <loc>https://thecyclevault.com/learn/mood-changes-across-the-cycle.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://thecyclevault.com/education/articles/what-normal-periods-really-look-like.html</loc>
+        <loc>https://thecyclevault.com/learn/how-stress-shows-up-in-your-cycle.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://thecyclevault.com/education/articles/what-tracking-cant-predict.html</loc>
+        <loc>https://thecyclevault.com/learn/how-periods-can-change-across-life-stages.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://thecyclevault.com/education/articles/what-tracking-your-cycle-can-help-you-notice.html</loc>
+        <loc>https://thecyclevault.com/learn/spotting-vs-a-period.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://thecyclevault.com/education/articles/when-it-makes-sense-to-talk-to-a-doctor.html</loc>
+        <loc>https://thecyclevault.com/learn/what-tracking-your-cycle-can-help-you-notice.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://thecyclevault.com/education/articles/why-cycle-length-can-change-from-month-to-month.html</loc>
+        <loc>https://thecyclevault.com/learn/what-tracking-cant-predict.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://thecyclevault.com/education/articles/why-period-symptoms-can-feel-different-every-month.html</loc>
+        <loc>https://thecyclevault.com/learn/when-it-makes-sense-to-talk-to-a-doctor.html</loc>
+        <lastmod>2026-05-23</lastmod>
+        <priority>0.6</priority>
     </url>
 </urlset>

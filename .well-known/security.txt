@@ -1,0 +1,7 @@
+# If you've found a security vulnerability in The CycleVault,
+# please report it responsibly using the contact below.
+
+Contact: mailto:privacy@thecyclevault.com
+Expires: 2027-05-23T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://thecyclevault.com/.well-known/security.txt

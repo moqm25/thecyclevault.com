@@ -1,500 +1,772 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title + Description (Google snippet) -->
-    <title>The CycleVault - Private Period Tracking</title>
-    <meta name="description"
-        content="A private period tracker that keeps your data where it belongs: with you. No ads, no tracking—just calm, private cycle tracking.">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <!-- Canonical (prevents duplicate URL variants) -->
-    <link rel="canonical" href="https://thecyclevault.com/">
-
-    <!-- Open Graph (most platforms + sometimes Google) -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://thecyclevault.com/">
-    <meta property="og:title" content="The CycleVault - Private Period Tracking">
-    <meta property="og:description"
-        content="Private, local-first period tracking. No ads. No tracking. Your data stays with you.">
-    <meta property="og:image" content="https://thecyclevault.com/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="The CycleVault">
-
-
-    <!-- Twitter (fallback + forces large preview on many platforms) -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The CycleVault - Private Period Tracking">
-    <meta name="twitter:description" content="Private, local-first period tracking. No ads. No tracking.">
-    <meta name="twitter:image" content="https://thecyclevault.com/og-image.png">
-    <!-- Fonts (System UI stack used in CSS, but preconnecting for performance if we used external) -->
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Favicon placeholder -->
-    <link rel="icon" href="images/favicon_io/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#A89BFF" />
+<title>The CycleVault — A calmer way to track your cycle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="site.css?v=15" />
+<script>document.documentElement.classList.add('js-on');</script>
+<script>(function(){try{var t=localStorage.getItem('cv-theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
 </head>
-
 <body>
 
-    <!-- Global Ambient Background -->
-    <div class="global-ambient-background">
-        <div class="orb-float orb-1"></div>
-        <div class="orb-float orb-2"></div>
-        <div class="orb-float orb-3"></div>
+<!-- Ambient color wash that animates everywhere -->
+<div class="ambient" aria-hidden="true">
+  <div class="wash wash-a"></div>
+  <div class="wash wash-b"></div>
+  <div class="wash wash-c"></div>
+  <div class="grain"></div>
+</div>
+
+<!-- Sticky header -->
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand" aria-label="The CycleVault home">
+      <span class="brand-mark" aria-hidden="true"><img src="images/Logo_no_background.png" alt="" /></span>
+      <span class="brand-text">The CycleVault</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#why">Why</a>
+      <a href="features.html">Features</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="learn/index.html">Learn</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+      <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+    </button>
+    <a href="#waitlist" class="nav-cta">Join the waitlist <span aria-hidden="true">→</span></a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-grid">
+
+      <div class="hero-copy reveal">
+        <div class="eyebrow">
+          <span class="dot"></span>
+          <span>Private. Local. Yours.</span>
+        </div>
+        <h1 class="hero-title">
+          A <em>calmer</em> way to<br />
+          track your cycle.
+        </h1>
+        <p class="hero-sub">
+          The CycleVault is a private period tracker that keeps every entry on your phone — no accounts, no trackers, no extraction. Just a beautiful daily ritual.
+        </p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#waitlist">
+            <span>Join the waitlist</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </a>
+          <a class="btn btn-ghost" href="#privacy">
+            See how privacy works
+          </a>
+        </div>
+        <div class="hero-meta">
+          <div class="meta-row">
+            <span class="meta-pill"><span class="meta-dot"></span>iOS · coming soon</span>
+            <span class="meta-pill"><span class="meta-dot meta-dot-2"></span>Local-only data</span>
+            <span class="meta-pill"><span class="meta-dot meta-dot-3"></span>No accounts</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero phone -->
+      <div class="hero-phone-wrap reveal reveal-late" data-tilt>
+        <div class="phone-aura"></div>
+        <div class="sparkles" aria-hidden="true">
+          <span class="sp sp1"></span><span class="sp sp2"></span><span class="sp sp3"></span>
+          <span class="sp sp4"></span><span class="sp sp5"></span><span class="sp sp6"></span>
+        </div>
+        <div class="phone phone-hero">
+          <div class="notch"></div>
+          <div class="screen">
+            <!-- App screen: Today -->
+            <div class="app app-today">
+              <div class="status-bar">
+                <span class="sb-time">9:41</span>
+                <span class="sb-right">
+                  <span class="sb-sig"></span>
+                  <span class="sb-wifi"></span>
+                  <span class="sb-bat"></span>
+                </span>
+              </div>
+              <div class="today-head">
+                <h2 class="today-title">The CycleVault</h2>
+                <p class="today-hi">Hi, Queen <span class="sparkle">✦</span></p>
+                <p class="today-date">FEB 11</p>
+              </div>
+
+              <div class="today-card">
+                <div class="ring">
+                  <svg viewBox="0 0 200 200" class="ring-svg">
+                    <defs>
+                      <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#FFB1B8"/>
+                        <stop offset="1" stop-color="#B6ADFF"/>
+                      </linearGradient>
+                    </defs>
+                    <circle cx="100" cy="100" r="86" fill="none" stroke="#F1ECF7" stroke-width="10"/>
+                    <circle class="ring-prog" cx="100" cy="100" r="86" fill="none" stroke="url(#ringGrad)" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="25 75" transform="rotate(-90 100 100)"/>
+                  </svg>
+                  <div class="ring-inner">
+                    <div class="ring-sparkle">
+                      <svg viewBox="0 0 24 24" width="28" height="28"><path d="M12 2 13.5 9 21 10.5 13.5 12 12 19.5 10.5 12 3 10.5 10.5 9z" fill="#A89BFF"/><circle cx="19" cy="6" r="1.4" fill="#FFB1B8"/></svg>
+                    </div>
+                    <div class="ring-label">Next period in</div>
+                    <div class="ring-days">~21 <span>days</span></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="phase-card">
+                <div class="phase-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 3 14 10 21 12 14 14 12 21 10 14 3 12 10 10z" fill="#FF8A95"/></svg>
+                </div>
+                <div class="phase-text">
+                  <div class="phase-eyebrow">ESTIMATED PHASE</div>
+                  <div class="phase-name">Follicular</div>
+                  <div class="phase-sub">Energy levels may start rising.</div>
+                </div>
+              </div>
+
+              <button class="cta-period">Start period</button>
+
+              <div class="log-preview">
+                <div class="log-head">
+                  <span class="log-icon">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#A89BFF" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M16 3 L20 7"/></svg>
+                  </span>
+                  <span>Log Today</span>
+                </div>
+                <div class="log-row">
+                  <span class="log-sub">Flow Intensity</span>
+                </div>
+                <div class="flow-chips">
+                  <span class="chip">Light</span>
+                  <span class="chip chip-active">Medium</span>
+                  <span class="chip">Heavy</span>
+                </div>
+              </div>
+
+              <div class="tabbar">
+                <span class="tab tab-active"><span class="tab-ico tab-today"></span><span>Today</span></span>
+                <span class="tab"><span class="tab-ico tab-cal"></span><span>Calendar</span></span>
+                <span class="tab"><span class="tab-ico tab-hist"></span><span>History</span></span>
+                <span class="tab"><span class="tab-ico tab-learn"></span><span>Learn</span></span>
+                <span class="tab"><span class="tab-ico tab-set"></span><span>Settings</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating glyph cards next to the phone -->
+        <div class="float-card fc-1">
+          <div class="fc-pill">
+            <span class="fc-dot fc-dot-coral"></span>
+            <span>Today is day 7</span>
+          </div>
+        </div>
+        <div class="float-card fc-2">
+          <div class="fc-row"><span class="fc-emoji">🌙</span><div><div class="fc-title">Mood: gentle</div><div class="fc-sub">Logged 3 min ago</div></div></div>
+        </div>
+        <div class="float-card fc-3">
+          <span class="fc-shield">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#FF8A95" stroke-width="2.2" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.4 8 9 4.6-.6 8-4.5 8-9V6z"/></svg>
+          </span>
+          <span>Stored on this device</span>
+        </div>
+      </div>
     </div>
 
-    <!-- Sticky Header -->
-    <header id="main-header">
-        <div class="container header-container">
-            <a href="#" class="logo">
-                <img src="images/cyclevault-icon-light.png" alt="CycleVault Logo" class="logo-icon">
-                <span class="logo-text">The CycleVault</span>
-            </a>
+    <!-- Word marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Private</span><span class="m-sep">✦</span>
+        <span>Local-first</span><span class="m-sep">✦</span>
+        <span>No accounts</span><span class="m-sep">✦</span>
+        <span>No ads</span><span class="m-sep">✦</span>
+        <span>No trackers</span><span class="m-sep">✦</span>
+        <span>Built calmly</span><span class="m-sep">✦</span>
+        <span>Private</span><span class="m-sep">✦</span>
+        <span>Local-first</span><span class="m-sep">✦</span>
+        <span>No accounts</span><span class="m-sep">✦</span>
+        <span>No ads</span><span class="m-sep">✦</span>
+        <span>No trackers</span><span class="m-sep">✦</span>
+        <span>Built calmly</span><span class="m-sep">✦</span>
+      </div>
+    </div>
+  </section>
 
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="education/index.html">Education</a></li>
-                    <li><a href="#problem">Why?</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#privacy">Privacy</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
-            </nav>
+  <!-- ============ WHY ============ -->
+  <section id="why" class="why">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow-center"><span class="dot"></span><span>Why a new tracker</span></p>
+        <h2 class="section-title">Most period apps <em>know too much.</em></h2>
+        <p class="section-sub">Cycle data is some of the most sensitive information you have. It shouldn't live on someone else's servers, get sold to brokers, or quietly train a model.</p>
+      </div>
 
-            <button id="theme-toggle" aria-label="Toggle Dark Mode">
-                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="5"></circle>
-                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                </svg>
-                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-            </button>
+      <div class="why-grid">
+        <div class="why-col why-col-bad reveal">
+          <header><span class="why-tag bad">Most apps</span></header>
+          <ul class="why-list">
+            <li><span class="x">✕</span><div><b>Cloud-by-default</b><p>Your symptoms, logs, and notes are uploaded the moment you tap.</p></div></li>
+            <li><span class="x">✕</span><div><b>Accounts required</b><p>Email, phone number, sometimes Apple ID linked to your cycle.</p></div></li>
+            <li><span class="x">✕</span><div><b>Trackers everywhere</b><p>Facebook, Google, analytics SDKs — all reading along.</p></div></li>
+            <li><span class="x">✕</span><div><b>Hidden monetization</b><p>"Free" because the product is, quietly, you.</p></div></li>
+          </ul>
         </div>
-    </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section">
-            <div class="container hero-container">
-                <div class="hero-content fade-in">
-                    <h1 class="text-gradient">A period tracker that keeps your data where it belongs: with you.</h1>
-                    <p class="hero-subhead">Private. Local. Secure. Period tracking without the extraction.</p>
-                    <p class="coming-soon-text">COMING SOON</p>
-                    <div class="hero-ctas">
-                        <!-- <button class="btn btn-primary">Get it on the App Store</button> -->
-                        <!-- <div class="coming-soon-wrapper"> -->
-                        <a href="mailto:founder@thecyclevault.com?subject=I%20want%20to%20join%20the%20waitlist!&body=Hi!%20I'd%20like%20to%20try%20The%20CycleVault.%20Please%20let%20me%20know%20when%20it's%20available."
-                            class="btn btn-primary">Join the Waiting List</a>
-                        <!-- </div> -->
-                        <a href="#privacy" class="btn btn-secondary">See how we protect your data</a>
-                    </div>
-                </div>
-                <div class="hero-visual fade-in delay-1">
-                    <div class="iphone-mockup">
-                        <div class="iphone-screen">
-                            <img src="assets/app_screen.png" alt="The CycleVault App Screen" class="app-screen-img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Background Orbs -->
-            <div class="orb orb-1"></div>
-            <div class="orb orb-2"></div>
-        </section>
-
-        <!-- The Problem Section -->
-        <section id="problem" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Why CycleVault?</h2>
-                    <p>Because most period apps know too much.</p>
-                </div>
-                <div class="grid grid-2">
-                    <div class="card problem-card fade-in">
-                        <div class="icon-box warning">!</div>
-                        <h3>Data Over-Collection</h3>
-                        <p>Most apps track interactions, location, and identifiable data far beyond what's needed for a
-                            calendar.</p>
-                    </div>
-                    <div class="card problem-card fade-in delay-1">
-                        <div class="icon-box warning">Ads</div>
-                        <h3>You Are The Product</h3>
-                        <p>Many "free" apps monetize by building a profile of you to sell to advertisers and data
-                            brokers.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- The Difference Section -->
-        <section id="difference" class="section alt-bg">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="text-gradient">The CycleVault Difference</h2>
-                </div>
-                <div class="comparison-table fade-in">
-                    <div class="col most-apps">
-                        <h3>Most Apps</h3>
-                        <ul>
-                            <li class="negative">Data stored in cloud</li>
-                            <li class="negative">Required accounts & logins</li>
-                            <li class="negative">Third-party trackers</li>
-                            <li class="negative">Hidden subscription fees</li>
-                        </ul>
-                    </div>
-                    <div class="col cycle-vault">
-                        <h3>The CycleVault</h3>
-                        <ul>
-                            <li class="positive">Data stays locally on your iPhone</li>
-                            <li class="positive">No accounts, no logins</li>
-                            <li class="positive">Zero ads, zero trackers</li>
-                            <li class="positive">Transparent, fair model</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Feature Showcase Section (Sticky Scrollytelling) -->
-        <section id="features" class="feature-showcase">
-            <div class="container feature-showcase__inner">
-
-                <!-- Header (Spans Full Width of Grid) -->
-                <div class="section-header feature-showcase__main-header"
-                    style="grid-column: 1 / -1; text-align: center; margin-bottom: 40px; padding-top: 80px;">
-                    <h2 class="text-gradient">Designed for Calm</h2>
-                    <p style="max-width: 600px; margin: 0 auto;">A private, peaceful cycle tracker that respects your
-                        data and your peace of mind.</p>
-                </div>
-
-                <!-- Left Column: Scrolling Text -->
-                <div class="feature-showcase__text-col">
-
-                    <!-- 1. Welcome Sequence (Group: welcome) -->
-                    <div class="feature-showcase__panel" data-feature="welcome-1" data-group="welcome">
-                        <div class="feature-content fade-in">
-                            <div class="feature-icon">✨</div>
-                            <h3>Welcome Home</h3>
-                            <p>Your cycle journey begins here. We've stripped away the clutter to give you a serene,
-                                distraction-free dashboard. Instantly see your current phase, daily insights, and
-                                fertility status—beautifully visualized without overwhelming charts.</p>
-                        </div>
-                        <div class="feature-showcase__mobile-visual">
-                            <img src="assets/feature_welcome_1.jpeg" alt="Welcome Screen 1">
-                        </div>
-                    </div>
-
-                    <div class="feature-showcase__panel" data-feature="welcome-2" data-group="welcome">
-                        <div class="feature-content fade-in">
-                            <h3>No Account Needed</h3>
-                            <p>Privacy starts on day one. We believe your health data belongs to you, not a server.
-                                CycleVault requires no email, no password, and no account creation. Simply open the app
-                                and start tracking immediately.</p>
-                        </div>
-                        <div class="feature-showcase__mobile-visual">
-                            <img src="assets/feature_welcome_2.jpeg" alt="Welcome Screen 2">
-                        </div>
-                    </div>
-
-                    <!-- 2. Tracking Sequence (Group: tracking) -->
-                    <div class="feature-showcase__panel" data-feature="tracking-1" data-group="tracking">
-                        <div class="feature-content fade-in">
-                            <div class="feature-icon">🩸</div>
-                            <h3>Effortless Tracking</h3>
-                            <p>Logging should be quick, not a chore. With our streamlined interface, you can record flow
-                                intensity, symptoms, and mood in seconds. It’s designed to be intuitive and fast, so you
-                                can get back to living your life.</p>
-                        </div>
-                        <div class="feature-showcase__mobile-visual">
-                            <img src="assets/feature_tracking_3.jpeg" alt="Tracking Screen">
-                        </div>
-                    </div>
-
-                    <div class="feature-showcase__panel" data-feature="tracking-2" data-group="tracking">
-                        <div class="feature-content fade-in">
-                            <h3>Deep Insights</h3>
-                            <p>Unlock the power of your data. Swipe to reveal comprehensive trends and patterns in your
-                                cycle history. Understand your body's unique rhythm with crystal-clear analytics—all
-                                processed locally on your device.</p>
-                        </div>
-                        <div class="feature-showcase__mobile-visual">
-                            <img src="assets/feature_tracking_4.jpeg" alt="Insights Screen">
-                        </div>
-                    </div>
-
-                    <!-- 3. Calendar Sequence (Group: calendar) -->
-                    <div class="feature-showcase__panel" data-feature="calendar-1" data-group="calendar">
-                        <div class="feature-content fade-in">
-                            <div class="feature-icon">🗓️</div>
-                            <h3>Calm Calendar</h3>
-                            <p>Visualize your entire history with our gentle, dot-based calendar. It provides a clear,
-                                eagle-eye view of past cycles and future predictions, helping you plan ahead with
-                                confidence and ease.</p>
-                        </div>
-                        <div class="feature-showcase__mobile-visual">
-                            <img src="assets/feature_calendar_1.png" alt="Calendar View">
-                        </div>
-                    </div>
-
-                    <div class="feature-showcase__panel" data-feature="calendar-2" data-group="calendar">
-                        <div class="feature-content fade-in">
-                            <h3>Plan Ahead</h3>
-                            <p>Future planning made simple. Scroll smoothly through upcoming months to see predicted
-                                fertile windows and period dates. Whether you're planning a vacation or just your week,
-                                you'll always know what to expect.</p>
-                        </div>
-                        <div class="feature-showcase__mobile-visual">
-                            <img src="assets/feature_calendar_2.png" alt="Calendar Planning">
-                        </div>
-                    </div>
-
-                    <!-- 4. Details Sequence (Group: details) -->
-                    <div class="feature-showcase__panel" data-feature="details" data-group="details">
-                        <div class="feature-content fade-in">
-                            <div class="feature-icon">📝</div>
-                            <h3>Detailed History</h3>
-                            <p>Dive deeper into any specific day. Tap a date to view a complete breakdown of your logs,
-                                edit entries, or review personal notes. It's your personal health diary, organized and
-                                always accessible.</p>
-                        </div>
-                        <div class="feature-showcase__mobile-visual">
-                            <img src="assets/feature_details.jpeg" alt="Detailed History">
-                        </div>
-                    </div>
-
-                    <!-- 5. Export (Group: export) -->
-                    <div class="feature-showcase__panel" data-feature="export" data-group="export">
-                        <div class="feature-content fade-in">
-                            <div class="feature-icon">🔒</div>
-                            <h3>Total Control</h3>
-                            <p>Your data is portable and yours to keep. Export your entire history to a secure JSON file
-                                for backup or transfer. And if you ever choose to leave, you can wipe everything
-                                instantly with a single tap.</p>
-                        </div>
-                        <div class="feature-showcase__mobile-visual">
-                            <img src="assets/feature_export.jpeg" alt="Export Screen">
-                        </div>
-                    </div>
-
-                    <!-- 6. Lock (Group: lock) -->
-                    <div class="feature-showcase__panel" data-feature="lock" data-group="lock">
-                        <div class="feature-content fade-in">
-                            <div class="feature-icon">🛡️</div>
-                            <h3>Biometric Security</h3>
-                            <p>Add an extra layer of privacy to your most personal data. Secure The CycleVault with Face
-                                ID or Touch ID, ensuring that your history remains visible only to you, even if your
-                                phone is unlocked.</p>
-                        </div>
-                        <div class="feature-showcase__mobile-visual">
-                            <img src="assets/feature_lock.jpeg" alt="Lock Screen">
-                        </div>
-                    </div>
-
-                    <div class="section-footer-link fade-in" style="margin-top: 60px; text-align: left;">
-                        <a href="features.html" class="btn btn-outline">Read More About Our Features</a>
-                    </div>
-                </div>
-
-                <!-- Right Column: Sticky Phone -->
-                <div class="feature-showcase__sticky-col">
-                    <div class="feature-showcase__phone">
-                        <div class="feature-showcase__screen">
-                            <!-- 1. Welcome (Group: welcome) -->
-                            <img src="assets/feature_welcome_1.jpeg" class="screen-img active" data-img="welcome-1"
-                                alt="Welcome 1">
-                            <img src="assets/feature_welcome_2.jpeg" class="screen-img" data-img="welcome-2"
-                                alt="Welcome 2">
-
-                            <!-- 2. Tracking (Group: tracking) -->
-                            <img src="assets/feature_tracking_3.jpeg" class="screen-img" data-img="tracking-1"
-                                alt="Tracking 1">
-                            <img src="assets/feature_tracking_4.jpeg" class="screen-img" data-img="tracking-2"
-                                alt="Tracking 2">
-
-                            <!-- 3. Calendar (Group: calendar) -->
-                            <img src="assets/feature_calendar_1.png" class="screen-img" data-img="calendar-1"
-                                alt="Calendar 1">
-                            <img src="assets/feature_calendar_2.png" class="screen-img" data-img="calendar-2"
-                                alt="Calendar 2">
-
-                            <!-- 4. Details (Group: details) -->
-                            <img src="assets/feature_details.jpeg" class="screen-img" data-img="details"
-                                alt="Detailed History">
-
-                            <!-- 5. Export (Group: export) -->
-                            <img src="assets/feature_export.jpeg" class="screen-img" data-img="export" alt="Export">
-
-                            <!-- 6. Lock (Group: lock) -->
-                            <img src="assets/feature_lock.jpeg" class="screen-img" data-img="lock" alt="Lock">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Privacy Section -->
-        <section id="privacy" class="section privacy-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="text-gradient">Privacy isn't a feature.<br>It's the foundation.</h2>
-                </div>
-                <div class="grid grid-3">
-                    <div class="card privacy-card fade-in">
-                        <h3>Local-Only Data</h3>
-                        <p>Your cycle, symptoms, and notes stay encrypted on your device's filesystem.</p>
-                    </div>
-                    <div class="card privacy-card fade-in delay-1">
-                        <h3>No Trackers</h3>
-                        <p>We don't embed Facebook, Google, or any other third-party tracking SDKs.</p>
-                    </div>
-                    <div class="card privacy-card fade-in delay-2">
-                        <h3>You Control It</h3>
-                        <p>Export a backup or delete everything permanently with one button.</p>
-                    </div>
-                </div>
-                <div class="privacy-summary fade-in">
-                    <ul class="check-list">
-                        <li>No selling period data</li>
-                        <li>No third-party ads</li>
-                        <li>No dark patterns</li>
-                    </ul>
-                    <div style="text-align: center; margin-top: 2rem;">
-                        <a href="privacy.html" class="btn btn-outline">Read Full Privacy Policy</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pricing Section -->
-        <section id="pricing" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="text-gradient">Simple, Fair Pricing</h2>
-                </div>
-                <div class="grid grid-2 pricing-grid">
-                    <div class="card pricing-card fade-in">
-                        <div class="pricing-header">
-                            <h3>Free Forever</h3>
-                            <div class="price">$0</div>
-                        </div>
-                        <ul class="pricing-features">
-                            <li>Core cycle tracking</li>
-                            <li>Calendar & history</li>
-                            <li>Data export & delete</li>
-                            <li>No ads, no logins</li>
-                        </ul>
-                        <button class="btn btn-outline full-width" style="display: none;">Included on Day One</button>
-                        <div class="coming-soon-wrapper-card" style="text-align: center; margin-top: 1rem;">
-                            <span class="coming-soon-text-small"
-                                style="display: block; font-size: 0.8rem; font-weight: bold; margin-bottom: 0.5rem; letter-spacing: 1px;">COMING
-                                SOON</span>
-                            <a href="mailto:founder@thecyclevault.com?subject=I%20want%20to%20join%20the%20waitlist!&body=Hi!%20I'd%20like%20to%20try%20The%20CycleVault.%20Please%20let%20me%20know%20when%20it's%20available."
-                                class="btn btn-primary full-width">Join the Waiting List</a>
-                        </div>
-                    </div>
-                    <div class="card pricing-card premium fade-in delay-1">
-                        <div class="pricing-header">
-                            <h3>Premium</h3>
-                            <div class="price">Coming Soon</div>
-                        </div>
-                        <ul class="pricing-features">
-                            <li>All Free features</li>
-                            <li>Advanced insights & trends</li>
-                            <li>Private AI assistant</li>
-                            <li>Supporting indie dev</li>
-                        </ul>
-                        <button class="btn btn-primary full-width disabled">Join the Waitlist</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section id="faq" class="section alt-bg">
-            <div class="container narrow-container">
-                <div class="section-header">
-                    <h2>Frequently Asked Questions</h2>
-                </div>
-                <div class="faq-list">
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Do you sell or share my data?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>No. We never sell your data. In fact, we don't even have access to it. It lives on your
-                                iPhone.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Is my data stored in the cloud?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>No. By default, data is stored locally on your device. Backup depends on your personal
-                                iCloud Backup settings, which are encrypted by Apple.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            Do I need an account?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Nope. Just open the app and start tracking. No email or password required.</p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false">
-                            How does the app make money?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>We plan to introduce optional premium features for advanced insights. The core privacy
-                                and tracking features will remain free.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container footer-container">
-            <div class="footer-left">
-                <span class="footer-logo">The CycleVault</span>
-                <p class="copyright">&copy; 2026 The CycleVault. All rights reserved.</p>
-            </div>
-            <div class="footer-right">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="contact.html">Contact</a>
-            </div>
+        <div class="why-divider" aria-hidden="true">
+          <div class="why-arrow">
+            <svg viewBox="0 0 64 64" width="44" height="44"><path d="M14 32h36M36 18l14 14-14 14" fill="none" stroke="url(#wg)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="wg"><stop offset="0" stop-color="#FF8A95"/><stop offset="1" stop-color="#B6ADFF"/></linearGradient></defs></svg>
+          </div>
         </div>
-        <div class="container footer-disclaimer">
-            <p>The CycleVault is not a medical device and does not provide medical advice. Consult a doctor for health
-                concerns.</p>
-        </div>
-    </footer>
 
-    <script src="main.js"></script>
+        <div class="why-col why-col-good reveal reveal-late">
+          <header><span class="why-tag good">The CycleVault</span></header>
+          <ul class="why-list">
+            <li><span class="check">✓</span><div><b>Stays on your phone</b><p>Every entry is written to your device's encrypted storage. That's it.</p></div></li>
+            <li><span class="check">✓</span><div><b>No accounts, ever</b><p>Open the app and start logging. No email. No password.</p></div></li>
+            <li><span class="check">✓</span><div><b>Zero third-party SDKs</b><p>We don't embed analytics or ad networks. You can verify.</p></div></li>
+            <li><span class="check">✓</span><div><b>Transparent model</b><p>Free forever, with an optional premium tier that funds the work.</p></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES SCROLLYTELLING ============ -->
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow-center"><span class="dot"></span><span>Designed for calm</span></p>
+        <h2 class="section-title">A tracker that <em>breathes</em> with you.</h2>
+        <p class="section-sub">Every screen is built to be quiet, fast, and unambiguous. No streaks. No nudges. No noise.</p>
+      </div>
+    </div>
+
+    <div class="feature-stage">
+      <div class="feature-rail container">
+
+        <!-- Text panels -->
+        <div class="feature-text">
+          <article class="f-panel" data-feature="today">
+            <div class="f-num">01</div>
+            <h3>A home screen that calms, not counts.</h3>
+            <p>Today is the first thing you see — your phase, your prediction, a single tap to log. No streaks, no notifications, no guilt loop. Just the rhythm of your body, rendered gently.</p>
+            <ul class="f-bullets">
+              <li>Live phase ring with soft predictive halo</li>
+              <li>One-tap "Start period" with haptic confirmation</li>
+              <li>Quick log: flow, mood, symptoms — under 5 seconds</li>
+            </ul>
+          </article>
+
+          <article class="f-panel" data-feature="calendar">
+            <div class="f-num">02</div>
+            <h3>A calendar you can read in a glance.</h3>
+            <p>Past periods, today, and predicted windows live on the same calm grid. Coral dots are real. Dashed circles are predictions. The little ones underneath whisper your phases.</p>
+            <ul class="f-bullets">
+              <li>Three states: logged · today · predicted</li>
+              <li>Phase dots: menstrual, follicular, ovulatory, luteal</li>
+              <li>Swipe months with smooth, decelerating motion</li>
+            </ul>
+          </article>
+
+          <article class="f-panel" data-feature="history">
+            <div class="f-num">03</div>
+            <h3>Your history, beautifully detailed.</h3>
+            <p>Tap any cycle to open a clean ledger of daily logs — flow, mood, symptoms, discharge — each saved as soft pills. Edit anything; nothing is permanent unless you say so.</p>
+            <ul class="f-bullets">
+              <li>Per-cycle summary: length, regularity, flow profile</li>
+              <li>Daily cards with editable symptom and color pills</li>
+              <li>Cycle-over-cycle comparison at a tap</li>
+            </ul>
+          </article>
+
+          <article class="f-panel" data-feature="insights">
+            <div class="f-num">04</div>
+            <h3>Insights without the dashboard fatigue.</h3>
+            <p>A single, calm chart of your last six cycles — and the one number that matters today: when your next period is likely to begin. We don't predict your fertility. We trust your body.</p>
+            <ul class="f-bullets">
+              <li>Cycle length trend with smooth spline interpolation</li>
+              <li>Current phase, with gentle plain-language context</li>
+              <li>"Likely" — never "guaranteed". Predictions stay honest.</li>
+            </ul>
+          </article>
+
+          <article class="f-panel" data-feature="lock">
+            <div class="f-num">05</div>
+            <h3>Locked when you want it locked.</h3>
+            <p>Turn on biometric lock and your cycle becomes invisible to anyone holding your phone — partners, family, customs officers. Face ID and Touch ID, no passcode storage of our own.</p>
+            <ul class="f-bullets">
+              <li>Face ID / Touch ID lock with instant unlock</li>
+              <li>Optional auto-lock on app background</li>
+              <li>Decoy mode (planned): replace the icon, hide the app</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Sticky phone column with switching screens -->
+        <div class="feature-sticky">
+          <div class="phone phone-stage" data-tilt>
+            <div class="notch"></div>
+            <div class="screen">
+
+              <!-- Today screen (reuse) -->
+              <div class="app app-today f-screen f-screen-active" data-screen="today">
+                <div class="status-bar"><span class="sb-time">9:41</span><span class="sb-right"><span class="sb-sig"></span><span class="sb-wifi"></span><span class="sb-bat"></span></span></div>
+                <div class="today-head">
+                  <h2 class="today-title">The CycleVault</h2>
+                  <p class="today-hi">Hi, Queen <span class="sparkle">✦</span></p>
+                  <p class="today-date">FEB 11</p>
+                </div>
+                <div class="today-card">
+                  <div class="ring">
+                    <svg viewBox="0 0 200 200" class="ring-svg">
+                      <circle cx="100" cy="100" r="86" fill="none" stroke="#F1ECF7" stroke-width="10"/>
+                      <circle class="ring-prog" cx="100" cy="100" r="86" fill="none" stroke="url(#ringGrad)" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="25 75" transform="rotate(-90 100 100)"/>
+                    </svg>
+                    <div class="ring-inner">
+                      <div class="ring-sparkle"><svg viewBox="0 0 24 24" width="28" height="28"><path d="M12 2 13.5 9 21 10.5 13.5 12 12 19.5 10.5 12 3 10.5 10.5 9z" fill="#A89BFF"/></svg></div>
+                      <div class="ring-label">Next period in</div>
+                      <div class="ring-days">~21 <span>days</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="phase-card">
+                  <div class="phase-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 3 14 10 21 12 14 14 12 21 10 14 3 12 10 10z" fill="#FF8A95"/></svg></div>
+                  <div class="phase-text"><div class="phase-eyebrow">ESTIMATED PHASE</div><div class="phase-name">Follicular</div><div class="phase-sub">Energy levels may start rising.</div></div>
+                </div>
+                <button class="cta-period">Start period</button>
+                <div class="log-preview">
+                  <div class="log-head"><span class="log-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#A89BFF" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M16 3 L20 7"/></svg></span><span>Log Today</span></div>
+                  <div class="log-row"><span class="log-sub">Flow Intensity</span></div>
+                  <div class="flow-chips"><span class="chip">Light</span><span class="chip chip-active">Medium</span><span class="chip">Heavy</span></div>
+                </div>
+                <div class="tabbar">
+                  <span class="tab tab-active"><span class="tab-ico tab-today"></span><span>Today</span></span>
+                  <span class="tab"><span class="tab-ico tab-cal"></span><span>Calendar</span></span>
+                  <span class="tab"><span class="tab-ico tab-hist"></span><span>History</span></span>
+                  <span class="tab"><span class="tab-ico tab-learn"></span><span>Learn</span></span>
+                  <span class="tab"><span class="tab-ico tab-set"></span><span>Settings</span></span>
+                </div>
+              </div>
+
+              <!-- Calendar screen -->
+              <div class="app app-cal f-screen" data-screen="calendar">
+                <div class="status-bar"><span class="sb-time">9:41</span><span class="sb-right"><span class="sb-sig"></span><span class="sb-wifi"></span><span class="sb-bat"></span></span></div>
+                <div class="cal-head">
+                  <h2 class="cal-title">Calendar</h2>
+                  <div class="cal-pill"><span>Today</span><span class="cal-plus">+</span></div>
+                </div>
+                <div class="cal-month">
+                  <button class="cal-nav cal-nav-l" aria-hidden="true">‹</button>
+                  <div class="cal-month-wrap">
+                    <div class="cal-month-name">February 2026</div>
+                    <div class="cal-phase">Estimated phase today: <b>Follicular</b> <span class="sparkle">✦</span></div>
+                  </div>
+                  <button class="cal-nav cal-nav-r" aria-hidden="true">›</button>
+                </div>
+                <div class="cal-dow"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span></div>
+                <div class="cal-grid">
+                  <!-- Row 1 -->
+                  <div class="cd"><span class="cd-n">1</span><span class="cd-dot dot-lut"></span></div>
+                  <div class="cd"><span class="cd-n">2</span><span class="cd-dot dot-lut"></span></div>
+                  <div class="cd"><span class="cd-n">3</span><span class="cd-dot dot-lut"></span></div>
+                  <div class="cd cd-period"><span class="cd-n">4</span></div>
+                  <div class="cd cd-period"><span class="cd-n">5</span></div>
+                  <div class="cd cd-period"><span class="cd-n">6</span></div>
+                  <div class="cd cd-period"><span class="cd-n">7</span></div>
+                  <!-- Row 2 -->
+                  <div class="cd cd-period"><span class="cd-n">8</span></div>
+                  <div class="cd"><span class="cd-n">9</span><span class="cd-dot dot-fol"></span></div>
+                  <div class="cd"><span class="cd-n">10</span><span class="cd-dot dot-fol"></span></div>
+                  <div class="cd"><span class="cd-n">11</span><span class="cd-dot dot-fol"></span></div>
+                  <div class="cd cd-today"><span class="cd-n">12</span><span class="cd-dot dot-fol"></span></div>
+                  <div class="cd"><span class="cd-n">13</span><span class="cd-dot dot-fol"></span></div>
+                  <div class="cd"><span class="cd-n">14</span><span class="cd-dot dot-fol"></span></div>
+                  <!-- Row 3 -->
+                  <div class="cd"><span class="cd-n">15</span><span class="cd-dot dot-ov"></span></div>
+                  <div class="cd"><span class="cd-n">16</span><span class="cd-dot dot-ov"></span></div>
+                  <div class="cd"><span class="cd-n">17</span><span class="cd-dot dot-ov"></span></div>
+                  <div class="cd"><span class="cd-n">18</span><span class="cd-dot dot-ov"></span></div>
+                  <div class="cd"><span class="cd-n">19</span><span class="cd-dot dot-lut"></span></div>
+                  <div class="cd"><span class="cd-n">20</span><span class="cd-dot dot-lut"></span></div>
+                  <div class="cd"><span class="cd-n">21</span><span class="cd-dot dot-lut"></span></div>
+                  <!-- Row 4 -->
+                  <div class="cd"><span class="cd-n">22</span><span class="cd-dot dot-lut"></span></div>
+                  <div class="cd"><span class="cd-n">23</span><span class="cd-dot dot-lut"></span></div>
+                  <div class="cd"><span class="cd-n">24</span><span class="cd-dot dot-lut"></span></div>
+                  <div class="cd"><span class="cd-n">25</span><span class="cd-dot dot-lut"></span></div>
+                  <div class="cd"><span class="cd-n">26</span><span class="cd-dot dot-lut"></span></div>
+                  <div class="cd"><span class="cd-n">27</span><span class="cd-dot dot-lut"></span></div>
+                  <div class="cd"><span class="cd-n">28</span><span class="cd-dot dot-lut"></span></div>
+                </div>
+                <div class="cal-legend">
+                  <span><span class="lg-d lg-period"></span>Period</span>
+                  <span><span class="lg-d lg-pred"></span>Predicted</span>
+                  <span><span class="lg-d lg-today"></span>Today</span>
+                </div>
+                <div class="cal-legend cal-legend-2">
+                  <span><span class="lg-tiny lg-men"></span>Menstrual</span>
+                  <span><span class="lg-tiny lg-fol"></span>Follicular</span>
+                  <span><span class="lg-tiny lg-ov"></span>Ovulatory</span>
+                  <span><span class="lg-tiny lg-lut"></span>Luteal</span>
+                </div>
+                <div class="tabbar">
+                  <span class="tab"><span class="tab-ico tab-today"></span><span>Today</span></span>
+                  <span class="tab tab-active"><span class="tab-ico tab-cal"></span><span>Calendar</span></span>
+                  <span class="tab"><span class="tab-ico tab-hist"></span><span>History</span></span>
+                  <span class="tab"><span class="tab-ico tab-learn"></span><span>Learn</span></span>
+                  <span class="tab"><span class="tab-ico tab-set"></span><span>Settings</span></span>
+                </div>
+              </div>
+
+              <!-- History screen -->
+              <div class="app app-hist f-screen" data-screen="history">
+                <div class="status-bar"><span class="sb-time">9:41</span><span class="sb-right"><span class="sb-sig"></span><span class="sb-wifi"></span><span class="sb-bat"></span></span></div>
+                <div class="hist-head">
+                  <button class="hist-back" aria-hidden="true">‹</button>
+                  <button class="hist-edit">Edit</button>
+                </div>
+                <h2 class="hist-title">Cycle Details</h2>
+                <div class="hist-summary">
+                  <div>
+                    <div class="hist-row"><b>Start:</b> Jan 7</div>
+                    <div class="hist-row hist-muted">End: Jan 12</div>
+                  </div>
+                  <div class="hist-right">
+                    <div class="hist-len">28 <span>days</span></div>
+                    <span class="hist-tag">Regular</span>
+                  </div>
+                </div>
+                <div class="hist-section-h">Daily Logs</div>
+                <div class="hist-log">
+                  <div class="hist-log-top"><b>Jan 7</b><span class="hist-pill hist-pill-light">Light</span></div>
+                  <div class="hist-chips"><span class="hchip hchip-purple">Excessive Sleeping</span></div>
+                  <div class="hist-chips"><span class="hchip hchip-yellow">Yellow</span><span class="hchip hchip-blue">Sticky</span><span class="hchip hchip-purple">Clumpy</span></div>
+                </div>
+                <div class="hist-log">
+                  <div class="hist-log-top"><b>Jan 8</b><span class="hist-pill hist-pill-light">Light</span></div>
+                  <div class="hist-empty">No symptoms</div>
+                </div>
+                <div class="hist-log">
+                  <div class="hist-log-top"><b>Jan 9</b><span class="hist-pill hist-pill-med">Medium</span></div>
+                  <div class="hist-empty">No symptoms</div>
+                  <div class="hist-chips"><span class="hchip hchip-blue">Sticky</span><span class="hchip hchip-purple">Clumpy</span></div>
+                </div>
+                <div class="tabbar">
+                  <span class="tab"><span class="tab-ico tab-today"></span><span>Today</span></span>
+                  <span class="tab"><span class="tab-ico tab-cal"></span><span>Calendar</span></span>
+                  <span class="tab tab-active"><span class="tab-ico tab-hist"></span><span>History</span></span>
+                  <span class="tab"><span class="tab-ico tab-learn"></span><span>Learn</span></span>
+                  <span class="tab"><span class="tab-ico tab-set"></span><span>Settings</span></span>
+                </div>
+              </div>
+
+              <!-- Insights screen -->
+              <div class="app app-ins f-screen" data-screen="insights">
+                <div class="status-bar"><span class="sb-time">9:41</span><span class="sb-right"><span class="sb-sig"></span><span class="sb-wifi"></span><span class="sb-bat"></span></span></div>
+                <div class="ins-head">
+                  <h2 class="ins-title">Insights</h2>
+                  <p class="ins-sub">Trends from your last six cycles</p>
+                </div>
+                <div class="ins-card ins-next">
+                  <div class="ins-eyebrow">Next period</div>
+                  <div class="ins-date"><span class="ins-month">Oct</span> <span class="ins-day">15</span> <span class="ins-in">in 5 days</span></div>
+                </div>
+                <div class="ins-card ins-len">
+                  <div class="ins-len-l">
+                    <div class="ins-eyebrow">Average cycle length</div>
+                    <div class="ins-num">28 <span>days</span></div>
+                  </div>
+                  <div class="ins-len-r">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#A89BFF" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg>
+                  </div>
+                </div>
+                <div class="ins-card ins-phase">
+                  <div>
+                    <div class="ins-eyebrow">Current phase</div>
+                    <div class="ins-num ins-num-sm">Follicular</div>
+                  </div>
+                  <span class="ins-leaf">
+                    <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 20c0-8 7-15 16-16-1 9-8 16-16 16z" fill="#FF8A95"/><path d="M4 20l8-8" stroke="#fff" stroke-width="1.6" fill="none"/></svg>
+                  </span>
+                </div>
+                <div class="ins-card ins-chart">
+                  <div class="ins-eyebrow">Cycle length trends</div>
+                  <svg class="trend-svg" viewBox="0 0 320 130" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id="trendArea" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#A89BFF" stop-opacity="0.4"/>
+                        <stop offset="1" stop-color="#A89BFF" stop-opacity="0"/>
+                      </linearGradient>
+                    </defs>
+                    <line x1="0" y1="35" x2="320" y2="35" stroke="#EEE9F4" stroke-dasharray="2 4"/>
+                    <line x1="0" y1="75" x2="320" y2="75" stroke="#EEE9F4" stroke-dasharray="2 4"/>
+                    <path class="trend-area" d="M0,90 C40,80 60,55 80,55 C100,55 110,35 140,40 C160,43 170,75 200,72 C225,70 235,38 270,45 C295,50 305,68 320,68 L320,130 L0,130 Z" fill="url(#trendArea)"/>
+                    <path class="trend-line" d="M0,90 C40,80 60,55 80,55 C100,55 110,35 140,40 C160,43 170,75 200,72 C225,70 235,38 270,45 C295,50 305,68 320,68" fill="none" stroke="#A89BFF" stroke-width="2.4" stroke-linecap="round"/>
+                    <g class="trend-dots" fill="#A89BFF">
+                      <circle cx="20" cy="86" r="3"/><circle cx="80" cy="55" r="3"/><circle cx="140" cy="40" r="3"/><circle cx="200" cy="72" r="3"/><circle cx="260" cy="46" r="3"/><circle cx="310" cy="68" r="3"/>
+                    </g>
+                    <g class="trend-labels" font-family="Inter" font-size="9" fill="#9B95AE">
+                      <text x="14" y="120">Jan</text><text x="73" y="120">Feb</text><text x="133" y="120">Mar</text><text x="193" y="120">Apr</text><text x="253" y="120">May</text><text x="298" y="120">Jun</text>
+                    </g>
+                  </svg>
+                </div>
+                <div class="tabbar">
+                  <span class="tab"><span class="tab-ico tab-today"></span><span>Today</span></span>
+                  <span class="tab"><span class="tab-ico tab-cal"></span><span>Calendar</span></span>
+                  <span class="tab"><span class="tab-ico tab-hist"></span><span>History</span></span>
+                  <span class="tab tab-active"><span class="tab-ico tab-learn"></span><span>Learn</span></span>
+                  <span class="tab"><span class="tab-ico tab-set"></span><span>Settings</span></span>
+                </div>
+              </div>
+
+              <!-- Lock screen -->
+              <div class="app app-lock f-screen" data-screen="lock">
+                <div class="status-bar"><span class="sb-time">9:41</span><span class="sb-right"><span class="sb-sig"></span><span class="sb-wifi"></span><span class="sb-bat"></span></span></div>
+                <div class="lock-stage">
+                  <div class="lock-orb">
+                    <div class="lock-icon">
+                      <svg viewBox="0 0 24 24" width="42" height="42" fill="none" stroke="#FF7A85" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2.5" fill="#FF7A85" stroke="none"/><path d="M8 11V8a4 4 0 1 1 8 0v3" stroke="#FF7A85"/></svg>
+                    </div>
+                    <div class="lock-pulse"></div>
+                    <div class="lock-pulse lock-pulse-2"></div>
+                  </div>
+                  <h3 class="lock-title">The CycleVault Locked</h3>
+                  <p class="lock-sub">Authentication required to access your data.</p>
+                  <button class="lock-btn">Unlock with Face ID</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Sticky-column progress -->
+          <div class="feature-progress" aria-hidden="true">
+            <span data-pi="0" class="fp-dot fp-active"></span>
+            <span data-pi="1" class="fp-dot"></span>
+            <span data-pi="2" class="fp-dot"></span>
+            <span data-pi="3" class="fp-dot"></span>
+            <span data-pi="4" class="fp-dot"></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRIVACY ============ -->
+  <section id="privacy" class="privacy">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow-center"><span class="dot"></span><span>Privacy by architecture</span></p>
+        <h2 class="section-title">Privacy isn't a feature.<br /><em>It's the foundation.</em></h2>
+        <p class="section-sub">The CycleVault is engineered so that there's nothing about you to leak in the first place.</p>
+      </div>
+
+      <div class="privacy-grid">
+        <div class="priv-card reveal">
+          <div class="priv-ico">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#FF7A85" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.4 8 9 4.6-.6 8-4.5 8-9V6z"/></svg>
+          </div>
+          <h3>Local-only data</h3>
+          <p>Everything you log — cycles, symptoms, notes — is written to your phone's encrypted on-device storage. We have no servers that see it.</p>
+        </div>
+        <div class="priv-card reveal reveal-late">
+          <div class="priv-ico">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#A89BFF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M5 5l14 14"/></svg>
+          </div>
+          <h3>No trackers</h3>
+          <p>No Facebook SDK. No Google Analytics. No third-party crash reporters. The binary you install is the entire story.</p>
+        </div>
+        <div class="priv-card reveal">
+          <div class="priv-ico">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#FF7A85" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/><circle cx="18" cy="17" r="3"/></svg>
+          </div>
+          <h3>You control it</h3>
+          <p>Export your full history to a portable JSON file whenever you want. Or wipe everything with a single, irreversible tap.</p>
+        </div>
+        <div class="priv-card reveal reveal-late">
+          <div class="priv-ico">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#A89BFF" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2v20M2 12h20"/></svg>
+          </div>
+          <h3>Open to audit</h3>
+          <p>Our privacy summary, data model, and storage details are documented in plain English. If you spot something, tell us.</p>
+        </div>
+      </div>
+
+      <div class="privacy-strip reveal">
+        <div class="ps-pill"><span class="ps-check">✓</span>No selling period data</div>
+        <div class="ps-pill"><span class="ps-check">✓</span>No third-party ads</div>
+        <div class="ps-pill"><span class="ps-check">✓</span>No dark patterns</div>
+        <div class="ps-pill"><span class="ps-check">✓</span>No streaks or guilt loops</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LEARN ============ -->
+  <section id="learn" class="learn">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow-center"><span class="dot"></span><span>The CycleVault Library</span></p>
+        <h2 class="section-title">Calm, careful writing about <em>your body.</em></h2>
+        <p class="section-sub">A small, hand-edited library of plain-language articles — written to inform, not to alarm. No SEO bait, no scary headlines.</p>
+      </div>
+      <div class="learn-grid">
+        <a class="learn-card reveal" href="learn/the-menstrual-cycle-explained-simply.html">
+          <div class="learn-thumb learn-thumb-1"><img src="learn/imgs/1.png" alt="" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" loading="lazy" /></div>
+          <div class="learn-meta">4 min read · Foundations</div>
+          <h3>The menstrual cycle, explained simply.</h3>
+          <p>What's actually happening across the four phases — and why your body isn't a clock.</p>
+        </a>
+        <a class="learn-card reveal reveal-late" href="learn/why-period-symptoms-can-feel-different-every-month.html">
+          <div class="learn-thumb learn-thumb-2"><img src="learn/imgs/12.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" loading="lazy" /></div>
+          <div class="learn-meta">5 min read · Variation</div>
+          <h3>Why your symptoms feel different every month.</h3>
+          <p>Hormones don't act alone. Sleep, stress, and life shape every cycle.</p>
+        </a>
+        <a class="learn-card reveal" href="learn/what-tracking-cant-predict.html">
+          <div class="learn-thumb learn-thumb-3"><img src="learn/imgs/9.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;" loading="lazy" /></div>
+          <div class="learn-meta">4 min read · Tracking</div>
+          <h3>What tracking can — and can't — predict.</h3>
+          <p>An honest look at the limits of any cycle app, including ours.</p>
+        </a>
+      </div>
+      <div class="reveal" style="text-align: center; margin-top: 36px;">
+        <a href="learn/index.html" class="btn btn-ghost">Browse the full library <span class="btn-arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow-center"><span class="dot"></span><span>Simple, fair</span></p>
+        <h2 class="section-title">Free forever. Premium when you're ready.</h2>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card reveal">
+          <div class="price-head">
+            <h3>Free</h3>
+            <div class="price-num">$0</div>
+            <div class="price-sub">Everything you need to track calmly.</div>
+          </div>
+          <ul class="price-list">
+            <li><span class="check">✓</span>Daily logging — flow, mood, symptoms</li>
+            <li><span class="check">✓</span>Calendar with predictions</li>
+            <li><span class="check">✓</span>Full history & export</li>
+            <li><span class="check">✓</span>Face ID lock</li>
+            <li><span class="check">✓</span>No ads, no accounts</li>
+          </ul>
+          <a class="btn btn-ghost btn-block" href="#waitlist">Join the waitlist</a>
+        </div>
+        <div class="price-card price-card-premium reveal reveal-late">
+          <div class="price-ribbon">Coming later</div>
+          <div class="price-head">
+            <h3>Premium</h3>
+            <div class="price-num price-num-grad">Supporter</div>
+            <div class="price-sub">Funds the indie work behind the app.</div>
+          </div>
+          <ul class="price-list">
+            <li><span class="check check-grad">✓</span>Everything in Free</li>
+            <li><span class="check check-grad">✓</span>Deeper trend insights</li>
+            <li><span class="check check-grad">✓</span>Private, on-device AI summaries</li>
+            <li><span class="check check-grad">✓</span>Custom themes & widgets</li>
+            <li><span class="check check-grad">✓</span>Priority support</li>
+          </ul>
+          <a class="btn btn-primary btn-block" href="#waitlist">Join the waitlist</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="faq">
+    <div class="container container-narrow">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow-center"><span class="dot"></span><span>Questions, answered</span></p>
+        <h2 class="section-title">Frequently asked.</h2>
+      </div>
+      <div class="faq-list reveal">
+        <details class="faq-item" open><summary><span class="faq-q">Do you sell or share my data?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>No. We never sell your data — and more importantly, we don't have access to it. Your cycle history lives on your phone in encrypted storage. There's no server-side database to sell from.</p></div></details>
+        <details class="faq-item"><summary><span class="faq-q">Is my data stored in the cloud?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>By default, no. Everything is stored locally. If you have iCloud Backup turned on for your device generally, your encrypted CycleVault data may be included in that backup — controlled by Apple's encryption keys, not ours.</p></div></details>
+        <details class="faq-item"><summary><span class="faq-q">Do I need to create an account?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>No. There are no accounts to create, ever. You open the app and you start tracking. No email, password, phone number, or Sign-in-with-Apple required.</p></div></details>
+        <details class="faq-item"><summary><span class="faq-q">How will The CycleVault make money?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>The core experience — tracking, predictions, calendar, history, export, lock — will be free forever. An optional Supporter tier will eventually unlock deeper insights and themes, and that's how we keep the lights on. No ads. No data deals.</p></div></details>
+        <details class="faq-item"><summary><span class="faq-q">Will it work on Android?</span><span class="faq-plus" aria-hidden="true"></span></summary><div class="faq-body"><p>iOS first. Android is on the roadmap once the core experience is polished and stable. Sign up for the waitlist and we'll tell you the moment it lands.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WAITLIST CTA ============ -->
+  <section id="waitlist" class="cta">
+    <div class="container">
+      <div class="cta-card reveal">
+        <div class="cta-aura"></div>
+        <div class="cta-stars">
+          <span class="cs cs1">✦</span><span class="cs cs2">✦</span><span class="cs cs3">✦</span><span class="cs cs4">✦</span><span class="cs cs5">✦</span>
+        </div>
+        <p class="cta-eyebrow">COMING SOON · iOS</p>
+        <h2 class="cta-title">Be among the first to <em>track quietly.</em></h2>
+        <p class="cta-sub">Join the waitlist and we'll email you exactly once: the day The CycleVault is available on the App Store. No newsletters, no nudges.</p>
+        <form class="cta-form" id="waitlist-form" action="https://formspree.io/f/xbdbkybb" method="POST">
+          <input type="email" name="email" required placeholder="you@example.com" aria-label="Email" autocomplete="email" />
+          <input type="hidden" name="_subject" value="New CycleVault waitlist signup" />
+          <input type="hidden" name="source" value="thecyclevault.com homepage" />
+          <button type="submit" class="btn btn-primary">
+            <span class="cta-btn-label">Join the waitlist</span>
+            <span class="cta-btn-spinner" aria-hidden="true"></span>
+          </button>
+          <span class="cta-thanks">We'll never share this email. Promise.</span>
+          <span class="cta-error" role="alert"></span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="foot">
+    <div class="container foot-inner">
+      <div class="foot-brand">
+        <span class="brand-mark"><img src="images/Logo_no_background.png" alt="" /></span>
+        <div>
+          <div class="foot-title">The CycleVault</div>
+          <div class="foot-tag">Private. Local. Yours.</div>
+        </div>
+      </div>
+      <div class="foot-cols">
+        <div><div class="foot-h">Product</div><a href="features.html">Features</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></div>
+        <div><div class="foot-h">Company</div><a href="learn/index.html">Learn</a><a href="contact.html">Contact</a></div>
+        <div><div class="foot-h">Legal</div><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a></div>
+      </div>
+    </div>
+    <div class="container foot-bottom">
+      <p>© 2026 The CycleVault. Made calmly.</p>
+      <p class="foot-disc">The CycleVault is not a medical device and doesn't provide medical advice. Consult a clinician for health concerns.</p>
+    </div>
+  </footer>
+
+</main>
+
+<script src="site.js"></script>
 </body>
-
 </html>

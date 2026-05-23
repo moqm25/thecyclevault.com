@@ -1,0 +1,41 @@
+# The CycleVault
+
+> The CycleVault is a calm, privacy-first menstrual cycle tracking app for Apple platforms. It runs fully on-device, requires no account, and frames tracking as a quiet personal practice rather than a feed of notifications.
+
+The CycleVault is currently pre-launch with an open waitlist. The marketing site at thecyclevault.com explains the product philosophy, feature set, privacy posture, and pricing intent, and hosts a small library of educational articles about menstrual cycles, hormones, and related topics.
+
+Key product principles:
+- No account required — all data stays on the user's device
+- No advertising, no third-party trackers, no data brokers
+- Calm, low-pressure UX — no streaks, gamification, or push-notification spam
+- Designed for iOS, iPadOS, watchOS, and macOS
+
+## Pages
+- [Home](https://thecyclevault.com/index.html): Product overview, why-it-exists, pricing intent, FAQ, waitlist signup
+- [Features](https://thecyclevault.com/features.html): Detailed walkthrough of tracking, calendar, insights, export, and lock features
+- [Privacy](https://thecyclevault.com/privacy.html): Privacy posture and data handling
+- [Terms](https://thecyclevault.com/terms.html): Terms of service
+- [Contact](https://thecyclevault.com/contact.html): Support, founder, and privacy contact addresses
+
+## Learn (educational articles)
+- [Learn index](https://thecyclevault.com/learn/index.html): Topic hub for cycle education
+- [The menstrual cycle explained simply](https://thecyclevault.com/learn/the-menstrual-cycle-explained-simply.html)
+- [What a period actually is](https://thecyclevault.com/learn/what-a-period-actually-is.html)
+- [What hormones are doing during your cycle](https://thecyclevault.com/learn/what-hormones-are-doing-during-your-cycle.html)
+- [What normal periods really look like](https://thecyclevault.com/learn/what-normal-periods-really-look-like.html)
+- [Why cycle length can change from month to month](https://thecyclevault.com/learn/why-cycle-length-can-change-from-month-to-month.html)
+- [Why period symptoms can feel different every month](https://thecyclevault.com/learn/why-period-symptoms-can-feel-different-every-month.html)
+- [Cramps — why they happen and why they vary](https://thecyclevault.com/learn/cramps-why-they-happen-and-why-they-vary.html)
+- [Fatigue around your period](https://thecyclevault.com/learn/fatigue-around-your-period.html)
+- [Mood changes across the cycle](https://thecyclevault.com/learn/mood-changes-across-the-cycle.html)
+- [How stress shows up in your cycle](https://thecyclevault.com/learn/how-stress-shows-up-in-your-cycle.html)
+- [How periods can change across life stages](https://thecyclevault.com/learn/how-periods-can-change-across-life-stages.html)
+- [Spotting vs a period](https://thecyclevault.com/learn/spotting-vs-a-period.html)
+- [What tracking your cycle can help you notice](https://thecyclevault.com/learn/what-tracking-your-cycle-can-help-you-notice.html)
+- [What tracking can't predict](https://thecyclevault.com/learn/what-tracking-cant-predict.html)
+- [When it makes sense to talk to a doctor](https://thecyclevault.com/learn/when-it-makes-sense-to-talk-to-a-doctor.html)
+
+## Optional
+- [Sitemap](https://thecyclevault.com/sitemap.xml)
+- [Robots](https://thecyclevault.com/robots.txt)
+- [Security policy](https://thecyclevault.com/.well-known/security.txt)

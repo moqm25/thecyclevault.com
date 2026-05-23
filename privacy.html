@@ -1,246 +1,168 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title + Description (Google snippet) -->
-    <title>Privacy Policy - The CycleVault</title>
-    <meta name="description"
-        content="Privacy Policy for The CycleVault. We respect your data and keep it local to your device.">
-
-    <!-- Canonical (prevents duplicate URL variants) -->
-    <link rel="canonical" href="https://thecyclevault.com/privacy.html">
-
-    <!-- Open Graph (most platforms + sometimes Google) -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://thecyclevault.com/privacy.html">
-    <meta property="og:title" content="The CycleVault - Privacy Policy">
-    <meta property="og:description"
-        content="Privacy Policy for The CycleVault. We respect your data and keep it local to your device.">
-    <meta property="og:image" content="https://thecyclevault.com/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="The CycleVault">
-
-
-    <!-- Twitter (fallback + forces large preview on many platforms) -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The CycleVault - Privacy Policy">
-    <meta name="twitter:description"
-        content="Privacy Policy for The CycleVault. We respect your data and keep it local to your device.">
-    <meta name="twitter:image" content="https://thecyclevault.com/og-image.png">
-
-
-
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="images/cyclevault-icon-light.png">
-
-    <style>
-        /* Specific styles for Privacy Policy page */
-        .policy-header {
-            padding: 120px 0 60px;
-            text-align: center;
-        }
-
-        .policy-content {
-            padding-bottom: 100px;
-        }
-
-        .policy-card {
-            margin-bottom: 32px;
-        }
-
-        .policy-list {
-            list-style: disc;
-            margin-left: 20px;
-            margin-top: 10px;
-            color: var(--text-muted);
-        }
-
-        .policy-list li {
-            margin-bottom: 8px;
-        }
-    </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#A89BFF" />
+<title>Privacy Policy — The CycleVault</title>
+<meta name="description" content="Privacy Policy for The CycleVault. Your cycle data stays on your device. We don't have servers that see it." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="site.css?v=15" />
+<script>document.documentElement.classList.add('js-on');</script>
+<script>(function(){try{var t=localStorage.getItem('cv-theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches))document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
 </head>
-
 <body>
 
-    <!-- Global Ambient Background -->
-    <div class="global-ambient-background">
-        <div class="orb-float orb-1"></div>
-        <div class="orb-float orb-2"></div>
-        <div class="orb-float orb-3"></div>
+<div class="ambient" aria-hidden="true">
+  <div class="wash wash-a"></div>
+  <div class="wash wash-b"></div>
+  <div class="wash wash-c"></div>
+  <div class="grain"></div>
+</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true"><img src="images/Logo_no_background.png" alt="" /></span>
+      <span class="brand-text">The CycleVault</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html#why">Why</a>
+      <a href="features.html">Features</a>
+      <a href="privacy.html" style="color: var(--ink);">Privacy</a>
+      <a href="learn/index.html">Learn</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+      <svg class="ico-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="ico-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+    </button>
+    <a href="index.html#waitlist" class="nav-cta">Join the waitlist <span aria-hidden="true">→</span></a>
+  </div>
+</header>
+
+<main>
+
+  <section class="subpage-hero">
+    <div class="container">
+      <p class="eyebrow eyebrow-center"><span class="dot"></span><span>Privacy by architecture</span></p>
+      <h1 class="reveal">Privacy isn't a feature. <em>It's the foundation.</em></h1>
+      <p class="subpage-sub reveal">We've engineered The CycleVault so there's nothing about you to leak in the first place. Here's exactly what that means, in plain English.</p>
+      <div class="policy-meta-wrap reveal" style="margin-top: 24px;">
+        <span class="policy-meta">Last updated: December 18, 2025</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="policy-stack container container-narrow">
+
+    <div class="policy-card reveal">
+      <p>The CycleVault ("we," "our," "us") is committed to protecting your privacy and treating your cycle-related data with respect. This Privacy Policy explains how The CycleVault website and companion iOS app handle information.</p>
+      <p>By using The CycleVault app or visiting thecyclevault.com, you agree to the terms in this Privacy Policy.</p>
     </div>
 
-    <!-- Sticky Header -->
-    <header id="main-header">
-        <div class="container header-container">
-            <a href="index.html" class="logo">
-                <img src="images/cyclevault-icon-light.png" alt="CycleVault Logo" class="logo-icon">
-                <span class="logo-text">The CycleVault</span>
-            </a>
+    <div class="policy-card reveal">
+      <h2><span class="policy-num">1</span> What we collect</h2>
+      <p>We designed The CycleVault from the ground up to avoid collecting personal data.</p>
+      <h3>App data stored locally on your device</h3>
+      <p>The iOS app stores information only on your device's encrypted file system, including:</p>
+      <ul>
+        <li>Period tracking entries</li>
+        <li>Symptoms</li>
+        <li>Notes</li>
+        <li>Cycle predictions</li>
+        <li>Optional first name (if provided)</li>
+      </ul>
+      <p>This data never leaves your device unless you explicitly export it.</p>
+      <h3>Website</h3>
+      <p>thecyclevault.com does not:</p>
+      <ul>
+        <li>Collect personal information</li>
+        <li>Use cookies for tracking or profiling</li>
+        <li>Require or offer user accounts</li>
+      </ul>
+      <p>If analytics are ever added, this policy will be updated before they are deployed.</p>
+    </div>
 
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="education/index.html">Education</a></li>
-                    <li><a href="index.html#problem">Why?</a></li>
-                    <li><a href="index.html#features">Features</a></li>
-                    <li><a href="index.html#privacy">Privacy</a></li>
-                    <li><a href="index.html#pricing">Pricing</a></li>
-                    <li><a href="index.html#faq">FAQ</a></li>
-                </ul>
-            </nav>
+    <div class="policy-card reveal">
+      <h2><span class="policy-num">2</span> What we don't collect</h2>
+      <p>The CycleVault does not:</p>
+      <ul>
+        <li>Collect or store medical or cycle history on servers</li>
+        <li>Send your data to third parties</li>
+        <li>Sell or share personal information</li>
+        <li>Use ad trackers</li>
+        <li>Require a subscription for basic use</li>
+        <li>Require sign-in or a cloud profile</li>
+      </ul>
+      <p>Your cycle data remains fully private and local to your device at all times.</p>
+    </div>
 
-            <button id="theme-toggle" aria-label="Toggle Dark Mode">
-                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="5"></circle>
-                    <line x1="12" y1="1" x2="12" y2="3"></line>
-                    <line x1="12" y1="21" x2="12" y2="23"></line>
-                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                    <line x1="1" y1="12" x2="3" y2="12"></line>
-                    <line x1="21" y1="12" x2="23" y2="12"></line>
-                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                </svg>
-                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
-            </button>
-        </div>
-    </header>
+    <div class="policy-card reveal">
+      <h2><span class="policy-num">3</span> Data storage</h2>
+      <p>All period, symptom, and note data is stored securely and locally on your device.</p>
+      <p>The app performs no automatic network activity.</p>
+      <p>If you delete the app, your data is removed from your device as part of the uninstall process.</p>
+    </div>
 
-    <main>
-        <!-- Page Header -->
-        <section class="policy-header">
-            <div class="container narrow-container">
-                <h1>Privacy Policy</h1>
-                <p>Last Updated: December 18, 2025</p>
-            </div>
-        </section>
+    <div class="policy-card reveal">
+      <h2><span class="policy-num">4</span> Export &amp; control</h2>
+      <p>You remain in control of your data. You may:</p>
+      <ul>
+        <li>Export your cycle history to local storage</li>
+        <li>Permanently delete all local data inside the app</li>
+      </ul>
+      <p>We never store or back up exported data.</p>
+    </div>
 
-        <!-- Policy Content -->
-        <section class="policy-content">
-            <div class="container narrow-container">
+    <div class="policy-card reveal">
+      <h2><span class="policy-num">5</span> Children's privacy</h2>
+      <p>The CycleVault is not intended for children under 13. We do not knowingly collect information from children.</p>
+    </div>
 
-                <!-- Introduction -->
-                <div class="card policy-card fade-in">
-                    <p>The CycleVault (“we,” “our,” “us”) is committed to protecting your privacy and treating your
-                        cycle-related data with respect. This Privacy Policy explains how The CycleVault website and
-                        companion iOS app handle information.</p>
-                    <p>By using The CycleVault app or visiting thecyclevault.com, you agree to the terms in this Privacy
-                        Policy.</p>
-                </div>
+    <div class="policy-card reveal">
+      <h2><span class="policy-num">6</span> Changes to this policy</h2>
+      <p>We may update this Privacy Policy as we improve or expand the app. If major changes occur, the updated date at the top of this policy will be revised.</p>
+    </div>
 
-                <!-- 1. What We Collect -->
-                <div class="card policy-card fade-in delay-1">
-                    <h2>1. What We Collect</h2>
-                    <p>We designed The CycleVault from the ground up to avoid collecting personal data.</p>
+    <div class="policy-card reveal">
+      <h2><span class="policy-num">7</span> Contact</h2>
+      <p>For privacy questions or requests, email <a href="mailto:privacy@thecyclevault.com">privacy@thecyclevault.com</a>.</p>
+    </div>
 
-                    <h3>App Data Stored Locally on Your Device</h3>
-                    <p>The iOS app stores information only on your device’s encrypted file system, including:</p>
-                    <ul class="policy-list">
-                        <li>period tracking entries</li>
-                        <li>symptoms</li>
-                        <li>notes</li>
-                        <li>cycle predictions</li>
-                        <li>optional first name (if provided)</li>
-                    </ul>
-                    <p>This data never leaves your device unless you explicitly export it.</p>
+  </section>
 
-                    <h3 style="margin-top: 24px;">Website</h3>
-                    <p>TheCycleVault.com does not:</p>
-                    <ul class="policy-list">
-                        <li>collect personal information</li>
-                        <li>use cookies for tracking or profiling</li>
-                        <li>require or offer user accounts</li>
-                    </ul>
-                    <p>If analytics are added later, this policy will be updated.</p>
-                </div>
+</main>
 
-                <!-- 2. What We Don’t Collect -->
-                <div class="card policy-card fade-in">
-                    <h2>2. What We Don’t Collect</h2>
-                    <p>The CycleVault does not:</p>
-                    <ul class="policy-list">
-                        <li>collect or store medical or cycle history on servers</li>
-                        <li>send your data to third parties</li>
-                        <li>sell or share personal information</li>
-                        <li>use ad trackers</li>
-                        <li>require a subscription for basic use</li>
-                        <li>require sign-in or a cloud profile</li>
-                    </ul>
-                    <p>Your cycle data remains fully private and local to your device at all times.</p>
-                </div>
+<footer class="foot">
+  <div class="container foot-inner">
+    <div class="foot-brand">
+      <span class="brand-mark"><img src="images/Logo_no_background.png" alt="" /></span>
+      <div>
+        <div class="foot-title">The CycleVault</div>
+        <div class="foot-tag">Private. Local. Yours.</div>
+      </div>
+    </div>
+    <div class="foot-cols">
+      <div><div class="foot-h">Product</div><a href="features.html">Features</a><a href="index.html#pricing">Pricing</a><a href="index.html#faq">FAQ</a></div>
+      <div><div class="foot-h">Company</div><a href="learn/index.html">Learn</a><a href="contact.html">Contact</a></div>
+      <div><div class="foot-h">Legal</div><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a></div>
+    </div>
+  </div>
+  <div class="container foot-bottom">
+    <p>© 2026 The CycleVault. Made calmly.</p>
+    <p class="foot-disc">The CycleVault is not a medical device and doesn't provide medical advice. Consult a clinician for health concerns.</p>
+  </div>
+</footer>
 
-                <!-- 3. Data Storage -->
-                <div class="card policy-card fade-in">
-                    <h2>3. Data Storage</h2>
-                    <p>All period, symptom, and note data is stored securely and locally on your device.</p>
-                    <p>The app performs no automatic network activity.</p>
-                    <p>If you delete the app, your data is removed from your device as part of the uninstall process.
-                    </p>
-                </div>
-
-                <!-- 4. Export & Control -->
-                <div class="card policy-card fade-in">
-                    <h2>4. Export & Control</h2>
-                    <p>You remain in control of your data.</p>
-                    <p>You may:</p>
-                    <ul class="policy-list">
-                        <li>export your cycle history to local storage</li>
-                        <li>permanently delete all local data inside the app</li>
-                    </ul>
-                    <p>We never store or backup exported data.</p>
-                </div>
-
-                <!-- 5. Children’s Privacy -->
-                <div class="card policy-card fade-in">
-                    <h2>5. Children’s Privacy</h2>
-                    <p>The CycleVault is not intended for children under 13.</p>
-                    <p>We do not knowingly collect information from children.</p>
-                </div>
-
-                <!-- 6. Changes to this Policy -->
-                <div class="card policy-card fade-in">
-                    <h2>6. Changes to this Policy</h2>
-                    <p>We may update this Privacy Policy as we improve or expand the app.</p>
-                    <p>If major changes occur, the updated date at the top of this policy will be revised.</p>
-                </div>
-
-                <!-- 7. Contact -->
-                <div class="card policy-card fade-in">
-                    <h2>7. Contact</h2>
-                    <p>For privacy questions or requests:</p>
-                    <a href="mailto:privacy@thecyclevault.com" class="text-gradient"
-                        style="font-weight: bold;">privacy@thecyclevault.com</a>
-                </div>
-
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container footer-container">
-            <div class="footer-left">
-                <span class="footer-logo">The CycleVault</span>
-                <p class="copyright">&copy; 2026 The CycleVault. All rights reserved.</p>
-            </div>
-            <div class="footer-right">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-        <div class="container footer-disclaimer">
-            <p>The CycleVault is not a medical device and does not provide medical advice. Consult a doctor for health
-                concerns.</p>
-        </div>
-    </footer>
-
-    <script src="main.js"></script>
+<script src="site.js"></script>
 </body>
-
 </html>
