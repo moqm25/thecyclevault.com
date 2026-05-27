@@ -2,7 +2,7 @@
 
 > The CycleVault is a calm, privacy-first menstrual cycle tracking app for Apple platforms. It runs fully on-device, requires no account, and frames tracking as a quiet personal practice rather than a feed of notifications.
 
-The CycleVault is currently pre-launch with an open waitlist. The marketing site at thecyclevault.com explains the product philosophy, feature set, privacy posture, and pricing intent, and hosts a small library of educational articles about menstrual cycles, hormones, and related topics.
+The CycleVault is now available on the App Store. The marketing site at thecyclevault.com explains the product philosophy, feature set, privacy posture, and pricing intent, and hosts a small library of educational articles about menstrual cycles, hormones, and related topics.
 
 Key product principles:
 - No account required — all data stays on the user's device
@@ -11,7 +11,7 @@ Key product principles:
 - Designed for iOS, iPadOS, watchOS, and macOS
 
 ## Pages
-- [Home](https://thecyclevault.com/index.html): Product overview, why-it-exists, pricing intent, FAQ, waitlist signup
+- [Home](https://thecyclevault.com/index.html): Product overview, why-it-exists, pricing, FAQ, App Store download
 - [Features](https://thecyclevault.com/features.html): Detailed walkthrough of tracking, calendar, insights, export, and lock features
 - [Privacy](https://thecyclevault.com/privacy.html): Privacy posture and data handling
 - [Terms](https://thecyclevault.com/terms.html): Terms of service
