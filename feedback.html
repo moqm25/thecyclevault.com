@@ -9,24 +9,24 @@
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#A89BFF" />
-<title>Contact — The CycleVault</title>
-<meta name="description" content="Reach out to The CycleVault. Support, founder, and privacy contacts." />
+<title>Send feedback — The CycleVault</title>
+<meta name="description" content="Report a bug, suggest a feature, or just say hello. Feedback goes straight to the founder." />
 
 <!-- Open Graph / iMessage / Facebook / WhatsApp / Slack -->
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="The CycleVault" />
-<meta property="og:title" content="Contact — The CycleVault" />
-<meta property="og:description" content="Three direct lines. Support, founder, privacy — replies usually arrive within a few days." />
+<meta property="og:title" content="Send feedback — The CycleVault" />
+<meta property="og:description" content="Bug, suggestion, or comment? One short form. Replies usually arrive within a few days." />
 <meta property="og:image" content="https://thecyclevault.com/images/og-share-card.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content="The CycleVault app icon" />
-<meta property="og:url" content="https://thecyclevault.com/contact.html" />
+<meta property="og:url" content="https://thecyclevault.com/feedback.html" />
 
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Contact — The CycleVault" />
-<meta name="twitter:description" content="Three direct lines. Support, founder, privacy." />
+<meta name="twitter:title" content="Send feedback — The CycleVault" />
+<meta name="twitter:description" content="Bug, suggestion, or comment? One short form." />
 <meta name="twitter:image" content="https://thecyclevault.com/images/og-share-card.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -70,43 +70,65 @@
 
   <section class="subpage-hero">
     <div class="container">
-      <p class="eyebrow eyebrow-center"><span class="dot"></span><span>Get in touch</span></p>
-      <h1 class="reveal">We'd love <em>to hear from you.</em></h1>
-      <p class="subpage-sub reveal">Three direct lines, no contact forms, no tickets. Replies usually arrive within a few days — sometimes from the founder personally.</p>
+      <p class="eyebrow eyebrow-center"><span class="dot"></span><span>Feedback</span></p>
+      <h1 class="reveal">Tell us <em>what you think.</em></h1>
+      <p class="subpage-sub reveal">Bug, suggestion, comment, or just a hello — it all comes straight to the founder. No tickets, no autoresponders.</p>
     </div>
   </section>
 
   <section class="container">
-    <div class="contact-grid">
-
-      <a class="contact-card reveal" href="mailto:support@thecyclevault.com">
-        <div class="contact-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 7 9-7"/></svg>
+    <form class="feedback-form reveal" id="feedback-form" action="https://formspree.io/f/xwvzzaaq" method="POST" novalidate>
+      <fieldset class="ff-types">
+        <legend class="ff-label">What's this about?</legend>
+        <div class="ff-chips" role="radiogroup" aria-label="Feedback type">
+          <label class="ff-chip">
+            <input type="radio" name="type" value="Bug" required />
+            <span class="ff-chip-body"><span class="ff-chip-glyph" aria-hidden="true">⚠</span>Bug</span>
+          </label>
+          <label class="ff-chip">
+            <input type="radio" name="type" value="Suggestion" />
+            <span class="ff-chip-body"><span class="ff-chip-glyph" aria-hidden="true">✦</span>Suggestion</span>
+          </label>
+          <label class="ff-chip">
+            <input type="radio" name="type" value="Comment" />
+            <span class="ff-chip-body"><span class="ff-chip-glyph" aria-hidden="true">✿</span>Comment</span>
+          </label>
+          <label class="ff-chip">
+            <input type="radio" name="type" value="Other" />
+            <span class="ff-chip-body"><span class="ff-chip-glyph" aria-hidden="true">·</span>Other</span>
+          </label>
         </div>
-        <h3>General support</h3>
-        <p>For help with the app, bug reports, or feedback on what's working — or what isn't.</p>
-        <span class="contact-email">support@thecyclevault.com</span>
-      </a>
+      </fieldset>
 
-      <a class="contact-card reveal reveal-late" href="mailto:founder@thecyclevault.com">
-        <div class="contact-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
-        </div>
-        <h3>Founder</h3>
-        <p>A direct line to the person who builds The CycleVault. Ideas, partnerships, or a hello.</p>
-        <span class="contact-email">founder@thecyclevault.com</span>
-      </a>
+      <div class="ff-field">
+        <label class="ff-label" for="ff-email">Email <span class="ff-optional">— optional, only if you want a reply</span></label>
+        <input type="email" id="ff-email" name="email" placeholder="you@example.com" autocomplete="email" />
+      </div>
 
-      <a class="contact-card reveal" href="mailto:privacy@thecyclevault.com">
-        <div class="contact-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.4 8 9 4.6-.6 8-4.5 8-9V6z"/></svg>
-        </div>
-        <h3>Privacy</h3>
-        <p>Questions about your data, our practices, or how we handle requests.</p>
-        <span class="contact-email">privacy@thecyclevault.com</span>
-      </a>
+      <div class="ff-field">
+        <label class="ff-label" for="ff-message">Your message</label>
+        <textarea id="ff-message" name="message" required minlength="10" rows="6" placeholder="Tell us what happened, what you'd love to see, or what's on your mind…"></textarea>
+        <span class="ff-hint">No personal health data, please — keep this to the app itself.</span>
+      </div>
 
-    </div>
+      <!-- Source: defaults to website, overwritten by JS if ?source= is in the URL (e.g. ios-app) -->
+      <input type="hidden" name="source" id="ff-source" value="thecyclevault.com feedback" />
+      <input type="hidden" name="appVersion" id="ff-version" value="" />
+      <input type="hidden" name="_subject" value="New CycleVault feedback" />
+      <!-- Honeypot for spam bots -->
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;height:0;width:0;opacity:0" aria-hidden="true" />
+
+      <div class="ff-actions">
+        <button type="submit" class="btn btn-primary">
+          <span class="ff-btn-label">Send feedback</span>
+          <span class="ff-btn-spinner" aria-hidden="true"></span>
+        </button>
+        <span class="ff-thanks">Thanks — we read every message.</span>
+        <span class="ff-error" role="alert"></span>
+      </div>
+    </form>
+
+    <p class="ff-pp reveal">Prefer email? <a href="mailto:support@thecyclevault.com">support@thecyclevault.com</a> works too.</p>
   </section>
 
   <section class="cta">
@@ -117,7 +139,7 @@
           <span class="cs cs1">✦</span><span class="cs cs2">✦</span><span class="cs cs3">✦</span><span class="cs cs4">✦</span><span class="cs cs5">✦</span>
         </div>
         <p class="cta-eyebrow">COMING SOON · iOS</p>
-        <h2 class="cta-title">Or just <em>join the waitlist.</em></h2>
+        <h2 class="cta-title">Not on the list <em>yet?</em></h2>
         <p class="cta-sub">We'll email you exactly once: the day The CycleVault is live on the App Store.</p>
         <div style="position: relative; z-index: 2; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
           <a href="index.html#waitlist" class="btn btn-primary">Join the waitlist <span class="btn-arrow" aria-hidden="true">→</span></a>

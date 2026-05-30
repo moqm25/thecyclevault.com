@@ -53,7 +53,7 @@
             "id": "luteal-phase",
             "title": "The Luteal Phase",
             "summary": "What happens in the second half of the menstrual cycle and how it may affect mood and energy.",
-            "url": "https://my.clevelandclinic.org/health/body/22644-luteal-phase",
+            "url": "https://my.clevelandclinic.org/health/articles/24417-luteal-phase",
             "sourceName": "Cleveland Clinic",
             "tags": [
                 "luteal",
@@ -69,8 +69,8 @@
             "id": "period-pain",
             "title": "Menstrual Cramps (Dysmenorrhea)",
             "summary": "Causes of period pain and evidence-based ways to manage cramps.",
-            "url": "https://www.cdc.gov/reproductivehealth/womensrh/menstrual-disorders.htm",
-            "sourceName": "Centers for Disease Control and Prevention (CDC)",
+            "url": "https://www.mayoclinic.org/diseases-conditions/menstrual-cramps/symptoms-causes/syc-20374938",
+            "sourceName": "Mayo Clinic",
             "tags": [
                 "pain-relief",
                 "health"
@@ -101,7 +101,7 @@
             "id": "exercise-cycle",
             "title": "Exercise and the Menstrual Cycle",
             "summary": "How hormonal fluctuations may influence strength, endurance, and recovery.",
-            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7357557/",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7497427/",
             "sourceName": "National Institutes of Health (NIH)",
             "tags": [
                 "fitness",
@@ -117,7 +117,7 @@
             "id": "sleep-hormones",
             "title": "Hormones and Sleep",
             "summary": "How estrogen and progesterone influence sleep quality across the cycle.",
-            "url": "https://www.sleepfoundation.org/how-sleep-works/hormones-and-sleep",
+            "url": "https://www.sleepfoundation.org/women-sleep",
             "sourceName": "Sleep Foundation",
             "tags": [
                 "sleep",
@@ -133,7 +133,7 @@
             "id": "pcos-basics",
             "title": "Polycystic Ovary Syndrome (PCOS)",
             "summary": "Symptoms, causes, and diagnosis of PCOS.",
-            "url": "https://www.cdc.gov/diabetes/basics/pcos.html",
+            "url": "https://www.cdc.gov/diabetes/risk-factors/pcos-polycystic-ovary-syndrome.html",
             "sourceName": "Centers for Disease Control and Prevention (CDC)",
             "tags": [
                 "health",
@@ -181,7 +181,7 @@
             "id": "cycle-length-normal",
             "title": "What Is a Normal Menstrual Cycle Length?",
             "summary": "Understanding typical cycle length ranges and natural variation.",
-            "url": "https://www.acog.org/womens-health/faqs/your-menstrual-cycle",
+            "url": "https://www.acog.org/womens-health/infographics/the-menstrual-cycle",
             "sourceName": "American College of Obstetricians and Gynecologists (ACOG)",
             "tags": [
                 "basics",
@@ -197,7 +197,7 @@
             "id": "heavy-periods",
             "title": "Heavy Menstrual Bleeding",
             "summary": "Causes, symptoms, and when heavy periods may be a concern.",
-            "url": "https://www.cdc.gov/ncbddd/blooddisorders/women/menorrhagia.html",
+            "url": "https://www.cdc.gov/female-blood-disorders/about/heavy-menstrual-bleeding.html",
             "sourceName": "Centers for Disease Control and Prevention (CDC)",
             "tags": [
                 "health",
@@ -213,7 +213,7 @@
             "id": "light-periods",
             "title": "Light Periods (Hypomenorrhea)",
             "summary": "What light menstrual flow may indicate and common causes.",
-            "url": "https://my.clevelandclinic.org/health/diseases/17634-hypomenorrhea",
+            "url": "https://health.clevelandclinic.org/hypomenorrhea",
             "sourceName": "Cleveland Clinic",
             "tags": [
                 "health",
@@ -277,7 +277,7 @@
             "id": "hormones-estrogen-progesterone",
             "title": "Estrogen and Progesterone",
             "summary": "The primary hormones driving the menstrual cycle.",
-            "url": "https://www.yourhormones.info/hormones/estrogen/",
+            "url": "https://www.yourhormones.info/hormones/oestradiol/",
             "sourceName": "Society for Endocrinology",
             "tags": [
                 "hormones",
@@ -309,7 +309,7 @@
             "id": "basal-body-temp",
             "title": "Basal Body Temperature Method",
             "summary": "How temperature tracking confirms ovulation after it occurs.",
-            "url": "https://www.plannedparenthood.org/learn/pregnancy/fertility-awareness/basal-body-temperature",
+            "url": "https://www.plannedparenthood.org/learn/birth-control/fertility-awareness/whats-temperature-method-fams",
             "sourceName": "Planned Parenthood",
             "tags": [
                 "tracking",
@@ -325,8 +325,8 @@
             "id": "endometriosis",
             "title": "Endometriosis",
             "summary": "Symptoms, causes, and diagnosis of endometriosis.",
-            "url": "https://www.cdc.gov/reproductivehealth/endometriosis/index.htm",
-            "sourceName": "Centers for Disease Control and Prevention (CDC)",
+            "url": "https://womenshealth.gov/a-z-topics/endometriosis",
+            "sourceName": "Office on Women's Health (HHS)",
             "tags": [
                 "conditions",
                 "health"
@@ -357,8 +357,8 @@
             "id": "stress-cycle",
             "title": "Stress and the Menstrual Cycle",
             "summary": "How physical and emotional stress can delay ovulation.",
-            "url": "https://www.health.harvard.edu/womens-health/how-stress-affects-your-period",
-            "sourceName": "Harvard Health Publishing",
+            "url": "https://health.clevelandclinic.org/can-stress-cause-you-to-skip-a-period",
+            "sourceName": "Cleveland Clinic",
             "tags": [
                 "stress",
                 "health"
@@ -389,7 +389,7 @@
             "id": "spotting-midcycle",
             "title": "Ovulation Spotting",
             "summary": "Why light bleeding can happen mid-cycle.",
-            "url": "https://my.clevelandclinic.org/health/symptoms/22185-ovulation-bleeding",
+            "url": "https://health.clevelandclinic.org/spotting-during-ovulation",
             "sourceName": "Cleveland Clinic",
             "tags": [
                 "tracking",
@@ -405,7 +405,7 @@
             "id": "nutrition-cycle",
             "title": "Nutrition and the Menstrual Cycle",
             "summary": "How nutrient needs may change across the cycle.",
-            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6835948/",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6775480/",
             "sourceName": "National Institutes of Health (NIH)",
             "tags": [
                 "nutrition",
@@ -437,7 +437,7 @@
             "id": "period-products-safety",
             "title": "Menstrual Product Safety",
             "summary": "Safety considerations for pads, tampons, cups, and discs.",
-            "url": "https://www.fda.gov/medical-devices/consumer-products/menstrual-products",
+            "url": "https://www.fda.gov/consumers/consumer-updates/facts-tampons-and-how-use-them-safely",
             "sourceName": "U.S. Food & Drug Administration (FDA)",
             "tags": [
                 "products",
@@ -469,7 +469,7 @@
             "id": "privacy-reproductive-data",
             "title": "Reproductive Health Data Privacy",
             "summary": "Why menstrual data is sensitive and how it can be misused.",
-            "url": "https://www.eff.org/deeplinks/2022/06/period-tracking-apps-and-your-privacy",
+            "url": "https://www.eff.org/deeplinks/2022/06/should-you-really-delete-your-period-tracking-app",
             "sourceName": "Electronic Frontier Foundation (EFF)",
             "tags": [
                 "privacy",
@@ -485,7 +485,7 @@
             "id": "why-cycle-length-can-change-from-month-to-month",
             "title": "Why Cycle Length Can Change From Month to Month",
             "summary": "Many people expect their menstrual cycle to follow a fixed timetable. When a period arrives earlier or later than expected, it can trigger worry or frustration...",
-            "url": "https://thecyclevault.com/education/articles/why-cycle-length-can-change-from-month-to-month.html",
+            "url": "https://thecyclevault.com/learn/why-cycle-length-can-change-from-month-to-month.html",
             "sourceName": "The CycleVault Education",
             "tags": [
                 "Cycle Tracking"
@@ -500,7 +500,7 @@
             "id": "how-periods-can-change-across-life-stages",
             "title": "How Periods Can Change Across Life Stages",
             "summary": "Periods are often treated as something that should stay the same once they “settle in.” When changes happen later on, they can feel unsettling or raise questio...",
-            "url": "https://thecyclevault.com/education/articles/how-periods-can-change-across-life-stages.html",
+            "url": "https://thecyclevault.com/learn/how-periods-can-change-across-life-stages.html",
             "sourceName": "The CycleVault Education",
             "tags": [
                 "Period Health"
@@ -515,7 +515,7 @@
             "id": "what-tracking-cant-predict",
             "title": "What Tracking Can't Predict",
             "summary": "Cycle tracking can be a helpful way to notice patterns over time, but it can also create expectations that bodies aren't designed to meet. When a predicted dat...",
-            "url": "https://thecyclevault.com/education/articles/what-tracking-cant-predict.html",
+            "url": "https://thecyclevault.com/learn/what-tracking-cant-predict.html",
             "sourceName": "The CycleVault Education",
             "tags": [],
             "readingMinutes": 5,
@@ -528,7 +528,7 @@
             "id": "what-normal-periods-really-look-like",
             "title": "What “Normal” Periods Really Look Like",
             "summary": "Many people grow up with the idea that a “normal” period arrives on the same day every month, lasts the same number of days, and causes little to no discomfort...",
-            "url": "https://thecyclevault.com/education/articles/what-normal-periods-really-look-like.html",
+            "url": "https://thecyclevault.com/learn/what-normal-periods-really-look-like.html",
             "sourceName": "The CycleVault Education",
             "tags": [
                 "Period Health"
@@ -543,7 +543,7 @@
             "id": "spotting-vs-a-period",
             "title": "Spotting vs a Period",
             "summary": "Not all bleeding during a menstrual cycle looks the same. Many people notice light bleeding at times that don’t line up with their expected period and wonder w...",
-            "url": "https://thecyclevault.com/education/articles/spotting-vs-a-period.html",
+            "url": "https://thecyclevault.com/learn/spotting-vs-a-period.html",
             "sourceName": "The CycleVault Education",
             "tags": [
                 "Period Health"
@@ -558,7 +558,7 @@
             "id": "mood-changes-across-the-cycle",
             "title": "Mood Changes Across the Cycle",
             "summary": "Emotional shifts across the menstrual cycle are often talked about in oversimplified ways. Feelings get attributed to “just hormones,” which can make real expe...",
-            "url": "https://thecyclevault.com/education/articles/mood-changes-across-the-cycle.html",
+            "url": "https://thecyclevault.com/learn/mood-changes-across-the-cycle.html",
             "sourceName": "The CycleVault Education",
             "tags": [
                 "Cycle Tracking"
@@ -573,7 +573,7 @@
             "id": "how-stress-shows-up-in-your-cycle",
             "title": "How Stress Shows Up in Your Cycle",
             "summary": "Stress is often described as something that lives only in the mind, but the body feels it too. For people with menstrual cycles, stress can show up in subtle o...",
-            "url": "https://thecyclevault.com/education/articles/how-stress-shows-up-in-your-cycle.html",
+            "url": "https://thecyclevault.com/learn/how-stress-shows-up-in-your-cycle.html",
             "sourceName": "The CycleVault Education",
             "tags": [
                 "Cycle Tracking"
@@ -588,7 +588,7 @@
             "id": "cramps-why-they-happen-and-why-they-vary",
             "title": "Cramps: Why They Happen and Why They Vary",
             "summary": "Cramps are one of the most common and least clearly explained parts of having a period. For some people, they are a mild background sensation. For others, they...",
-            "url": "https://thecyclevault.com/education/articles/cramps-why-they-happen-and-why-they-vary.html",
+            "url": "https://thecyclevault.com/learn/cramps-why-they-happen-and-why-they-vary.html",
             "sourceName": "The CycleVault Education",
             "tags": [
                 "Symptoms"
@@ -603,7 +603,7 @@
             "id": "what-hormones-are-doing-during-your-cycle",
             "title": "What Hormones Are Doing During Your Cycle",
             "summary": "Hormones often get blamed for how people feel during their menstrual cycle. They are described as unpredictable, overwhelming, or “out of control.” In reality,...",
-            "url": "https://thecyclevault.com/education/articles/what-hormones-are-doing-during-your-cycle.html",
+            "url": "https://thecyclevault.com/learn/what-hormones-are-doing-during-your-cycle.html",
             "sourceName": "The CycleVault Education",
             "tags": [
                 "Cycle Tracking"
@@ -618,7 +618,7 @@
             "id": "the-menstrual-cycle-explained-simply",
             "title": "The Menstrual Cycle, Explained Simply",
             "summary": "The menstrual cycle is often talked about as a countdown to a period or a number of days on a calendar. But at its core, the cycle is less like a strict schedu...",
-            "url": "https://thecyclevault.com/education/articles/the-menstrual-cycle-explained-simply.html",
+            "url": "https://thecyclevault.com/learn/the-menstrual-cycle-explained-simply.html",
             "sourceName": "The CycleVault Education",
             "tags": [
                 "Cycle Tracking"
@@ -633,7 +633,7 @@
             "id": "why-period-symptoms-can-feel-different-every-month",
             "title": "Why Period Symptoms Can Feel Different Every Month",
             "summary": "Many people expect their period symptoms to follow a predictable script. When cramps are stronger one month, emotions feel heavier the next, or symptoms barely...",
-            "url": "https://thecyclevault.com/education/articles/why-period-symptoms-can-feel-different-every-month.html",
+            "url": "https://thecyclevault.com/learn/why-period-symptoms-can-feel-different-every-month.html",
             "sourceName": "The CycleVault Education",
             "tags": [
                 "Period Health"
@@ -648,7 +648,7 @@
             "id": "fatigue-around-your-period",
             "title": "Fatigue Around Your Period",
             "summary": "Feeling more tired around your period is a common experience, yet it is often dismissed or misunderstood. Fatigue during this time can feel frustrating, especi...",
-            "url": "https://thecyclevault.com/education/articles/fatigue-around-your-period.html",
+            "url": "https://thecyclevault.com/learn/fatigue-around-your-period.html",
             "sourceName": "The CycleVault Education",
             "tags": [
                 "Period Health"
@@ -663,7 +663,7 @@
             "id": "what-tracking-your-cycle-can-help-you-notice",
             "title": "What Tracking Your Cycle Can Help You Notice",
             "summary": "Tracking your menstrual cycle is often talked about as a way to predict the future or gain control over your body. That framing can create pressure and disappo...",
-            "url": "https://thecyclevault.com/education/articles/what-tracking-your-cycle-can-help-you-notice.html",
+            "url": "https://thecyclevault.com/learn/what-tracking-your-cycle-can-help-you-notice.html",
             "sourceName": "The CycleVault Education",
             "tags": [
                 "Cycle Tracking"
@@ -678,7 +678,7 @@
             "id": "when-it-makes-sense-to-talk-to-a-doctor",
             "title": "When It Makes Sense to Talk to a Doctor",
             "summary": "Many people hesitate to talk to a doctor about their period. Some worry they’re overreacting. Others worry they won’t be taken seriously. And many assume that...",
-            "url": "https://thecyclevault.com/education/articles/when-it-makes-sense-to-talk-to-a-doctor.html",
+            "url": "https://thecyclevault.com/learn/when-it-makes-sense-to-talk-to-a-doctor.html",
             "sourceName": "The CycleVault Education",
             "tags": [],
             "readingMinutes": 4,
@@ -691,7 +691,7 @@
             "id": "what-a-period-actually-is",
             "title": "What a Period Actually Is",
             "summary": "Periods are often described as “bleeding once a month,” but that description leaves out most of what is actually happening. For many people, periods are a regu...",
-            "url": "https://thecyclevault.com/education/articles/what-a-period-actually-is.html",
+            "url": "https://thecyclevault.com/learn/what-a-period-actually-is.html",
             "sourceName": "The CycleVault Education",
             "tags": [
                 "Period Health"

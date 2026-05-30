@@ -298,4 +298,94 @@
       }
     });
   }
+
+  /* ---------- Feedback form (Formspree, AJAX) ---------- */
+  const fForm = document.getElementById('feedback-form');
+  if (fForm) {
+    // Pick up source + version from query string so iOS-app submissions are
+    // distinguished from website submissions in the Formspree dashboard.
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const src = params.get('source');
+      const ver = params.get('version');
+      if (src) {
+        const srcInput = document.getElementById('ff-source');
+        if (srcInput) srcInput.value = src;
+      }
+      if (ver) {
+        const verInput = document.getElementById('ff-version');
+        if (verInput) verInput.value = ver;
+      }
+    } catch {}
+
+    const fBtn = fForm.querySelector('button[type="submit"]');
+    const fLabel = fForm.querySelector('.ff-btn-label');
+    const fThanks = fForm.querySelector('.ff-thanks');
+    const fErr = fForm.querySelector('.ff-error');
+    const fMsg = fForm.querySelector('textarea[name="message"]');
+    const fEmail = fForm.querySelector('input[name="email"]');
+
+    function fShowError(msg) {
+      fThanks.classList.remove('visible');
+      fErr.textContent = msg;
+      fErr.classList.add('visible');
+    }
+    function fClearError() {
+      fErr.textContent = '';
+      fErr.classList.remove('visible');
+    }
+    [fMsg, fEmail].forEach(el => el && el.addEventListener('input', fClearError));
+
+    fForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      fClearError();
+      if (fForm.dataset.state === 'sending' || fForm.dataset.state === 'done') return;
+
+      // Type is required but `required` on radios doesn't always trigger if the
+      // group is empty — check explicitly so we can show our own message.
+      const typeChosen = !!fForm.querySelector('input[name="type"]:checked');
+      if (!typeChosen) {
+        fShowError('Please pick a type so we know how to route this.');
+        return;
+      }
+      if (!fMsg.value.trim() || fMsg.value.trim().length < 10) {
+        fShowError('Add a few more words so we have something to work with.');
+        return;
+      }
+
+      fForm.dataset.state = 'sending';
+      fBtn.disabled = true;
+      fLabel.textContent = 'Sending…';
+
+      try {
+        const res = await fetch(fForm.action, {
+          method: 'POST',
+          body: new FormData(fForm),
+          headers: { Accept: 'application/json' },
+        });
+        if (res.ok) {
+          fForm.dataset.state = 'done';
+          fLabel.textContent = 'Sent ✦';
+          fBtn.classList.add('btn-success');
+          fThanks.textContent = 'Thanks — your message landed. We read every one.';
+          fThanks.classList.add('visible');
+          fForm.querySelectorAll('input, textarea, button').forEach(el => {
+            if (el !== fBtn) el.disabled = true;
+          });
+          return;
+        }
+        const data = await res.json().catch(() => ({}));
+        const detail = data?.errors?.[0]?.message;
+        fShowError(detail || 'Something went wrong. Please try again in a moment.');
+      } catch {
+        fShowError('No network — please check your connection and try again.');
+      } finally {
+        if (fForm.dataset.state !== 'done') {
+          fForm.dataset.state = '';
+          fBtn.disabled = false;
+          fLabel.textContent = 'Send feedback';
+        }
+      }
+    });
+  }
 })();
