@@ -1822,6 +1822,11 @@ em { font-family: 'Fraunces', serif; font-style: italic; font-weight: 500; font-
 .foot-brand { display: flex; align-items: center; gap: 12px; }
 .foot-title { font-weight: 700; color: var(--ink); letter-spacing: -.01em; }
 .foot-tag { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+.foot-ig { display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; font-size: 12.5px; font-weight: 600; color: var(--muted); transition: color .2s; }
+.foot-ig svg { width: 15px; height: 15px; transition: transform .25s cubic-bezier(.2,.8,.2,1); }
+.foot-ig:hover { color: var(--coral); }
+.foot-ig:hover svg { transform: scale(1.1); }
+@media (prefers-reduced-motion: reduce) { .foot-ig, .foot-ig svg { transition: none; } .foot-ig:hover svg { transform: none; } }
 .foot-cols { display: grid; grid-template-columns: repeat(3,1fr); gap: 30px; }
 @media (max-width: 480px) { .foot-cols { grid-template-columns: 1fr 1fr; } }
 .foot-h { font-size: 11.5px; font-weight: 700; letter-spacing: .1em; color: var(--ink); margin-bottom: 12px; text-transform: uppercase; }
